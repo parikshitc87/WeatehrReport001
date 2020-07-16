@@ -2,16 +2,20 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-07-16T21:45:56 IST" name="Default suite" finished-at="2020-07-16T21:46:04 IST" duration-ms="8685">
+  <suite started-at="2020-07-16T23:47:53 IST" name="Default suite" finished-at="2020-07-16T23:48:03 IST" duration-ms="9374">
     <groups>
     </groups>
-    <test started-at="2020-07-16T21:45:56 IST" name="Default test" finished-at="2020-07-16T21:46:04 IST" duration-ms="8685">
+    <test started-at="2020-07-16T23:47:53 IST" name="Default test" finished-at="2020-07-16T23:48:03 IST" duration-ms="9374">
       <class name="com.weatherData.testcases.testClass">
-        <test-method is-config="true" signature="Setup()[pri:0, instance:com.weatherData.testcases.testClass@2ea227af]" started-at="2020-07-16T21:45:56 IST" name="Setup" finished-at="2020-07-16T21:46:04 IST" duration-ms="8647" status="PASS">
+        <test-method is-config="true" signature="Setup()[pri:0, instance:com.weatherData.testcases.testClass@7f552bd3]" started-at="2020-07-16T23:47:53 IST" name="Setup" finished-at="2020-07-16T23:48:02 IST" duration-ms="8618" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Setup -->
-        <test-method signature="verifyHomePageTitleTest()[pri:0, instance:com.weatherData.testcases.testClass@2ea227af]" started-at="2020-07-16T21:46:04 IST" name="verifyHomePageTitleTest" finished-at="2020-07-16T21:46:04 IST" duration-ms="4" status="PASS">
+        <test-method is-config="true" signature="SetupPage()[pri:0, instance:com.weatherData.testcases.testClass@7f552bd3]" started-at="2020-07-16T23:48:02 IST" name="SetupPage" finished-at="2020-07-16T23:48:02 IST" duration-ms="24" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetupPage -->
+        <test-method signature="verifyHomePageTitleTest()[pri:0, instance:com.weatherData.testcases.testClass@7f552bd3]" started-at="2020-07-16T23:48:02 IST" name="verifyHomePageTitleTest" finished-at="2020-07-16T23:48:03 IST" duration-ms="698" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyHomePageTitleTest -->
