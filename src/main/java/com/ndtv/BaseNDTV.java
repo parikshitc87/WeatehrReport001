@@ -9,23 +9,16 @@ package com.ndtv;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.support.events.EventFiringWebDriver;
-import org.openqa.selenium.support.events.WebDriverEventListener;
-import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
-import org.testng.xml.LaunchSuite;
 
 import common.utils.CommUtils;
-
-
-import org.apache.xmlbeans.impl.xb.xsdschema.Public;
 
 public class BaseNDTV {
 
@@ -39,16 +32,21 @@ public class BaseNDTV {
 		
 		prop = new Properties();
 		try {
-			FileInputStream ipStream = new FileInputStream(System.getProperty("user.dir")+ "src\\main\\java\\env\\properties\\config.properties");
+			FileInputStream ipStream = new FileInputStream(System.getProperty("user.dir")
+					+ "/src/main/java/env/properties/config.properties");
+			prop.load(ipStream);
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		catch (IOException e) {
 			e.printStackTrace();
 		}
 		
 		
 
 		System.setProperty("webdriver.chrome.driver",
-				System.getProperty("user.dir") + "\\src\\main\\resources\\com\\drivers\\chromedriver.exe");
+				System.getProperty("user.dir") + "\\src\\main\\resources\\drivers\\chromedriver.exe");
 
 		driver = new ChromeDriver();
 
@@ -56,13 +54,13 @@ public class BaseNDTV {
 		driver.manage().timeouts().implicitlyWait(CommUtils.Implicitely_Wait, TimeUnit.SECONDS);
 
 		driver.manage().window().maximize();
-		driver.get(prop.getProperty("browser"));
+		driver.get(prop.getProperty("url"));
 
 	}
 	
 	
 	
-	@AfterMethod
+	//@AfterMethod   //Closing browser and clearing cookies
 	public void houseKeeping() {
 		driver.manage().deleteAllCookies();
 		driver.quit();
