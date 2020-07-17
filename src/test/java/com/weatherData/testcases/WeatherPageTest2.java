@@ -17,8 +17,6 @@ public class WeatherPageTest2 extends BaseNDTV {
 	WeatherPageNDTV weatherPageNdtv;
 	String tempdatacollector;
 	int tempInDegreeC;
-	
-	
 
 	@BeforeMethod
 	public void SetupPage() {
@@ -34,53 +32,86 @@ public class WeatherPageTest2 extends BaseNDTV {
 	}
 
 	@Test(dependsOnMethods = { "presenceOfCityInput" })
-	public void enterCityNameTest() { //This will enter city name in text-field and verify on the map
+	public void enterCityNameTest() { // This will enter city name in text-field and verify on the map
 		weatherPageNdtv.enterCityName("Lucknow");
-		//System.out.println();
+		// System.out.println();
 		Assert.assertEquals(weatherPageNdtv.presenceOfCityonList("Lucknow"), true);
-		
+
 	}
-	
-	@Test//(dependsOnMethods = { "enterCityNameTest" })
-	public void selectCityCheckbox(){
-		
-		
-		/*
-		 * if(!driver.findElement(By.
-		 * xpath("//div[@class='cityText' and contains(. ,'Ajmer')]")).isDisplayed()) {
-		 * System.out.println("Ajmer Displayed");
-		 * weatherPageNdtv.clickCityOnMap("Ajmer"); }
-		 */
-		
-		driver.findElement(By.xpath("//span[@id='icon_holder']")).click();
-		
-		weatherPageNdtv.enterCityName("Ajmer");
-		
-		
+
+	@Test // (dependsOnMethods = { "enterCityNameTest" })
+	public void selectCityCheckbox() {
+
+	//	if (!driver.findElement(By.xpath("//div[@class='cityText' and contains(. ,'Ajmer')]")).isEnabled()) {
+			System.out.println("Ajmer not Displayed");
+			clickOn(driver, driver.findElement(By.xpath("//span[@id='icon_holder']")), 15);
+			
+
+			weatherPageNdtv.enterCityName("Ajmer");
+	//	}
+
 		/*
 		 * if (!driver.findElement(By.
 		 * xpath("//div[@class='cityText' and contains(. ,'Ajmer')]")).isDisplayed()) {
 		 * weatherPageNdtv.clickToSelectCity("Ajmer"); }
 		 */
-		
+
 		if (!driver.findElement(By.xpath("//div[@class='cityText' and contains(. ,'Ajmer')]")).isDisplayed()) {
 			System.out.println("Ajmer");
 		}
-		
-	
-		weatherPageNdtv.clickCityOnMap("Ajmer");		
-		System.out.println(driver.findElement(By.xpath("//*[@id='map_canvas' and contains(., 'Temp in Degrees')]")).getText());
-		tempdatacollector = driver.findElement(By.xpath("//*[@id='map_canvas' and contains(., 'Temp in Degrees')]")).getText();
+
+		weatherPageNdtv.clickCityOnMap("Ajmer");
+		System.out.println(
+				driver.findElement(By.xpath("//*[@id='map_canvas' and contains(., 'Temp in Degrees')]")).getText());
+		tempdatacollector = driver.findElement(By.xpath("//*[@id='map_canvas' and contains(., 'Temp in Degrees')]"))
+				.getText();
 		tempInDegreeC = CommonCalculations.returnTemperatureInDegreeC(tempdatacollector);
-		
+
 	}
-	
-	
+
 	@Test
 	public void makesureCityDisplayedonMap() {
+
+	
+		/*if (driver.findElement(By.xpath("//div[@class='cityText' and contains(. ,'Ajmer')]")).isEnabled()) {
+			
+			weatherPageNdtv.clickCityOnMap("Ajmer");
+			
+		}*/
 		
+		/*else {
+			clickOn(driver, driver.findElement(By.xpath("//span[@id='icon_holder']")), 15);
+					 
+					 
+					  weatherPageNdtv.enterCityName("Ajmer");
+			
+		}*/
+		
+		//driver.findElement(By.xpath("//div[@class='cityText' and contains(. ,'Ajmer')]")).click();
+		clickOn(driver, driver.findElement(By.xpath("//span[@id='icon_holder']")), 15);
+		weatherPageNdtv.enterCityName("Ajmer");
+		weatherPageNdtv.clickCityOnMap("Ajmer");
+		/*
+		 * if (!driver.findElement(By.
+		 * xpath("//div[@class='cityText' and contains(. ,'Ajmer')]")).isDisplayed()) {
+		 * weatherPageNdtv.clickToSelectCity("Ajmer"); }
+		 */
+
+		/*
+		 * if (!driver.findElement(By.
+		 * xpath("//div[@class='cityText' and contains(. ,'Ajmer')]")).isDisplayed()) {
+		 * System.out.println("Ajmer"); }
+		 */
+
+		
+		System.out.println(
+				driver.findElement(By.xpath("//*[@id='map_canvas' and contains(., 'Temp in Degrees')]")).getText());
+		tempdatacollector = driver.findElement(By.xpath("//*[@id='map_canvas' and contains(., 'Temp in Degrees')]"))
+				.getText();
+		tempInDegreeC = CommonCalculations.returnTemperatureInDegreeC(tempdatacollector);
+
+	
+
 	}
-	
-	
 
 }

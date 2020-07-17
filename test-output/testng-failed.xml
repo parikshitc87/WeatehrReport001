@@ -5,7 +5,7 @@
     <classes>
       <class name="com.weatherData.testcases.WeatherPageTest2">
         <methods>
-          <include name="selectCityCheckbox"/>
+          <include name="makesureCityDisplayedonMap"/>
           <include name="SetupPage"/>
         </methods>
       </class> <!-- com.weatherData.testcases.WeatherPageTest2 -->
