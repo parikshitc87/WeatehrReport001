@@ -23,10 +23,16 @@ public class HomePageNDTV extends BaseNDTV {
 	
 	
 	public void OpenExtendedMenu() {
-		threeDotMenu.click();
-
+		threeDotMenu.click(); // this action will open the extended menu which contains Weather link
 	}
 	
+	public boolean WeatherLinkPresent() {
+		return weatherLink.isDisplayed(); //will return true if Weather link is available after user clicks open 3 dot menu
+	}
+	
+	public void ClickWeatherLink() {
+		weatherLink.click(); //Will click on the link to reach Weather page
+	}
 	
 	
 	

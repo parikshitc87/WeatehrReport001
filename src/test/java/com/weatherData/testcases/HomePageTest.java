@@ -1,5 +1,7 @@
 package com.weatherData.testcases;
 
+import static org.testng.Assert.assertEquals;
+
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -32,8 +34,10 @@ public class HomePageTest extends BaseNDTV{
 	
 	@Test
 	public void presenceOfWeatherLinkTest() {
-		
+		assertEquals(homepageNdtv.WeatherLinkPresent(), true);
+		homepageNdtv.ClickWeatherLink();
 	}
 
+	
 	
 }
