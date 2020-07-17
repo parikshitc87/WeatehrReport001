@@ -1,11 +1,15 @@
-package ndtv.pages;
+package com.weatherData.testcases;
 
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import com.ndtv.BaseNDTV;
 
-public class WeatherPageNDTV extends BaseNDTV{
+import ndtv.pages.HomePageNDTV;
+import ndtv.pages.WeatherPageNDTV;
+
+public class WeatherPageTest extends BaseNDTV {
+
 	HomePageNDTV homepageNdtv;
 	WeatherPageNDTV weatherPageNdtv;
 	
@@ -14,6 +18,7 @@ public class WeatherPageNDTV extends BaseNDTV{
 	public void SetupPage() {
 		Setup();
 		homepageNdtv = new HomePageNDTV();
+		weatherPageNdtv = homepageNdtv.ClickWeatherLink();
 	}
 	
 	@Test
@@ -21,4 +26,6 @@ public class WeatherPageNDTV extends BaseNDTV{
 		
 	}
 
+
+	
 }

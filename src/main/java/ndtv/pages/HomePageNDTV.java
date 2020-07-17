@@ -30,8 +30,9 @@ public class HomePageNDTV extends BaseNDTV {
 		return weatherLink.isDisplayed(); //will return true if Weather link is available after user clicks open 3 dot menu
 	}
 	
-	public void ClickWeatherLink() {
+	public WeatherPageNDTV ClickWeatherLink() {
 		weatherLink.click(); //Will click on the link to reach Weather page
+		return new WeatherPageNDTV(); //for page chaining 
 	}
 	
 	

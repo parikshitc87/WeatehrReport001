@@ -26,7 +26,7 @@ public class BaseNDTV {
 	public static Properties prop;  //to get the Environmental Properties like Browser and URLs
 
 
-	@BeforeMethod
+	
 	public void Setup() {
 		
 		

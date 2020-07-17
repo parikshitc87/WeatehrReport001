@@ -1,25 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="1" total="2" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-07-17T18:25:48 IST" name="Default suite" finished-at="2020-07-17T18:25:57 IST" duration-ms="9534">
+  <suite started-at="2020-07-17T21:14:06 IST" name="Default suite" finished-at="2020-07-17T21:14:16 IST" duration-ms="9609">
     <groups>
     </groups>
-    <test started-at="2020-07-17T18:25:48 IST" name="Default test" finished-at="2020-07-17T18:25:57 IST" duration-ms="9534">
-      <class name="com.weatherData.testcases.testClass">
-        <test-method is-config="true" signature="Setup()[pri:0, instance:com.weatherData.testcases.testClass@7f552bd3]" started-at="2020-07-17T18:25:48 IST" name="Setup" finished-at="2020-07-17T18:25:56 IST" duration-ms="8775" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Setup -->
-        <test-method is-config="true" signature="SetupPage()[pri:0, instance:com.weatherData.testcases.testClass@7f552bd3]" started-at="2020-07-17T18:25:56 IST" name="SetupPage" finished-at="2020-07-17T18:25:56 IST" duration-ms="23" status="PASS">
+    <test started-at="2020-07-17T21:14:06 IST" name="Default test" finished-at="2020-07-17T21:14:16 IST" duration-ms="9609">
+      <class name="com.weatherData.testcases.HomePageTest">
+        <test-method is-config="true" signature="SetupPage()[pri:0, instance:com.weatherData.testcases.HomePageTest@4690b489]" started-at="2020-07-17T21:14:06 IST" name="SetupPage" finished-at="2020-07-17T21:14:15 IST" duration-ms="8563" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SetupPage -->
-        <test-method signature="verifyHomePageTitleTest()[pri:0, instance:com.weatherData.testcases.testClass@7f552bd3]" started-at="2020-07-17T18:25:56 IST" name="verifyHomePageTitleTest" finished-at="2020-07-17T18:25:57 IST" duration-ms="702" status="PASS">
+        <test-method signature="presenceOfWeatherLinkTest()[pri:2, instance:com.weatherData.testcases.HomePageTest@4690b489]" started-at="2020-07-17T21:14:15 IST" name="presenceOfWeatherLinkTest" finished-at="2020-07-17T21:14:16 IST" duration-ms="1006" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyHomePageTitleTest -->
-      </class> <!-- com.weatherData.testcases.testClass -->
+        </test-method> <!-- presenceOfWeatherLinkTest -->
+      </class> <!-- com.weatherData.testcases.HomePageTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

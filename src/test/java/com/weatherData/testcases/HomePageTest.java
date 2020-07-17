@@ -10,32 +10,35 @@ import com.ndtv.BaseNDTV;
 
 import ndtv.pages.HomePageNDTV;
 //import pages.SeleniumTestPage;
+import ndtv.pages.WeatherPageNDTV;
 
 
 
 public class HomePageTest extends BaseNDTV{
 	HomePageNDTV homepageNdtv;
+	WeatherPageNDTV weatherPageNdtv;
 	
 	
 	@BeforeMethod
 	public void SetupPage() {
+		Setup();
 		homepageNdtv = new HomePageNDTV();
 	}
 	
 	
 	
 	
-	@Test
+	@Test (priority = 1)
 	public void  verifyHomePageTitleTest() {  // to check if we have landed at the desired page
 		System.out.println(driver.getTitle());
-		homepageNdtv.OpenExtendedMenu();
 		Assert.assertEquals(driver.getTitle(), "NDTV: Latest News, India News, Breaking News, Business, Bollywood, Cricket, Videos & Photos");
 	}
 	
-	@Test
+	@Test (priority = 2)
 	public void presenceOfWeatherLinkTest() {
-		assertEquals(homepageNdtv.WeatherLinkPresent(), true);
-		homepageNdtv.ClickWeatherLink();
+		homepageNdtv.OpenExtendedMenu();
+		Assert.assertEquals(homepageNdtv.WeatherLinkPresent(), true); //test - Is the Weather link present ?
+		weatherPageNdtv = homepageNdtv.ClickWeatherLink(); //Navigate to Weather page
 	}
 
 	
