@@ -1,21 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="1" total="2" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-07-17T21:14:06 IST" name="Default suite" finished-at="2020-07-17T21:14:16 IST" duration-ms="9609">
+  <suite started-at="2020-07-17T21:50:11 IST" name="Default suite" finished-at="2020-07-17T21:50:31 IST" duration-ms="19555">
     <groups>
     </groups>
-    <test started-at="2020-07-17T21:14:06 IST" name="Default test" finished-at="2020-07-17T21:14:16 IST" duration-ms="9609">
-      <class name="com.weatherData.testcases.HomePageTest">
-        <test-method is-config="true" signature="SetupPage()[pri:0, instance:com.weatherData.testcases.HomePageTest@4690b489]" started-at="2020-07-17T21:14:06 IST" name="SetupPage" finished-at="2020-07-17T21:14:15 IST" duration-ms="8563" status="PASS">
+    <test started-at="2020-07-17T21:50:11 IST" name="Default test" finished-at="2020-07-17T21:50:31 IST" duration-ms="19555">
+      <class name="com.weatherData.testcases.WeatherPageTest">
+        <test-method is-config="true" signature="SetupPage()[pri:0, instance:com.weatherData.testcases.WeatherPageTest@79b06cab]" started-at="2020-07-17T21:50:11 IST" name="SetupPage" finished-at="2020-07-17T21:50:20 IST" duration-ms="9347" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SetupPage -->
-        <test-method signature="presenceOfWeatherLinkTest()[pri:2, instance:com.weatherData.testcases.HomePageTest@4690b489]" started-at="2020-07-17T21:14:15 IST" name="presenceOfWeatherLinkTest" finished-at="2020-07-17T21:14:16 IST" duration-ms="1006" status="PASS">
+        <test-method signature="presenceOfCityInput()[pri:0, instance:com.weatherData.testcases.WeatherPageTest@79b06cab]" started-at="2020-07-17T21:50:20 IST" name="presenceOfCityInput" finished-at="2020-07-17T21:50:21 IST" duration-ms="260" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- presenceOfWeatherLinkTest -->
-      </class> <!-- com.weatherData.testcases.HomePageTest -->
+        </test-method> <!-- presenceOfCityInput -->
+        <test-method is-config="true" signature="SetupPage()[pri:0, instance:com.weatherData.testcases.WeatherPageTest@79b06cab]" started-at="2020-07-17T21:50:21 IST" name="SetupPage" finished-at="2020-07-17T21:50:30 IST" duration-ms="9360" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetupPage -->
+        <test-method signature="enterCityName()[pri:0, instance:com.weatherData.testcases.WeatherPageTest@79b06cab]" started-at="2020-07-17T21:50:30 IST" name="enterCityName" finished-at="2020-07-17T21:50:31 IST" depends-on-methods="com.weatherData.testcases.WeatherPageTest.presenceOfCityInput" duration-ms="543" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enterCityName -->
+      </class> <!-- com.weatherData.testcases.WeatherPageTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
