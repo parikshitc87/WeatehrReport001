@@ -3,12 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.weatherData.testcases.WeatherPageTest">
+      <class name="com.weatherData.testcases.WeatherPageTest2">
         <methods>
+          <include name="selectCityCheckbox"/>
           <include name="SetupPage"/>
-          <include name="enterCityName"/>
         </methods>
-      </class> <!-- com.weatherData.testcases.WeatherPageTest -->
+      </class> <!-- com.weatherData.testcases.WeatherPageTest2 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -14,7 +14,10 @@ import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
@@ -58,9 +61,18 @@ public class BaseNDTV {
 
 	}
 	
+	public static void sendKeys(WebDriver driver, WebElement element, int timeout, String City) {
+		new WebDriverWait(driver, 	timeout).until(ExpectedConditions.visibilityOf(element));
+		element.sendKeys(City);
+	}
 	
+	public static void clickOn(WebDriver driver, WebElement element, int timeout) {
+		new WebDriverWait(driver, timeout)
+		.until(ExpectedConditions.elementToBeClickable(element));
+		element.click();
+		}
 	
-	//@AfterMethod   //Closing browser and clearing cookies
+//	@AfterMethod   //Closing browser and clearing cookies
 	public void houseKeeping() {
 		driver.manage().deleteAllCookies();
 		driver.quit();

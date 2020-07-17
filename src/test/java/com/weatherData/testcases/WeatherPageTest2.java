@@ -7,16 +7,18 @@ import org.testng.annotations.Test;
 
 import com.ndtv.BaseNDTV;
 
+import common.utils.CommonCalculations;
 import ndtv.pages.HomePageNDTV;
 import ndtv.pages.WeatherPageNDTV;
 
-public class WeatherPageTest extends BaseNDTV {
+public class WeatherPageTest2 extends BaseNDTV {
 
 	HomePageNDTV homepageNdtv;
 	WeatherPageNDTV weatherPageNdtv;
-	int cityTemperature;
-	int cityHumidity;
-	String tempDatacollector;
+	String tempdatacollector;
+	int tempInDegreeC;
+	
+	
 
 	@BeforeMethod
 	public void SetupPage() {
@@ -40,29 +42,42 @@ public class WeatherPageTest extends BaseNDTV {
 	}
 	
 	@Test//(dependsOnMethods = { "enterCityNameTest" })
-	public void selectCityCheckbox(){ //This will do steps from search city and click on it on Map to verify if weather details panel opens
-		weatherPageNdtv.enterCityName("Bhopal");
-		
-		do {
-			weatherPageNdtv.clickCityCheckBox("Bhopal");
-		}while(!weatherPageNdtv.cityDisplayedOnMap("Bhopal")) ;
+	public void selectCityCheckbox(){
 		
 		
-		weatherPageNdtv.clickCityOnMap("Bhopal");
-		Assert.assertEquals(weatherPageNdtv.weatherPanelDisplay("Bhopal"), true);		
-	}
-	
-	@Test
-	public void recordTempAndHumidity() {
+		/*
+		 * if(!driver.findElement(By.
+		 * xpath("//div[@class='cityText' and contains(. ,'Ajmer')]")).isDisplayed()) {
+		 * System.out.println("Ajmer Displayed");
+		 * weatherPageNdtv.clickCityOnMap("Ajmer"); }
+		 */
+		
+		driver.findElement(By.xpath("//span[@id='icon_holder']")).click();
+		
 		weatherPageNdtv.enterCityName("Ajmer");
 		
-		do {
-			weatherPageNdtv.clickCityCheckBox("Ajmer");
-		}while(!weatherPageNdtv.cityDisplayedOnMap("Ajmer")) ;
-				
+		
+		/*
+		 * if (!driver.findElement(By.
+		 * xpath("//div[@class='cityText' and contains(. ,'Ajmer')]")).isDisplayed()) {
+		 * weatherPageNdtv.clickToSelectCity("Ajmer"); }
+		 */
+		
+		if (!driver.findElement(By.xpath("//div[@class='cityText' and contains(. ,'Ajmer')]")).isDisplayed()) {
+			System.out.println("Ajmer");
+		}
+		
+	
 		weatherPageNdtv.clickCityOnMap("Ajmer");		
 		System.out.println(driver.findElement(By.xpath("//*[@id='map_canvas' and contains(., 'Temp in Degrees')]")).getText());
-		tempDatacollector = driver.findElement(By.xpath("//*[@id='map_canvas' and contains(., 'Temp in Degrees')]")).getText();
+		tempdatacollector = driver.findElement(By.xpath("//*[@id='map_canvas' and contains(., 'Temp in Degrees')]")).getText();
+		tempInDegreeC = CommonCalculations.returnTemperatureInDegreeC(tempdatacollector);
+		
+	}
+	
+	
+	@Test
+	public void makesureCityDisplayedonMap() {
 		
 	}
 	
