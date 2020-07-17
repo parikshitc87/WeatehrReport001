@@ -83,7 +83,9 @@ public class WeatherPageNDTV extends BaseNDTV {
 		return driver.findElement(By.xpath("//div[@class='cityText' and text()='"+City+"']")).isDisplayed();
 	}
 	
-	public int returnCityTemperature(String City) {
-	//	driver.findElement(By.xpath("//*[@id='map_canvas' and contains(., 'Temp in Degrees')]")).getText();
-	}
+	/*
+	 * public int returnCityTemperature(String City) { // driver.findElement(By.
+	 * xpath("//*[@id='map_canvas' and contains(., 'Temp in Degrees')]")).getText();
+	 * }
+	 */
 }
