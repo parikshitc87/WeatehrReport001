@@ -38,39 +38,11 @@ public class WeatherPageTest2 extends BaseNDTV {
 		Assert.assertEquals(weatherPageNdtv.presenceOfCityonList("Lucknow"), true);
 
 	}
+	
+	
 
-	@Test // (dependsOnMethods = { "enterCityNameTest" })
-	public void selectCityCheckbox() {
-
-	//	if (!driver.findElement(By.xpath("//div[@class='cityText' and contains(. ,'Ajmer')]")).isEnabled()) {
-			System.out.println("Ajmer not Displayed");
-			clickOn(driver, driver.findElement(By.xpath("//span[@id='icon_holder']")), 15);
-			
-
-			weatherPageNdtv.enterCityName("Ajmer");
-	//	}
-
-		/*
-		 * if (!driver.findElement(By.
-		 * xpath("//div[@class='cityText' and contains(. ,'Ajmer')]")).isDisplayed()) {
-		 * weatherPageNdtv.clickToSelectCity("Ajmer"); }
-		 */
-
-		if (!driver.findElement(By.xpath("//div[@class='cityText' and contains(. ,'Ajmer')]")).isDisplayed()) {
-			System.out.println("Ajmer");
-		}
-
-		weatherPageNdtv.clickCityOnMap("Ajmer");
-		System.out.println(
-				driver.findElement(By.xpath("//*[@id='map_canvas' and contains(., 'Temp in Degrees')]")).getText());
-		tempdatacollector = driver.findElement(By.xpath("//*[@id='map_canvas' and contains(., 'Temp in Degrees')]"))
-				.getText();
-		tempInDegreeC = CommonCalculations.returnTemperatureInDegreeC(tempdatacollector);
-
-	}
-
-	@Test
-	public void makesureCityDisplayedonMap() {
+	@Test //(dependsOnMethods = { "enterCityNameTest" })
+	public void collectData() {
 
 	
 		/*if (driver.findElement(By.xpath("//div[@class='cityText' and contains(. ,'Ajmer')]")).isEnabled()) {
@@ -89,21 +61,9 @@ public class WeatherPageTest2 extends BaseNDTV {
 		
 		//driver.findElement(By.xpath("//div[@class='cityText' and contains(. ,'Ajmer')]")).click();
 		clickOn(driver, driver.findElement(By.xpath("//span[@id='icon_holder']")), 15);
-		weatherPageNdtv.enterCityName("Ajmer");
-		weatherPageNdtv.clickCityOnMap("Ajmer");
-		/*
-		 * if (!driver.findElement(By.
-		 * xpath("//div[@class='cityText' and contains(. ,'Ajmer')]")).isDisplayed()) {
-		 * weatherPageNdtv.clickToSelectCity("Ajmer"); }
-		 */
-
-		/*
-		 * if (!driver.findElement(By.
-		 * xpath("//div[@class='cityText' and contains(. ,'Ajmer')]")).isDisplayed()) {
-		 * System.out.println("Ajmer"); }
-		 */
-
-		
+		weatherPageNdtv.enterCityName("Alwar");
+		weatherPageNdtv.clickCityOnMap("Alwar");
+				
 		System.out.println(
 				driver.findElement(By.xpath("//*[@id='map_canvas' and contains(., 'Temp in Degrees')]")).getText());
 		tempdatacollector = driver.findElement(By.xpath("//*[@id='map_canvas' and contains(., 'Temp in Degrees')]"))

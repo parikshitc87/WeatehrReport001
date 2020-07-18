@@ -5,8 +5,8 @@
     <classes>
       <class name="com.weatherData.testcases.WeatherPageTest2">
         <methods>
-          <include name="makesureCityDisplayedonMap"/>
           <include name="SetupPage"/>
+          <include name="collectData"/>
         </methods>
       </class> <!-- com.weatherData.testcases.WeatherPageTest2 -->
     </classes>

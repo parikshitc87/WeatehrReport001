@@ -1,5 +1,7 @@
 package ndtv.pages;
 
+import java.util.concurrent.TimeUnit;
+
 import javax.crypto.KeyAgreementSpi;
 import javax.xml.xpath.XPath;
 
@@ -14,6 +16,8 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import com.ndtv.BaseNDTV;
+
+import common.utils.CommUtils;
 
 public class WeatherPageNDTV extends BaseNDTV {
 
@@ -32,11 +36,19 @@ public class WeatherPageNDTV extends BaseNDTV {
 	}
 
 	public void enterCityName(String City) {
-		CityInputField.clear();
-		//sendKeys(driver, CityInputField, 15, City);
-		CityInputField.sendKeys(City); // , Keys.ENTER
-		CityInputField.sendKeys(Keys.RETURN);
+		
+		for(char c : City.toCharArray()) {
+			CityInputField.click();
+			CityInputField.sendKeys(String.valueOf(c), Keys.ENTER); // , Keys.ENTER
+			//driver.manage().timeouts().implicitlyWait(CommUtils.Implicitely_Wait, TimeUnit.SECONDS);
+			CityInputField.sendKeys(Keys.SPACE, Keys.BACK_SPACE);
+			
+			
+			//CityInputField.sendKeys(Keys.RETURN);
+		}
 		CityInputField.sendKeys(Keys.TAB, Keys.SPACE);
+		
+		
 		
 	}
 
