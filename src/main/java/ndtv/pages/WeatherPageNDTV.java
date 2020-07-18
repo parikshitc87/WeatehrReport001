@@ -51,6 +51,10 @@ public class WeatherPageNDTV extends BaseNDTV {
 		
 		
 	}
+	
+	public void sendTabSpace() {
+		CityInputField.sendKeys(Keys.TAB, Keys.SPACE);
+	}
 
 	public boolean presenceOfCityonList(String City) {
 		return driver.findElement(By.xpath("//input[@id='"+ City+"']")).isEnabled();
