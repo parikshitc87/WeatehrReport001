@@ -5,7 +5,7 @@
     <classes>
       <class name="org.openweathermap.WeatherData">
         <methods>
-          <include name="testOpenWeatherMapData"/>
+          <include name="testOpenWeatherMapData" invocation-numbers="0 1 2"/>
           <include name="setup"/>
         </methods>
       </class> <!-- org.openweathermap.WeatherData -->

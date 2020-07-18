@@ -23,7 +23,7 @@ public class WeatherPageTest extends BaseNDTV {
 	WeatherPageNDTV weatherPageNdtv;
 	String tempdatacollector;
 	int tempInDegreeC;
-	//int exe;
+
 
 	@BeforeMethod
 	public void SetupPage() {

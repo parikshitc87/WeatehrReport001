@@ -3,7 +3,7 @@ package common.utils;
 import java.util.ArrayList;
 
 public class CityNameGenerator {
-	static Xls_Reader reader;
+	public static Xls_Reader reader;
 	static String xlsLocation = 
 			System.getProperty("user.dir")+"\\src\\main\\resources\\test\\data\\dataExcel.xlsx";
 

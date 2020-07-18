@@ -12,6 +12,7 @@ import org.testng.annotations.BeforeMethod;
 public class BaseOpenWeatherMap {
 	public  Properties prop;
 	public  String Session_ID;
+	static String listOfCities = "listOfCities";
 	
 	@BeforeMethod
 	public  void setup() throws IOException {
@@ -24,6 +25,8 @@ public class BaseOpenWeatherMap {
 												//every time, a key-generator util class "Payload"
 												//and method returnKey could be		
 												//created to generate a new key every time or for every test 
+		
+		
 	}
 
 }
