@@ -7,6 +7,7 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import common.utils.CityNameGenerator;
+import common.utils.EnterAllData;
 import common.utils.Xls_Reader;
 import groovyjarjarantlr4.v4.runtime.atn.SemanticContext.AND;
 
@@ -31,14 +32,16 @@ public class WeatherData extends BaseOpenWeatherMap{
 	double liveTemp;
 	double maxTemp;
 	int humidity;
+	double windSpeed;
+	String weatherCondition;
 	JsonPath json;
-	ArrayList<Object> cityWeatherData = new ArrayList<Object>(3);
 	DecimalFormat df = new DecimalFormat("0.00");
 	static Workbook book;
 	static Sheet sheet;
 	Xls_Reader xlsReader;
 	FileInputStream file;
 	int columnCount;
+	int dataEntryFlag;
 	
 	
 	
@@ -61,28 +64,40 @@ public class WeatherData extends BaseOpenWeatherMap{
 							.extract()
 							.response();
 		
+		ArrayList<Object> cityWeatherData = new ArrayList<Object>();
+		dataEntryFlag = CityNameGenerator.reader.getRowCount("listOfCities"); //4
+		
 		System.out.println(response.asString());
 		df.setRoundingMode(RoundingMode.UP);
 
-		liveTemp=  ((Number) currentTemperature(response)).doubleValue();
+		liveTemp = ((Number) currentTemperature(response)).doubleValue();
 		cityWeatherData.add(df.format(liveTemp));
-		CityNameGenerator.reader.setCellData(listOfCities, "LiveTemp (OpenWeatherMap)", 2, String.valueOf(df.format(liveTemp)));
 		
 		maxTemp = ((Number) maxTemperature(response)).doubleValue();
 		cityWeatherData.add(df.format(maxTemp));
-		CityNameGenerator.reader.setCellData(listOfCities, "Max Temp (OpenWeatherMap)", 2, String.valueOf(df.format(maxTemp)));
-
+		
 		humidity = currentHumidity(response);
 		cityWeatherData.add(humidity);
-		CityNameGenerator.reader.setCellData(listOfCities, "Max Temp (OpenWeatherMap)", 2, String.valueOf(humidity));
+		
+		windSpeed = ((Number)windCondition(response)).doubleValue();
+		cityWeatherData.add(df.format(windSpeed));
+		
+		weatherCondition = weatherCondition(response);
+		cityWeatherData.add(weatherCondition);
+		
+		System.out.println(CityNameGenerator.reader.getRowCount("listOfCities"));
+		
 
-		for(Object a : cityWeatherData) {
-			System.out.println(a.toString());
+		
+		for(Object ob : cityWeatherData) {
+			System.out.println("*********"+String.valueOf(ob));
 		}
+		
 
-		System.out.println(CityNameGenerator.reader.getColumnCount("listOfCities"));
-		//columnCount = CityNameGenerator.reader.getColumnCount("listOfCities");
-		//addCityDataToSheet(columnCount, cityWeatherData.get(0));
+		//System.out.println("******************"+CityNameGenerator.reader.getRowCount(listOfCities)+"*********");
+		EnterAllData.enterOpenWeatherMapData(cityWeatherData, listOfCities, dataEntryFlag, City);
+		cityWeatherData.clear();
+		cityWeatherData = null;
 
 		
 	}
@@ -115,9 +130,18 @@ public class WeatherData extends BaseOpenWeatherMap{
 		return json.get("main.humidity");
 	}
 	
-	void addLiveTemp(String columnName, Object ob) {
-
-		
+	Object windCondition(Response res) {
+		json = new JsonPath(res.asString());
+		System.out.println("Current wind speed is " + json.get("wind.speed") + "m/s");
+		return json.get("wind.speed");
 	}
-
+	
+	String weatherCondition(Response res) {
+		json = new JsonPath(res.asString());
+		System.out.println("Current Weather condition is " + json.get("weather[0].main") + " & " + json.get("weather[0].description"));
+		return json.get("weather[0].main") + " & " + json.get("weather[0].description");
+	}
+	
+	
+	
 }

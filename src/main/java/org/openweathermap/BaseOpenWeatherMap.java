@@ -12,7 +12,7 @@ import org.testng.annotations.BeforeMethod;
 public class BaseOpenWeatherMap {
 	public  Properties prop;
 	public  String Session_ID;
-	static String listOfCities = "listOfCities";
+	String listOfCities = "listOfCities";
 	
 	@BeforeMethod
 	public  void setup() throws IOException {
