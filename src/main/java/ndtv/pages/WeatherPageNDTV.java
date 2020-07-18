@@ -15,7 +15,7 @@ import org.sikuli.guide.ClickableWindow;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-import com.ndtv.BaseNDTV;
+import com.ndtv.base.BaseNDTV;
 
 import common.utils.CommUtils;
 

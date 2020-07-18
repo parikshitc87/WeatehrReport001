@@ -5,11 +5,11 @@ import java.util.ArrayList;
 public class CityNameGenerator {
 	static Xls_Reader reader;
 	static String xlsLocation = 
-			System.getProperty("user.dir")+"\\src\\main\\resources\\com\\test\\data\\dataExcel.xlsx";
+			System.getProperty("user.dir")+"\\src\\main\\resources\\test\\data\\dataExcel.xlsx";
 
-	public static ArrayList<String[]> storeData() {
+	public static ArrayList<String> storeData() {
 
-		ArrayList<String[]> excelAllData = new ArrayList<String[]>();
+		ArrayList<String> excelAllCities = new ArrayList<String>();
 		try {
 			reader = new Xls_Reader(xlsLocation);
 		} catch (Exception e) {
@@ -17,17 +17,14 @@ public class CityNameGenerator {
 			e.printStackTrace();
 		}
 
-		for (int rowNum = 2; rowNum <= reader.getRowCount("Sheet1"); rowNum++) {
+		for (int rowNum = 2; rowNum <= reader.getRowCount("listOfCities"); rowNum++) {
 
-			String firstName = reader.getCellData("Sheet1", "First Name", rowNum);
+			String City = reader.getCellData("listOfCities", "City", rowNum);
 			
-
-			Object ob[] = { firstName, lastName, e_Mail, phoneNum, address, city, state, zipCode, website,
-					doYouHaveHosting, projectDesc };
-			excelAllData.add(ob);
+			excelAllCities.add(City);
 
 		}
-		return excelAllData;
+		return excelAllCities; //This will return the Arraylist with all the cities in the excel sheet
 
 	}
 }

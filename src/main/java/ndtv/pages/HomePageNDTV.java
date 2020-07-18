@@ -4,7 +4,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.ndtv.BaseNDTV;
+import com.ndtv.base.BaseNDTV;
 
 public class HomePageNDTV extends BaseNDTV {
 	

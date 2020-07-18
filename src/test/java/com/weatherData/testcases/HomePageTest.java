@@ -6,7 +6,7 @@ import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-import com.ndtv.BaseNDTV;
+import com.ndtv.base.BaseNDTV;
 
 import ndtv.pages.HomePageNDTV;
 //import pages.SeleniumTestPage;

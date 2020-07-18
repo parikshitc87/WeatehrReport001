@@ -5,7 +5,7 @@
  * 
  */
 
-package com.ndtv;
+package com.ndtv.base;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -72,7 +72,7 @@ public class BaseNDTV {
 		element.click();
 		}
 	
-//	@AfterMethod   //Closing browser and clearing cookies
+	@AfterMethod   //Closing browser and clearing cookies
 	public void houseKeeping() {
 		driver.manage().deleteAllCookies();
 		driver.quit();
