@@ -1,4 +1,4 @@
-package org.openweathermap.base;
+package org.openweathermap;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -16,12 +16,14 @@ public class BaseOpenWeatherMap {
 	@BeforeMethod
 	public  void setup() throws IOException {
 		prop = new Properties();
-		File file;
 		FileInputStream inputStream = new FileInputStream(
-				System.getProperty("user.dir") + "\\src\\files\\config\\env.properties");
+				System.getProperty("user.dir") + "/src/main/java/env/properties/config.properties");
 		prop.load(inputStream);
 		Session_ID = prop.getProperty("APIkey");
-		//Session_ID = Payload.session_ID(prop);
+		//Session_ID = Payload.returnKey(); // in case the APIkey is not static and needs to be generated
+												//every time, a key-generator util class "Payload"
+												//and method returnKey could be		
+												//created to generate a new key every time or for every test 
 	}
 
 }

@@ -71,6 +71,11 @@ public class BaseNDTV {
 		.until(ExpectedConditions.elementToBeClickable(element));
 		element.click();
 		}
+		
+	
+	public static String APIkey() {
+		return prop.getProperty("APIkey");
+	}
 	
 	@AfterMethod   //Closing browser and clearing cookies
 	public void houseKeeping() {

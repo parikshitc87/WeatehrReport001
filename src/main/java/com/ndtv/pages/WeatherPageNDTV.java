@@ -1,4 +1,4 @@
-package ndtv.pages;
+package com.ndtv.pages;
 
 import java.util.concurrent.TimeUnit;
 
@@ -11,7 +11,6 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
-import org.sikuli.guide.ClickableWindow;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 

@@ -7,10 +7,8 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import com.ndtv.base.BaseNDTV;
-
-import ndtv.pages.HomePageNDTV;
-//import pages.SeleniumTestPage;
-import ndtv.pages.WeatherPageNDTV;
+import com.ndtv.pages.HomePageNDTV;
+import com.ndtv.pages.WeatherPageNDTV;
 
 
 

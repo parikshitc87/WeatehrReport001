@@ -11,11 +11,11 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import com.ndtv.base.BaseNDTV;
+import com.ndtv.pages.HomePageNDTV;
+import com.ndtv.pages.WeatherPageNDTV;
 
 import common.utils.CityNameGenerator;
 import common.utils.CommonCalculations;
-import ndtv.pages.HomePageNDTV;
-import ndtv.pages.WeatherPageNDTV;
 
 public class WeatherPageTest extends BaseNDTV {
 
