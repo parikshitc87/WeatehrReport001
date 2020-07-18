@@ -4,7 +4,7 @@ public class CommUtils {
 	
 	//Defining commonly usable objects here
 	
-	public static int Page_LoadOut_Time = 30;
-	public static int Implicitely_Wait = 25;
+	public static int Page_LoadOut_Time = 15;
+	public static int Implicitely_Wait = 10;
 
 }

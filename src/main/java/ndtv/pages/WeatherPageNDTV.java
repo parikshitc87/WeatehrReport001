@@ -86,7 +86,7 @@ public class WeatherPageNDTV extends BaseNDTV {
 	
 	public void clickCityOnMap(String City) {
 		
-		clickOn(driver, driver.findElement(By.xpath("//div[@class='cityText' and text()='"+City+"']")) , 15);
+		clickOn(driver, driver.findElement(By.xpath("//div[@class='cityText' and text()='"+City+"']")) , 5);
 		
 		//driver.findElement(By.xpath("//div[@class='cityText' and text()='"+City+"']")).click();
 	}
