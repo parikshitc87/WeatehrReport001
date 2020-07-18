@@ -53,6 +53,7 @@ public class WeatherPageNDTV extends BaseNDTV {
 	}
 	
 	public void sendTabSpace() {
+		CityInputField.click();
 		CityInputField.sendKeys(Keys.TAB, Keys.SPACE);
 	}
 

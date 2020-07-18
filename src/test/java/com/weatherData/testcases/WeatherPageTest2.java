@@ -53,6 +53,7 @@ public class WeatherPageTest2 extends BaseNDTV {
 
 		clickOn(driver, driver.findElement(By.xpath("//span[@id='icon_holder']")), 15);
 		weatherPageNdtv.enterCityName("Bhopal");
+		weatherPageNdtv.sendTabSpace();
 		weatherPageNdtv.clickCityOnMap("Bhopal");
 	
 		
