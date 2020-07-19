@@ -48,19 +48,12 @@ public class WeatherDataComparisionTest extends BaseOpenWeatherMap {
 				reader.getCellData(listOfCities, "LiveTemp (NDTV)", reader.getCellRowNum(listOfCities, "City", City)));
 
 		double differenceInTemp = Math.abs(liveTempOWM - liveTempNDTV);
-		// boolean flag = false;
-
-		// calculating if NDTV data is within 10% of openWeatherMap data
-		// and Vice Versa, because opposite might not hold true
-
-		double percentOWM = (differenceInTemp / liveTempOWM) * 100;
-		double percentNDTV = (differenceInTemp / liveTempNDTV) * 100;
-
-		Double variancePercent = CommUtils.Variance_Percent;
+		
+		Double variance = CommUtils.Variance_difference;
 
 		// System.out.println("Variance Percentage is : " + variancePercent);
 
-		if (percentOWM <= variancePercent || percentNDTV <= variancePercent) {
+		if (variance >= differenceInTemp) {
 			boolean flag = true;
 			reader.setCellData(listOfCities, "LiveTemp Compare Result",
 					reader.getCellRowNum(listOfCities, "City", City), "Temperatues are within Variance Range");
@@ -76,7 +69,7 @@ public class WeatherDataComparisionTest extends BaseOpenWeatherMap {
 
 	@Test(dataProvider = "getCities")
 	public void compareWeatherConditions(String City) {
-		int weatherConditionMeter = 0;
+		int weatherSimilarityMeter = 0;
 		boolean cloudy1 = false;
 		boolean cloudy2 = false;
 
@@ -86,58 +79,54 @@ public class WeatherDataComparisionTest extends BaseOpenWeatherMap {
 				.getCellData(listOfCities, "Weather Condition (NDTV)", reader.getCellRowNum(listOfCities, "City", City))
 				.toLowerCase();
 
-		System.out.println(weatherConditionOWM);
-		System.out.println(weatherConditionNDTV);
-
-		if (weatherConditionOWM.contains("mist") && weatherConditionNDTV.contains("humid")) {
-			weatherConditionMeter++;
-		}
-		String array1[] = new String[] { "haze", "clouds"};
-		String array2[] = new String[] { "overcast", "cloudy" };
+		if (weatherConditionOWM.contains("mist") && weatherConditionNDTV.contains("humid"))
+			weatherSimilarityMeter++;
 		
-		loopOne:
-		for( String str1 : array1 ) {
-			for(String str2 : weatherConditionOWM.split("\\s")) {
+
+		String array1[] = new String[] { "haze", "clouds" };
+		String array2[] = new String[] { "overcast", "cloudy" };
+
+		loopOne: for (String str1 : array1) {
+			for (String str2 : weatherConditionOWM.split("\\s")) {
 				if (str1.equals(str2)) {
 					cloudy1 = true;
 					break loopOne;
 				}
 			}
 		}
-		
-		loopTwo:
-			for( String str1 : array2 ) {
-				for(String str2 : weatherConditionNDTV.split("\\s")) {
-					if (str1.equals(str2)) {
-						cloudy2 = true;
-						break loopTwo;
-					}
+
+		loopTwo: for (String str1 : array2) {
+			for (String str2 : weatherConditionNDTV.split("\\s")) {
+				if (str1.equals(str2)) {
+					cloudy2 = true;
+					break loopTwo;
 				}
 			}
-		
-		if(cloudy1 && cloudy2) {
-			weatherConditionMeter++;
-		}
-		
-		
-
-		if (weatherConditionOWM.contains("rain") && weatherConditionNDTV.contains("rain")) {
-			weatherConditionMeter++;
 		}
 
-		System.out.println("Flag count -- " + weatherConditionMeter);
+		if (cloudy1 && cloudy2) 
+			weatherSimilarityMeter++;
+		
 
-		if (weatherConditionMeter == 0) {
+		if (weatherConditionOWM.contains("rain") && weatherConditionNDTV.contains("rain")) 
+			weatherSimilarityMeter++;
+		
+
+		System.out.println(weatherConditionOWM);
+		System.out.print(weatherConditionNDTV);
+		System.out.println("Flag count -- " + weatherSimilarityMeter);
+
+		if (weatherSimilarityMeter == 0) {
 			reader.setCellData(listOfCities, "Weather Condition Compare Result",
 					reader.getCellRowNum(listOfCities, "City", City),
 					"Both portals show different Weather conditions!");
-		} else if (weatherConditionMeter == 1) {
+		} else if (weatherSimilarityMeter == 1) {
 			reader.setCellData(listOfCities, "Weather Condition Compare Result",
 					reader.getCellRowNum(listOfCities, "City", City),
 					"Both portals show slightly similar Weather conditions!");
 		}
 
-		else if (weatherConditionMeter == 2) {
+		else if (weatherSimilarityMeter == 2) {
 			reader.setCellData(listOfCities, "Weather Condition Compare Result",
 					reader.getCellRowNum(listOfCities, "City", City),
 					"Both portals show almost similar Weather conditions!");
@@ -145,10 +134,56 @@ public class WeatherDataComparisionTest extends BaseOpenWeatherMap {
 		}
 
 	}
-	
+
+	@Test(dataProvider = "getCities")
+	public void compareHumidity(String City) {
+		double humidityOWM = Integer.parseInt(reader.getCellData(listOfCities, "Humidity (OpenWeatherMap)",
+				reader.getCellRowNum(listOfCities, "City", City)));
+		double humidityNDTV = Integer.parseInt(
+				reader.getCellData(listOfCities, "Humidity (NDTV)", reader.getCellRowNum(listOfCities, "City", City)));
+
+		System.out.println("OpenWeatherMap Humidity:  " + humidityOWM);
+		System.out.println("NDTV Humidity:  " + humidityNDTV);
+
+		double differenceInTemp = Math.abs(humidityOWM - humidityNDTV);
+		System.out.println(differenceInTemp);
+		
+		
+		double percentOWM = (differenceInTemp / humidityOWM) * 100;
+		double percentNDTV = (differenceInTemp / humidityNDTV) * 100;
+		
+		System.out.println(percentOWM+"***"+percentNDTV);
+		
+//		/int variancePercent = CommUtils.Humidity_Variance_Percent;
+		
+		if (percentOWM <= CommUtils.Humidity_Variance_Percent || percentNDTV <= CommUtils.Humidity_Variance_Percent) {
+			boolean flag = true;
+			reader.setCellData(listOfCities, "Humidity Compare Result",
+					reader.getCellRowNum(listOfCities, "City", City), "Humidity readings are within Variance Range");
+			Assert.assertEquals(flag, true);
+		} else {
+			boolean flag = false;
+			reader.setCellData(listOfCities, "Humidity Compare Result",
+					reader.getCellRowNum(listOfCities, "City", City), "Humidity readings are NOT within Variance Range");
+			Assert.assertEquals(flag, true);
+		}
+	}
 	
 	@Test(dataProvider = "getCities")
-	public void compareHumidity() {
+	public void compareWindSpeed(String City) {
+		double windSpeedOWM = Double.parseDouble(reader.getCellData(listOfCities, "Wind (OpenWeatherMap)", reader.getCellRowNum(listOfCities, "City", City)));
+		double windSpeedNDTV = Double.parseDouble(reader.getCellData(listOfCities, "Wind (NDTV)", reader.getCellRowNum(listOfCities, "City", City)));
+		
+		if (windSpeedNDTV > windSpeedOWM) {
+			reader.setCellData(listOfCities, "Wind Compare Result", reader.getCellRowNum(listOfCities, "City", City), "Wind speed is faster on NDTV.");
+		}
+		else if (windSpeedNDTV < windSpeedOWM) {
+			reader.setCellData(listOfCities, "Wind Compare Result", reader.getCellRowNum(listOfCities, "City", City), "Wind speed is faster on Open Weather Map.");
+		}
+		else {
+			reader.setCellData(listOfCities, "Wind Compare Result", reader.getCellRowNum(listOfCities, "City", City), "Wind speed is same on both portals.");
+
+		}
 		
 	}
 

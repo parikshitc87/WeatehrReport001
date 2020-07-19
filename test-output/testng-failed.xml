@@ -5,7 +5,7 @@
     <classes>
       <class name="org.weatherComparision.testcases.WeatherDataComparisionTest">
         <methods>
-          <include name="compareLiveTemps" invocation-numbers="1 2 3"/>
+          <include name="compareLiveTemps" invocation-numbers="0 2 3"/>
           <include name="setup"/>
         </methods>
       </class> <!-- org.weatherComparision.testcases.WeatherDataComparisionTest -->

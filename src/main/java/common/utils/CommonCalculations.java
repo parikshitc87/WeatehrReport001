@@ -1,8 +1,13 @@
 package common.utils;
 
+import java.math.RoundingMode;
+import java.text.DecimalFormat;
+
 import freemarker.core.ReturnInstruction.Return;
 
 public class CommonCalculations {
+	static DecimalFormat df = new DecimalFormat("0.00");
+
 
 	public static int returnTemperatureInDegreeC(String str) {
 		str = str.substring(str.indexOf("Temp in Degrees") + 17, str.indexOf("Temp in Degrees") + 19);
@@ -16,14 +21,16 @@ public class CommonCalculations {
 		return Integer.parseInt(str);
 	}
 	
-	public static double returnWindSpeed(String str) {
+	public static String returnWindSpeed(String str) {
+		df.setRoundingMode(RoundingMode.UP);
 		String str1 = str.substring(str.indexOf("Wind") + 6, str.indexOf("Wind") + 10);
 		String str2 = str.substring(str.indexOf("Gust") + 11, str.indexOf("Gust") + 15);
 		System.out.println("*******************");
 		System.out.println(str1);
 		System.out.println(str2);
-		double avgWindSpeed = ( Double.parseDouble(str1) + Double.parseDouble(str2) ) / 2 ;
-		return avgWindSpeed;
+		double avgWindSpeed = ( Double.parseDouble(str1) + Double.parseDouble(str2) ) / (2 * 3.6 ) ; //dividing the average by 3.6 to get speed in m/s
+		String avgWindSpeedString = df.format(avgWindSpeed);
+		return avgWindSpeedString;
 	}
 	
 	public static String returnWeatherCondition(String str) {

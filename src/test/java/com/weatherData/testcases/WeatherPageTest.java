@@ -25,7 +25,7 @@ public class WeatherPageTest extends BaseNDTV {
 	String tempdatacollector;
 	int tempInDegreeC;
 	int humidity;
-	double windSpeed;
+	String windSpeed;
 	String weatherCondition;
 
 
