@@ -22,6 +22,7 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
 import common.utils.CommUtils;
+import logger.log4j.Log;
 
 public class BaseNDTV {
 
@@ -57,7 +58,9 @@ public class BaseNDTV {
 		driver.manage().timeouts().implicitlyWait(CommUtils.Implicitely_Wait, TimeUnit.SECONDS);
 
 		driver.manage().window().maximize();
+		Log.info("Browser launched properly");
 		driver.get(prop.getProperty("url"));
+		Log.info("Navigation to NDTV starts");
 
 	}
 	

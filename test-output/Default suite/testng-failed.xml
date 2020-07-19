@@ -6,7 +6,7 @@
       <class name="com.weatherData.testcases.WeatherPageTest">
         <methods>
           <include name="SetupPage"/>
-          <include name="enterCityNameTest" invocation-numbers="0"/>
+          <include name="collectData" invocation-numbers="0 1 2 3 4 5"/>
           <include name="houseKeeping"/>
         </methods>
       </class> <!-- com.weatherData.testcases.WeatherPageTest -->

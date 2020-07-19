@@ -23,8 +23,7 @@ public class WeatherPageNDTV extends BaseNDTV {
 	// defining WebElements
 	@FindBy(xpath = "//input[@type='text' and @class  = 'searchBox']")
 	public WebElement CityInputField;
-
-	// @FindBy(xpath = "//input[@id='temp' and @type = 'checkbox']")
+	// @FindBy(xpath = "//input[@id='temp' and @type = 'checkbox']") Delete this, no use 
 
 	public WeatherPageNDTV() {
 		PageFactory.initElements(driver, this);
@@ -40,15 +39,11 @@ public class WeatherPageNDTV extends BaseNDTV {
 			CityInputField.click();
 			CityInputField.sendKeys(String.valueOf(c), Keys.ENTER); // , Keys.ENTER
 			//driver.manage().timeouts().implicitlyWait(CommUtils.Implicitely_Wait, TimeUnit.SECONDS);
-			CityInputField.sendKeys(Keys.SPACE, Keys.BACK_SPACE);
-			
-			
+			CityInputField.sendKeys(Keys.SPACE, Keys.BACK_SPACE);			
 			//CityInputField.sendKeys(Keys.RETURN);
 		}
 		CityInputField.sendKeys(Keys.TAB, Keys.SPACE);
-		
-		
-		
+				
 	}
 	
 	public void sendTabSpace() {
@@ -72,12 +67,7 @@ public class WeatherPageNDTV extends BaseNDTV {
 		clickOn(driver, driver.findElement(By.xpath("//input[@id='"+City+"']")), 15);
 	}
 	
-	public void selectCityCheckbox(String City) {
-		Select select = new Select(driver.findElement(By.xpath("//input[@id='"+City+"' and @type  = 'checkbox']")));
-		select.selectByVisibleText(City);
-		//driver.findElement(By.xpath("//input[@id='"+City+"' and @type  = 'checkbox']")).
-	}
-	
+
 	public boolean cityDisplayedOnMap(String City) {
 		//this will tell if the city is displayed on the map
 		return driver.findElement(By.xpath("//div[@class='cityText' and text()='"+City+"']")).isDisplayed();
@@ -99,9 +89,5 @@ public class WeatherPageNDTV extends BaseNDTV {
 		return driver.findElement(By.xpath("//div[@class='cityText' and text()='"+City+"']")).isDisplayed();
 	}
 	
-	/*
-	 * public int returnCityTemperature(String City) { // driver.findElement(By.
-	 * xpath("//*[@id='map_canvas' and contains(., 'Temp in Degrees')]")).getText();
-	 * }
-	 */
+	
 }
