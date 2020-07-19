@@ -66,5 +66,6 @@ public class WeatherPageNDTV extends BaseNDTV {
 		return driver.findElement(By.xpath("//*[@class = 'outerContainer' and contains(.,'" + City
 				+ "')]//div[@class='temperatureContainer']//span[@class='tempRedText']")).isEnabled();
 	}
+	
 
 }

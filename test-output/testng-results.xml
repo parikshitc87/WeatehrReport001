@@ -2,16 +2,16 @@
 <testng-results ignored="2" total="8" passed="6" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-07-20T03:46:57 IST" name="Default suite" finished-at="2020-07-20T03:48:33 IST" duration-ms="96128">
+  <suite started-at="2020-07-20T04:06:14 IST" name="Default suite" finished-at="2020-07-20T04:07:51 IST" duration-ms="96823">
     <groups>
     </groups>
-    <test started-at="2020-07-20T03:46:57 IST" name="Default test" finished-at="2020-07-20T03:48:33 IST" duration-ms="96128">
+    <test started-at="2020-07-20T04:06:14 IST" name="Default test" finished-at="2020-07-20T04:07:51 IST" duration-ms="96823">
       <class name="com.weatherData.testcases.WeatherPageTest">
-        <test-method is-config="true" signature="SetupPage()[pri:0, instance:com.weatherData.testcases.WeatherPageTest@48e4374]" started-at="2020-07-20T03:46:57 IST" name="SetupPage" finished-at="2020-07-20T03:47:07 IST" duration-ms="10053" status="PASS">
+        <test-method is-config="true" signature="SetupPage()[pri:0, instance:com.weatherData.testcases.WeatherPageTest@48e4374]" started-at="2020-07-20T04:06:15 IST" name="SetupPage" finished-at="2020-07-20T04:06:25 IST" duration-ms="10720" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SetupPage -->
-        <test-method signature="collectDataTest(java.lang.String)[pri:3, instance:com.weatherData.testcases.WeatherPageTest@48e4374]" started-at="2020-07-20T03:47:07 IST" name="collectDataTest" data-provider="getCities" finished-at="2020-07-20T03:47:09 IST" duration-ms="1626" status="PASS">
+        <test-method signature="enterCityNameTest(java.lang.String)[pri:2, instance:com.weatherData.testcases.WeatherPageTest@48e4374]" started-at="2020-07-20T04:06:25 IST" name="enterCityNameTest" data-provider="getCities" finished-at="2020-07-20T04:06:26 IST" duration-ms="981" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -21,16 +21,16 @@
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- collectDataTest -->
-        <test-method is-config="true" signature="houseKeeping()[pri:0, instance:com.weatherData.testcases.WeatherPageTest@48e4374]" started-at="2020-07-20T03:47:09 IST" name="houseKeeping" finished-at="2020-07-20T03:47:10 IST" duration-ms="888" status="PASS">
+        </test-method> <!-- enterCityNameTest -->
+        <test-method is-config="true" signature="houseKeeping()[pri:0, instance:com.weatherData.testcases.WeatherPageTest@48e4374]" started-at="2020-07-20T04:06:26 IST" name="houseKeeping" finished-at="2020-07-20T04:06:28 IST" duration-ms="1311" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- houseKeeping -->
-        <test-method is-config="true" signature="SetupPage()[pri:0, instance:com.weatherData.testcases.WeatherPageTest@48e4374]" started-at="2020-07-20T03:47:10 IST" name="SetupPage" finished-at="2020-07-20T03:47:19 IST" duration-ms="9700" status="PASS">
+        <test-method is-config="true" signature="SetupPage()[pri:0, instance:com.weatherData.testcases.WeatherPageTest@48e4374]" started-at="2020-07-20T04:06:28 IST" name="SetupPage" finished-at="2020-07-20T04:06:38 IST" duration-ms="10235" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SetupPage -->
-        <test-method signature="collectDataTest(java.lang.String)[pri:3, instance:com.weatherData.testcases.WeatherPageTest@48e4374]" started-at="2020-07-20T03:47:19 IST" name="collectDataTest" data-provider="getCities" finished-at="2020-07-20T03:47:21 IST" duration-ms="1429" status="PASS">
+        <test-method signature="enterCityNameTest(java.lang.String)[pri:2, instance:com.weatherData.testcases.WeatherPageTest@48e4374]" started-at="2020-07-20T04:06:38 IST" name="enterCityNameTest" data-provider="getCities" finished-at="2020-07-20T04:06:39 IST" duration-ms="1047" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -40,16 +40,16 @@
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- collectDataTest -->
-        <test-method is-config="true" signature="houseKeeping()[pri:0, instance:com.weatherData.testcases.WeatherPageTest@48e4374]" started-at="2020-07-20T03:47:21 IST" name="houseKeeping" finished-at="2020-07-20T03:47:22 IST" duration-ms="1073" status="PASS">
+        </test-method> <!-- enterCityNameTest -->
+        <test-method is-config="true" signature="houseKeeping()[pri:0, instance:com.weatherData.testcases.WeatherPageTest@48e4374]" started-at="2020-07-20T04:06:39 IST" name="houseKeeping" finished-at="2020-07-20T04:06:40 IST" duration-ms="864" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- houseKeeping -->
-        <test-method is-config="true" signature="SetupPage()[pri:0, instance:com.weatherData.testcases.WeatherPageTest@48e4374]" started-at="2020-07-20T03:47:22 IST" name="SetupPage" finished-at="2020-07-20T03:47:31 IST" duration-ms="9492" status="PASS">
+        <test-method is-config="true" signature="SetupPage()[pri:0, instance:com.weatherData.testcases.WeatherPageTest@48e4374]" started-at="2020-07-20T04:06:40 IST" name="SetupPage" finished-at="2020-07-20T04:06:50 IST" duration-ms="10352" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SetupPage -->
-        <test-method signature="collectDataTest(java.lang.String)[pri:3, instance:com.weatherData.testcases.WeatherPageTest@48e4374]" started-at="2020-07-20T03:47:31 IST" name="collectDataTest" data-provider="getCities" finished-at="2020-07-20T03:47:44 IST" duration-ms="12737" status="PASS">
+        <test-method signature="enterCityNameTest(java.lang.String)[pri:2, instance:com.weatherData.testcases.WeatherPageTest@48e4374]" started-at="2020-07-20T04:06:50 IST" name="enterCityNameTest" data-provider="getCities" finished-at="2020-07-20T04:07:03 IST" duration-ms="12544" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -59,16 +59,16 @@
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- collectDataTest -->
-        <test-method is-config="true" signature="houseKeeping()[pri:0, instance:com.weatherData.testcases.WeatherPageTest@48e4374]" started-at="2020-07-20T03:47:44 IST" name="houseKeeping" finished-at="2020-07-20T03:47:45 IST" duration-ms="860" status="PASS">
+        </test-method> <!-- enterCityNameTest -->
+        <test-method is-config="true" signature="houseKeeping()[pri:0, instance:com.weatherData.testcases.WeatherPageTest@48e4374]" started-at="2020-07-20T04:07:03 IST" name="houseKeeping" finished-at="2020-07-20T04:07:04 IST" duration-ms="928" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- houseKeeping -->
-        <test-method is-config="true" signature="SetupPage()[pri:0, instance:com.weatherData.testcases.WeatherPageTest@48e4374]" started-at="2020-07-20T03:47:45 IST" name="SetupPage" finished-at="2020-07-20T03:47:55 IST" duration-ms="9473" status="PASS">
+        <test-method is-config="true" signature="SetupPage()[pri:0, instance:com.weatherData.testcases.WeatherPageTest@48e4374]" started-at="2020-07-20T04:07:04 IST" name="SetupPage" finished-at="2020-07-20T04:07:14 IST" duration-ms="9821" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SetupPage -->
-        <test-method signature="collectDataTest(java.lang.String)[pri:3, instance:com.weatherData.testcases.WeatherPageTest@48e4374]" started-at="2020-07-20T03:47:55 IST" name="collectDataTest" data-provider="getCities" finished-at="2020-07-20T03:48:07 IST" duration-ms="12818" status="PASS">
+        <test-method signature="enterCityNameTest(java.lang.String)[pri:2, instance:com.weatherData.testcases.WeatherPageTest@48e4374]" started-at="2020-07-20T04:07:14 IST" name="enterCityNameTest" data-provider="getCities" finished-at="2020-07-20T04:07:26 IST" duration-ms="12869" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -78,16 +78,16 @@
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- collectDataTest -->
-        <test-method is-config="true" signature="houseKeeping()[pri:0, instance:com.weatherData.testcases.WeatherPageTest@48e4374]" started-at="2020-07-20T03:48:07 IST" name="houseKeeping" finished-at="2020-07-20T03:48:08 IST" duration-ms="879" status="PASS">
+        </test-method> <!-- enterCityNameTest -->
+        <test-method is-config="true" signature="houseKeeping()[pri:0, instance:com.weatherData.testcases.WeatherPageTest@48e4374]" started-at="2020-07-20T04:07:26 IST" name="houseKeeping" finished-at="2020-07-20T04:07:27 IST" duration-ms="828" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- houseKeeping -->
-        <test-method is-config="true" signature="SetupPage()[pri:0, instance:com.weatherData.testcases.WeatherPageTest@48e4374]" started-at="2020-07-20T03:48:08 IST" name="SetupPage" finished-at="2020-07-20T03:48:18 IST" duration-ms="9854" status="PASS">
+        <test-method is-config="true" signature="SetupPage()[pri:0, instance:com.weatherData.testcases.WeatherPageTest@48e4374]" started-at="2020-07-20T04:07:27 IST" name="SetupPage" finished-at="2020-07-20T04:07:37 IST" duration-ms="10174" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SetupPage -->
-        <test-method signature="collectDataTest(java.lang.String)[pri:3, instance:com.weatherData.testcases.WeatherPageTest@48e4374]" started-at="2020-07-20T03:48:18 IST" name="collectDataTest" data-provider="getCities" finished-at="2020-07-20T03:48:19 IST" duration-ms="1302" status="PASS">
+        <test-method signature="enterCityNameTest(java.lang.String)[pri:2, instance:com.weatherData.testcases.WeatherPageTest@48e4374]" started-at="2020-07-20T04:07:37 IST" name="enterCityNameTest" data-provider="getCities" finished-at="2020-07-20T04:07:38 IST" duration-ms="719" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -97,16 +97,16 @@
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- collectDataTest -->
-        <test-method is-config="true" signature="houseKeeping()[pri:0, instance:com.weatherData.testcases.WeatherPageTest@48e4374]" started-at="2020-07-20T03:48:19 IST" name="houseKeeping" finished-at="2020-07-20T03:48:20 IST" duration-ms="829" status="PASS">
+        </test-method> <!-- enterCityNameTest -->
+        <test-method is-config="true" signature="houseKeeping()[pri:0, instance:com.weatherData.testcases.WeatherPageTest@48e4374]" started-at="2020-07-20T04:07:38 IST" name="houseKeeping" finished-at="2020-07-20T04:07:39 IST" duration-ms="1264" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- houseKeeping -->
-        <test-method is-config="true" signature="SetupPage()[pri:0, instance:com.weatherData.testcases.WeatherPageTest@48e4374]" started-at="2020-07-20T03:48:20 IST" name="SetupPage" finished-at="2020-07-20T03:48:30 IST" duration-ms="10191" status="PASS">
+        <test-method is-config="true" signature="SetupPage()[pri:0, instance:com.weatherData.testcases.WeatherPageTest@48e4374]" started-at="2020-07-20T04:07:39 IST" name="SetupPage" finished-at="2020-07-20T04:07:49 IST" duration-ms="9784" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SetupPage -->
-        <test-method signature="collectDataTest(java.lang.String)[pri:3, instance:com.weatherData.testcases.WeatherPageTest@48e4374]" started-at="2020-07-20T03:48:30 IST" name="collectDataTest" data-provider="getCities" finished-at="2020-07-20T03:48:32 IST" duration-ms="1277" status="PASS">
+        <test-method signature="enterCityNameTest(java.lang.String)[pri:2, instance:com.weatherData.testcases.WeatherPageTest@48e4374]" started-at="2020-07-20T04:07:49 IST" name="enterCityNameTest" data-provider="getCities" finished-at="2020-07-20T04:07:50 IST" duration-ms="906" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -116,8 +116,8 @@
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- collectDataTest -->
-        <test-method is-config="true" signature="houseKeeping()[pri:0, instance:com.weatherData.testcases.WeatherPageTest@48e4374]" started-at="2020-07-20T03:48:32 IST" name="houseKeeping" finished-at="2020-07-20T03:48:33 IST" duration-ms="957" status="PASS">
+        </test-method> <!-- enterCityNameTest -->
+        <test-method is-config="true" signature="houseKeeping()[pri:0, instance:com.weatherData.testcases.WeatherPageTest@48e4374]" started-at="2020-07-20T04:07:50 IST" name="houseKeeping" finished-at="2020-07-20T04:07:51 IST" duration-ms="896" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- houseKeeping -->

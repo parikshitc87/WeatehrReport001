@@ -45,7 +45,7 @@ public class WeatherPageTest extends BaseNDTV {
 
 	@Test(dataProvider = "getCities", priority = 2)
 	public void enterCityNameTest(String City) { // This will enter city name in text-field and verify on the map
-	
+
 		if (weatherPageNdtv.presenceOfCityonList(City)) {
 			try {
 				weatherPageNdtv.clickCityOnMap(City);
@@ -56,12 +56,13 @@ public class WeatherPageTest extends BaseNDTV {
 				weatherPageNdtv.clickCityOnMap(City);
 			}
 		}
-		
-		Assert.assertEquals(weatherPageNdtv.isCityOnMap(City), true); //verifies if the City is present on map with temp
+
+		Assert.assertEquals(
+				(weatherPageNdtv.isCityOnMap(City) || driver
+						.findElement(By.xpath("*[@id='map_canvas' and contains(., '" + City + "')]")).isDisplayed()),
+				true); // verifies City's Presence on Map and if Weather panel opened 
 	}
 
-	
-	
 	@Test(dataProvider = "getCities", priority = 3) // (dependsOnMethods = { "enterCityNameTest" })
 	public void collectDataTest(String City) {// Stores all data in sheet and asserts if the Temp is displayed on Panel
 		// This Arraylist will contain 4 informations - LiveTemp, Humidity, WindSpeed &
@@ -77,7 +78,7 @@ public class WeatherPageTest extends BaseNDTV {
 			weatherPageNdtv.enterCityName(City); // By now framework knows on NDTV map test City is not displayed by
 													// default, so it will enter City name in lookup
 			weatherPageNdtv.clickCityOnMap(City); // this should bring up the weather pop-up with weather informations
-													// in detail
+													// in detail.
 
 		}
 
