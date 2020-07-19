@@ -27,7 +27,7 @@ public class BaseNDTV {
 
 	public static WebDriver driver;
 	public static Properties prop;  //to get the Environmental Properties like Browser and URLs
-
+	public static String listOfCities = "listOfCities";
 
 	
 	public void Setup() {

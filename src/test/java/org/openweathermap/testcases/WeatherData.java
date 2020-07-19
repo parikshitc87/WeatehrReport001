@@ -1,7 +1,8 @@
-package org.openweathermap;
+package org.openweathermap.testcases;
 
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
+import org.openweathermap.BaseOpenWeatherMap;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
@@ -73,8 +74,10 @@ public class WeatherData extends BaseOpenWeatherMap{
 		liveTemp = ((Number) currentTemperature(response)).doubleValue();
 		cityWeatherData.add(df.format(liveTemp));
 		
-		maxTemp = ((Number) maxTemperature(response)).doubleValue();
-		cityWeatherData.add(df.format(maxTemp));
+		/*
+		 * maxTemp = ((Number) maxTemperature(response)).doubleValue();
+		 * cityWeatherData.add(df.format(maxTemp));
+		 */
 		
 		humidity = currentHumidity(response);
 		cityWeatherData.add(humidity);
@@ -96,8 +99,8 @@ public class WeatherData extends BaseOpenWeatherMap{
 
 		//System.out.println("******************"+CityNameGenerator.reader.getRowCount(listOfCities)+"*********");
 		EnterAllData.enterOpenWeatherMapData(cityWeatherData, listOfCities, dataEntryFlag, City);
-		cityWeatherData.clear();
-		cityWeatherData = null;
+		System.out.println("List of cities row count" +CityNameGenerator.reader.getRowCount(listOfCities));
+
 
 		
 	}
@@ -139,7 +142,7 @@ public class WeatherData extends BaseOpenWeatherMap{
 	String weatherCondition(Response res) {
 		json = new JsonPath(res.asString());
 		System.out.println("Current Weather condition is " + json.get("weather[0].main") + " & " + json.get("weather[0].description"));
-		return json.get("weather[0].main") + " & " + json.get("weather[0].description");
+		return json.get("weather[0].main") + " and " + json.get("weather[0].description");
 	}
 	
 	

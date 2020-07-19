@@ -16,6 +16,7 @@ import com.ndtv.pages.WeatherPageNDTV;
 
 import common.utils.CityNameGenerator;
 import common.utils.CommonCalculations;
+import common.utils.EnterAllData;
 
 public class WeatherPageTest extends BaseNDTV {
 
@@ -23,6 +24,9 @@ public class WeatherPageTest extends BaseNDTV {
 	WeatherPageNDTV weatherPageNdtv;
 	String tempdatacollector;
 	int tempInDegreeC;
+	int humidity;
+	double windSpeed;
+	String weatherCondition;
 
 
 	@BeforeMethod
@@ -48,7 +52,7 @@ public class WeatherPageTest extends BaseNDTV {
 
 	@Test (dataProvider = "getCities")// (dependsOnMethods = { "enterCityNameTest" })
 	public void collectData(String City) {
-
+		ArrayList<Object> cityWeatherData = new ArrayList<Object>();
 		try {
 			weatherPageNdtv.clickCityOnMap(City);
 		} catch (Exception e) {
@@ -69,7 +73,24 @@ public class WeatherPageTest extends BaseNDTV {
 		tempdatacollector = driver.findElement(By.xpath("//*[@id='map_canvas' and contains(., '"+City+"')]"))
 				.getText();
 		tempInDegreeC = CommonCalculations.returnTemperatureInDegreeC(tempdatacollector);
-
+		cityWeatherData.add(tempInDegreeC);
+		
+		humidity = CommonCalculations.returnHumidity(tempdatacollector);
+		cityWeatherData.add(humidity);
+		
+		windSpeed = CommonCalculations.returnWindSpeed(tempdatacollector);
+		cityWeatherData.add(windSpeed);
+		
+		weatherCondition = CommonCalculations.returnWeatherCondition(tempdatacollector);
+		cityWeatherData.add(weatherCondition);
+		
+		for(Object object : cityWeatherData ) {
+			System.out.println(String.valueOf(object));
+		}
+		
+		EnterAllData.enterNDTVData(cityWeatherData, listOfCities,  City);
+		
+		
 	}
 	
 	
