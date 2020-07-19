@@ -38,7 +38,7 @@ public class WeatherPageTest extends BaseNDTV {
 		weatherPageNdtv = homepageNdtv.ClickWeatherLink();
 	}
 
-	// @Test
+	 @Test
 	public void presenceOfCityInput() { // to test if "Pin your city" present on page
 		Assert.assertEquals(weatherPageNdtv.cityInputFieldEnabled(), true);
 	}

@@ -62,7 +62,7 @@ public class WeatherDataComparisionTest extends BaseOpenWeatherMap {
 			boolean flag = false;
 			reader.setCellData(listOfCities, "LiveTemp Compare Result",
 					reader.getCellRowNum(listOfCities, "City", City), "Temperatues are NOT within Variance Range");
-			Assert.assertEquals(flag, true);
+			Assert.assertEquals(flag, true, "Temperatues are NOT within Variance Range");
 		}
 
 	}
