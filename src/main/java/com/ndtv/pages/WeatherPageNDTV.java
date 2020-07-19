@@ -2,7 +2,6 @@
 
 package com.ndtv.pages;
 
-
 import java.util.concurrent.TimeUnit;
 
 import javax.crypto.KeyAgreementSpi;
@@ -26,7 +25,6 @@ public class WeatherPageNDTV extends BaseNDTV {
 	// defining WebElements
 	@FindBy(xpath = "//input[@type='text' and @class  = 'searchBox']")
 	public WebElement CityInputField;
-	// @FindBy(xpath = "//input[@id='temp' and @type = 'checkbox']") Delete this, no use 
 
 	public WeatherPageNDTV() {
 		PageFactory.initElements(driver, this);
@@ -37,60 +35,36 @@ public class WeatherPageNDTV extends BaseNDTV {
 	}
 
 	public void enterCityName(String City) {
-		
-		for(char c : City.toCharArray()) {
+
+		for (char c : City.toCharArray()) {
 			CityInputField.click();
 			CityInputField.sendKeys(String.valueOf(c), Keys.ENTER); // , Keys.ENTER
-			//driver.manage().timeouts().implicitlyWait(CommUtils.Implicitely_Wait, TimeUnit.SECONDS);
-			CityInputField.sendKeys(Keys.SPACE, Keys.BACK_SPACE);			
-			//CityInputField.sendKeys(Keys.RETURN);
+			// driver.manage().timeouts().implicitlyWait(CommUtils.Implicitely_Wait,
+			// TimeUnit.SECONDS);
+			CityInputField.sendKeys(Keys.SPACE, Keys.BACK_SPACE);
+			// CityInputField.sendKeys(Keys.RETURN);
 		}
 		CityInputField.sendKeys(Keys.TAB, Keys.SPACE);
-				
+
 	}
-	
+
 	public void sendTabSpace() {
 		CityInputField.click();
 		CityInputField.sendKeys(Keys.TAB, Keys.SPACE);
 	}
 
-	public boolean presenceOfCityonList(String City) {
-		return driver.findElement(By.xpath("//input[@id='"+ City+"']")).isEnabled();
+	public boolean presenceOfCityonList(String City) {// This will enter city name in text-field and verify on the map
+		return driver.findElement(By.xpath("//input[@id='" + City + "']")).isEnabled();
 	}
-	
-	public boolean isCitySelectedInList(String City) {
-		return driver.findElement(By.xpath("//input[@id='"+City+"']")).isSelected();
-	}
-	
-	public void clickToSelectCity(String City) {
-		clickOn(driver, driver.findElement(By.xpath("//input[@id='"+City+"']")), 15);
-	}
-	
-	public void clickCityCheckBox(String City) {
-		clickOn(driver, driver.findElement(By.xpath("//input[@id='"+City+"']")), 15);
-	}
-	
 
-	public boolean cityDisplayedOnMap(String City) {
-		//this will tell if the city is displayed on the map
-		return driver.findElement(By.xpath("//div[@class='cityText' and text()='"+City+"']")).isDisplayed();
+	public void clickCityOnMap(String City) { // Will click on City displayed on map to bring open panel with weather
+												// data
+		clickOn(driver, driver.findElement(By.xpath("//div[@class='cityText' and text()='" + City + "']")), 5);
 	}
-	
-	public void clickCityOnMap(String City) {
-		
-		clickOn(driver, driver.findElement(By.xpath("//div[@class='cityText' and text()='"+City+"']")) , 5);
-		
-		//driver.findElement(By.xpath("//div[@class='cityText' and text()='"+City+"']")).click();
+
+	public boolean isCityOnMap(String City) {
+		return driver.findElement(By.xpath("//*[@class = 'outerContainer' and contains(.,'" + City
+				+ "')]//div[@class='temperatureContainer']//span[@class='tempRedText']")).isEnabled();
 	}
-	
-	
-	public boolean weatherPanelDisplay(String City) { //will return true if weather panel is displayed after clicking on city on map
-		return driver.findElement(By.xpath("//span[@style='margin-bottom:10px' and contains(.,'"+City+"')]")).isDisplayed();
-	}
-	
-	public boolean isCityDisplayedOnMap(String City) {
-		return driver.findElement(By.xpath("//div[@class='cityText' and text()='"+City+"']")).isDisplayed();
-	}
-	
-	
+
 }

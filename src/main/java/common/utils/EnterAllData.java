@@ -9,7 +9,7 @@ import org.openweathermap.BaseOpenWeatherMap;
 public class EnterAllData extends BaseOpenWeatherMap {
 
 	// To fill up data captured from OpenWeatherMap.org into excel sheet
-	public static void enterOpenWeatherMapData(ArrayList<Object> arr, String listOfCities, int dataEntryFlag,
+	public static void enterOpenWeatherMapData(ArrayList<Object> arr, String listOfCities,
 			String City) {
 
 		int i = 0;
@@ -21,7 +21,7 @@ public class EnterAllData extends BaseOpenWeatherMap {
 				CityNameGenerator.reader.getCellRowNum(listOfCities, "City", City), String.valueOf(arr.get(i + 2)));
 		CityNameGenerator.reader.setCellData(listOfCities, "Weather Condition (OpenWeatherMap)",
 				CityNameGenerator.reader.getCellRowNum(listOfCities, "City", City), String.valueOf(arr.get(i + 3)));
-		//dataEntryFlag++;
+		
 
 	}
 

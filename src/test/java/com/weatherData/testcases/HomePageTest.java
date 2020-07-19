@@ -26,8 +26,6 @@ public class HomePageTest extends BaseNDTV{
 	}
 	
 	
-	
-	
 	@Test (priority = 1)
 	public void  verifyHomePageTitleTest() {  // Verifies NDTV homepage title 
 		Assert.assertEquals(driver.getTitle(), "NDTV: Latest News, India News, Breaking News, Business, Bollywood, Cricket, Videos & Photos", "Homepage Title Mismatch");
@@ -41,6 +39,7 @@ public class HomePageTest extends BaseNDTV{
 	
 	@Test (priority = 3)
 	public void clickWeatherLinkTest() {	//Clicks on the link
+		homepageNdtv.OpenExtendedMenu();
 		weatherPageNdtv = homepageNdtv.ClickWeatherLink();
 	}
 	

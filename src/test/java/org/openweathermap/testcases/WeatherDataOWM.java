@@ -47,19 +47,19 @@ public class WeatherDataOWM extends BaseOpenWeatherMap{
 	
 	
 	
-	@Test(dataProvider = "getCities")
-	public void testOpenWeatherMapData(String City) {
+	@Test(dataProvider = "getCities") 
+	public void testOpenWeatherMapData(String City) { //Extracts response from OpenWeatherMap.org, extracts weather data, stores it in Excel 
 		RestAssured.baseURI = prop.getProperty("baseURI");
 		String key = prop.getProperty("APIkey");
 		//System.out.println(prop.getProperty("baseURI"));
 		//System.out.println(APIkey);
 	
-		Response response = given().log().all()
+		Response response = given().log().all() 
 							.queryParam("q", City)
 							.queryParam("appid", key)
 							.queryParam("units", "metric")
 							.when()
-							.get("/data/2.5/weather") //I could have saved this elsewhere and brought here but we are going to use only one api here
+							.get("/data/2.5/weather") //I could have saved this elsewhere and brought here but we are going to use only one API
 							.then()
 							.assertThat().statusCode(200) //Is response okay? , lets go ahead with data pulling
 							.extract()
@@ -88,18 +88,14 @@ public class WeatherDataOWM extends BaseOpenWeatherMap{
 		weatherCondition = weatherCondition(response);
 		cityWeatherData.add(weatherCondition);
 		
-		System.out.println(CityNameGenerator.reader.getRowCount("listOfCities"));
-		
+		System.out.println("Data for: Temp | Humidity (%) | Wind Speed (m/s) | Weather Conditions");
 
-		
 		for(Object ob : cityWeatherData) {
-			System.out.println("*********"+String.valueOf(ob));
+			System.out.print("| ["+String.valueOf(ob)+"] |");
 		}
+		System.out.println();
 		
-
-		//System.out.println("******************"+CityNameGenerator.reader.getRowCount(listOfCities)+"*********");
-		EnterAllData.enterOpenWeatherMapData(cityWeatherData, listOfCities, dataEntryFlag, City);
-		System.out.println("List of cities row count" +CityNameGenerator.reader.getRowCount(listOfCities));
+		EnterAllData.enterOpenWeatherMapData(cityWeatherData, listOfCities, City); //Saves test data received from API in Excel sheet
 
 
 		
@@ -120,25 +116,28 @@ public class WeatherDataOWM extends BaseOpenWeatherMap{
 		return  json.get("main.temp");
 	 
 	}
-	
+	//Extracting Max Temp in C
 	Object maxTemperature(Response res) {
 		json = new JsonPath(res.asString());
 		System.out.println("Max Tempearature is " + json.get("main.temp") + prop.getProperty("unit"));
 		return  json.get("main.temp_max");
 	}
 	
+	//Extracting Current Humidity
 	Integer currentHumidity(Response res) {
 		json = new JsonPath(res.asString());
 		System.out.println("Current Humidity is " + json.get("main.humidity") + "%");
 		return json.get("main.humidity");
 	}
 	
+	//Extracting wind Speed m/s
 	Object windCondition(Response res) {
 		json = new JsonPath(res.asString());
 		System.out.println("Current wind speed is " + json.get("wind.speed") + "m/s");
 		return json.get("wind.speed");
 	}
 	
+	//Extracting Weather conditions
 	String weatherCondition(Response res) {
 		json = new JsonPath(res.asString());
 		System.out.println("Current Weather condition is " + json.get("weather[0].main") + " & " + json.get("weather[0].description"));

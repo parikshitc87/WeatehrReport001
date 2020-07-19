@@ -38,15 +38,14 @@ public class WeatherPageTest extends BaseNDTV {
 		weatherPageNdtv = homepageNdtv.ClickWeatherLink();
 	}
 
-	 @Test
+	@Test(priority = 1)
 	public void presenceOfCityInput() { // to test if "Pin your city" present on page
 		Assert.assertEquals(weatherPageNdtv.cityInputFieldEnabled(), true);
 	}
 
-	// @Test(dataProvider = "getCities")
+	@Test(dataProvider = "getCities", priority = 2)
 	public void enterCityNameTest(String City) { // This will enter city name in text-field and verify on the map
-		homepageNdtv.ClickWeatherLink();
-
+	
 		if (weatherPageNdtv.presenceOfCityonList(City)) {
 			try {
 				weatherPageNdtv.clickCityOnMap(City);
@@ -57,15 +56,16 @@ public class WeatherPageTest extends BaseNDTV {
 				weatherPageNdtv.clickCityOnMap(City);
 			}
 		}
-
-		homepageNdtv.ClickWeatherLink();
-		weatherPageNdtv.enterCityName(City);
-		Assert.assertEquals(weatherPageNdtv.presenceOfCityonList("Lucknow"), true);
+		
+		Assert.assertEquals(weatherPageNdtv.isCityOnMap(City), true); //verifies if the City is present on map with temp
 	}
 
-	@Test(dataProvider = "getCities") // (dependsOnMethods = { "enterCityNameTest" })
-	public void collectData(String City) {
-		//This Arraylist will contain 4 informations - LiveTemp, Humidity, WindSpeed & Weather Conditions
+	
+	
+	@Test(dataProvider = "getCities", priority = 3) // (dependsOnMethods = { "enterCityNameTest" })
+	public void collectDataTest(String City) {// Stores all data in sheet and asserts if the Temp is displayed on Panel
+		// This Arraylist will contain 4 informations - LiveTemp, Humidity, WindSpeed &
+		// Weather Conditions
 		ArrayList<Object> cityWeatherData = new ArrayList<Object>();
 		try {
 			weatherPageNdtv.clickCityOnMap(City); // first it will try finding City on Map directly
@@ -81,39 +81,35 @@ public class WeatherPageTest extends BaseNDTV {
 
 		}
 
-		// Now the Weather information of City has opened so lets get the data for further String manipulation for 
-		//test data extraction
+		// Now the Weather information of City has opened so lets get the data for
+		// further String manipulation for
+		// test data extraction
 		tempdatacollector = driver.findElement(By.xpath("//*[@id='map_canvas' and contains(., '" + City + "')]"))
-				.getText(); //Stores all weather data as one string
-		tempInDegreeC = CommonCalculations.returnTemperatureInDegreeC(tempdatacollector); //Method returns Temp in degree Centigrade
-		cityWeatherData.add(tempInDegreeC); 
-		
-		//Returns Humidity percent after String manipulations
+				.getText(); // Stores all weather data as one string
+		tempInDegreeC = CommonCalculations.returnTemperatureInDegreeC(tempdatacollector); // Method returns Temp in
+																							// degree Centigrade
+		cityWeatherData.add(tempInDegreeC);
+
+		// Returns Humidity percent after String manipulations
 		humidity = CommonCalculations.returnHumidity(tempdatacollector);
-		cityWeatherData.add(humidity); 
-		//Return Humidity windspeed in m/s after String manipulations
+		cityWeatherData.add(humidity);
+		// Return Humidity wind speed in m/s after String manipulations
 		windSpeed = CommonCalculations.returnWindSpeed(tempdatacollector);
 		cityWeatherData.add(windSpeed);
-		//Returns Weather conditions like "Overcast" or "Rain" after string manipulations
+		// Returns Weather conditions like "Overcast" or "Rain" after string
+		// manipulations
 		weatherCondition = CommonCalculations.returnWeatherCondition(tempdatacollector);
 		cityWeatherData.add(weatherCondition);
 
-		
-		  for (Object object : cityWeatherData) {
-		  System.out.println(String.valueOf(object)); }
-		 
-		 //Enters 4 weather data points in the Excel sheet
+		for (Object object : cityWeatherData) {
+			System.out.println(String.valueOf(object));
+		}
+
+		// Enters 4 weather data points in the Excel sheet
 		EnterAllData.enterNDTVData(cityWeatherData, listOfCities, City);
-		Assert.assertEquals(
-				(tempdatacollector.contains("Temp in Degrees: "+String.valueOf(tempInDegreeC))),
-				true, "Temperature data MISSING on weather pop up panel");
+		Assert.assertEquals((tempdatacollector.contains("Temp in Degrees: " + String.valueOf(tempInDegreeC))), true,
+				"Temperature data MISSING on weather pop up panel");
 
-	}
-
-	@DataProvider // will return cities names as String
-	public Iterator<String> getCities() {
-		ArrayList<String> it = CityNameGenerator.storeData();
-		return it.iterator();
 	}
 
 }
