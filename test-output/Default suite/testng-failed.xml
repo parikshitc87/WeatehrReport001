@@ -3,12 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="org.weatherComparision.testcases.WeatherDataComparisionTest">
+      <class name="com.weatherData.testcases.WeatherPageTest">
         <methods>
-          <include name="compareLiveTemps" invocation-numbers="0 2 3"/>
-          <include name="setup"/>
+          <include name="SetupPage"/>
+          <include name="enterCityNameTest" invocation-numbers="0"/>
+          <include name="houseKeeping"/>
         </methods>
-      </class> <!-- org.weatherComparision.testcases.WeatherDataComparisionTest -->
+      </class> <!-- com.weatherData.testcases.WeatherPageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

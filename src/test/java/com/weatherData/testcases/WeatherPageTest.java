@@ -28,7 +28,6 @@ public class WeatherPageTest extends BaseNDTV {
 	String windSpeed;
 	String weatherCondition;
 
-
 	@BeforeMethod
 	public void SetupPage() {
 		Setup();
@@ -37,20 +36,35 @@ public class WeatherPageTest extends BaseNDTV {
 		weatherPageNdtv = homepageNdtv.ClickWeatherLink();
 	}
 
-	@Test
-	public void presenceOfCityInput() {
+	// @Test
+	public void presenceOfCityInput() { // to test if "Pin your city" present on page
 		Assert.assertEquals(weatherPageNdtv.cityInputFieldEnabled(), true);
 	}
 
-	@Test(dependsOnMethods = { "presenceOfCityInput" })
-	public void enterCityNameTest() { // This will enter city name in text-field and verify on the map
-		weatherPageNdtv.enterCityName("Lucknow");
+	@Test(dataProvider = "getCities")
+	public void enterCityNameTest(String City) { // This will enter city name in text-field and verify on the map
+		homepageNdtv.ClickWeatherLink();
+
+		if (weatherPageNdtv.presenceOfCityonList(City)) {
+			try {
+				weatherPageNdtv.clickCityOnMap(City);
+			} catch (Exception e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+				clickOn(driver, driver.findElement(By.xpath("//span[@id='icon_holder']")), 15);
+				weatherPageNdtv.enterCityName(City);
+				weatherPageNdtv.clickCityOnMap(City);
+			}
+		}
+
+		homepageNdtv.ClickWeatherLink();
+		weatherPageNdtv.enterCityName(City);
 		// System.out.println();
 		Assert.assertEquals(weatherPageNdtv.presenceOfCityonList("Lucknow"), true);
 
 	}
 
-	@Test (dataProvider = "getCities")// (dependsOnMethods = { "enterCityNameTest" })
+	@Test(dataProvider = "getCities") // (dependsOnMethods = { "enterCityNameTest" })
 	public void collectData(String City) {
 		ArrayList<Object> cityWeatherData = new ArrayList<Object>();
 		try {
@@ -60,46 +74,41 @@ public class WeatherPageTest extends BaseNDTV {
 			e.printStackTrace();
 			clickOn(driver, driver.findElement(By.xpath("//span[@id='icon_holder']")), 15);
 			weatherPageNdtv.enterCityName(City);
-			
-			//weatherPageNdtv.sendTabSpace(); 
-			 
+
+			// weatherPageNdtv.sendTabSpace();
+
 			weatherPageNdtv.clickCityOnMap(City);
 		}
 
-		
-		//now the Weather information of City has opened so lets get the data
+		// now the Weather information of City has opened so lets get the data
 		System.out.println(
-				driver.findElement(By.xpath("//*[@id='map_canvas' and contains(., '"+City+"')]")).getText());
-		tempdatacollector = driver.findElement(By.xpath("//*[@id='map_canvas' and contains(., '"+City+"')]"))
+				driver.findElement(By.xpath("//*[@id='map_canvas' and contains(., '" + City + "')]")).getText());
+		tempdatacollector = driver.findElement(By.xpath("//*[@id='map_canvas' and contains(., '" + City + "')]"))
 				.getText();
 		tempInDegreeC = CommonCalculations.returnTemperatureInDegreeC(tempdatacollector);
 		cityWeatherData.add(tempInDegreeC);
-		
+
 		humidity = CommonCalculations.returnHumidity(tempdatacollector);
 		cityWeatherData.add(humidity);
-		
+
 		windSpeed = CommonCalculations.returnWindSpeed(tempdatacollector);
 		cityWeatherData.add(windSpeed);
-		
+
 		weatherCondition = CommonCalculations.returnWeatherCondition(tempdatacollector);
 		cityWeatherData.add(weatherCondition);
-		
-		for(Object object : cityWeatherData ) {
+
+		for (Object object : cityWeatherData) {
 			System.out.println(String.valueOf(object));
 		}
-		
-		EnterAllData.enterNDTVData(cityWeatherData, listOfCities,  City);
-		
-		
+
+		EnterAllData.enterNDTVData(cityWeatherData, listOfCities, City);
+
 	}
-	
-	
-	
-	@DataProvider //will return cities names as String one by one
+
+	@DataProvider // will return cities names as String one by one
 	public Iterator<String> getCities() {
 		ArrayList<String> it = CityNameGenerator.storeData();
 		return it.iterator();
 	}
-	
 
 }
