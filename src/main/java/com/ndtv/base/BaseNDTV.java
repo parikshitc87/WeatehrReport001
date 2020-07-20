@@ -2,6 +2,7 @@
 
 package com.ndtv.base;
 
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -10,13 +11,17 @@ import java.util.Iterator;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
+import org.apache.commons.io.FileUtils;
 import org.apache.log4j.LogManager;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
@@ -81,8 +86,20 @@ public class BaseNDTV {
 		return prop.getProperty("APIkey");
 	}
 
-	@AfterMethod // Closing browser and clearing cookies
-	public void houseKeeping() {
+	@AfterMethod // Taking Screenshot if needed + Closing browser and clearing cookies
+	public void houseKeeping(ITestResult result) {
+		if (ITestResult.FAILURE == result.getStatus()) {
+			try {
+
+				TakesScreenshot screenshot = (TakesScreenshot) driver;
+				File src = screenshot.getScreenshotAs(OutputType.FILE);
+				FileUtils.copyFile(src, new File(
+						System.getProperty("user.dir") + "\\test-output\\Screenshots\\" + result.getName() + ".png"));
+				System.out.println("Successfully captured a screenshot");
+			} catch (Exception e) {
+				System.out.println("Exception while taking screenshot " + e.getMessage());
+			}
+		}
 		driver.manage().deleteAllCookies();
 		driver.quit();
 	}

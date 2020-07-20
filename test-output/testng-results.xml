@@ -1,17 +1,275 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="2" total="8" passed="6" failed="0" skipped="0">
+<testng-results ignored="0" total="43" passed="28" failed="15" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-07-20T04:06:14 IST" name="Default suite" finished-at="2020-07-20T04:07:51 IST" duration-ms="96823">
+  <suite started-at="2020-07-20T08:47:22 IST" name="Suite" finished-at="2020-07-20T08:51:37 IST" duration-ms="254991">
     <groups>
     </groups>
-    <test started-at="2020-07-20T04:06:14 IST" name="Default test" finished-at="2020-07-20T04:07:51 IST" duration-ms="96823">
-      <class name="com.weatherData.testcases.WeatherPageTest">
-        <test-method is-config="true" signature="SetupPage()[pri:0, instance:com.weatherData.testcases.WeatherPageTest@48e4374]" started-at="2020-07-20T04:06:15 IST" name="SetupPage" finished-at="2020-07-20T04:06:25 IST" duration-ms="10720" status="PASS">
+    <test started-at="2020-07-20T08:47:22 IST" name="Test" finished-at="2020-07-20T08:51:37 IST" duration-ms="254991">
+      <class name="org.weatherComparision.testcases.WeatherDataComparisionTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:org.weatherComparision.testcases.WeatherDataComparisionTest@19bb07ed]" started-at="2020-07-20T08:51:36 IST" name="setup" finished-at="2020-07-20T08:51:36 IST" duration-ms="12" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- SetupPage -->
-        <test-method signature="enterCityNameTest(java.lang.String)[pri:2, instance:com.weatherData.testcases.WeatherPageTest@48e4374]" started-at="2020-07-20T04:06:25 IST" name="enterCityNameTest" data-provider="getCities" finished-at="2020-07-20T04:06:26 IST" duration-ms="981" status="PASS">
+        </test-method> <!-- setup -->
+        <test-method signature="compareHumidity(java.lang.String)[pri:0, instance:org.weatherComparision.testcases.WeatherDataComparisionTest@19bb07ed]" started-at="2020-07-20T08:51:36 IST" name="compareHumidity" data-provider="getCities" finished-at="2020-07-20T08:51:36 IST" duration-ms="30" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Lucknow]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:97)
+at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:751)
+at org.testng.Assert.assertEquals(Assert.java:761)
+at org.weatherComparision.testcases.WeatherDataComparisionTest.compareHumidity(WeatherDataComparisionTest.java:173)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:821)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
+at org.testng.TestRunner.privateRun(TestRunner.java:767)
+at org.testng.TestRunner.run(TestRunner.java:588)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1214)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1136)
+at org.testng.TestNG.runSuites(TestNG.java:1066)
+at org.testng.TestNG.run(TestNG.java:1034)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- compareHumidity -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:org.weatherComparision.testcases.WeatherDataComparisionTest@19bb07ed]" started-at="2020-07-20T08:51:36 IST" name="setup" finished-at="2020-07-20T08:51:36 IST" duration-ms="19" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="compareHumidity(java.lang.String)[pri:0, instance:org.weatherComparision.testcases.WeatherDataComparisionTest@19bb07ed]" started-at="2020-07-20T08:51:36 IST" name="compareHumidity" data-provider="getCities" finished-at="2020-07-20T08:51:36 IST" duration-ms="45" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Bhilai]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- compareHumidity -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:org.weatherComparision.testcases.WeatherDataComparisionTest@19bb07ed]" started-at="2020-07-20T08:51:36 IST" name="setup" finished-at="2020-07-20T08:51:36 IST" duration-ms="34" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="compareHumidity(java.lang.String)[pri:0, instance:org.weatherComparision.testcases.WeatherDataComparisionTest@19bb07ed]" started-at="2020-07-20T08:51:36 IST" name="compareHumidity" data-provider="getCities" finished-at="2020-07-20T08:51:36 IST" duration-ms="1" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Ajmer]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NumberFormatException">
+            <message>
+              <![CDATA[For input string: ""]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NumberFormatException: For input string: ""
+at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:68)
+at java.base/java.lang.Integer.parseInt(Integer.java:662)
+at java.base/java.lang.Integer.parseInt(Integer.java:770)
+at org.weatherComparision.testcases.WeatherDataComparisionTest.compareHumidity(WeatherDataComparisionTest.java:148)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:821)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
+at org.testng.TestRunner.privateRun(TestRunner.java:767)
+at org.testng.TestRunner.run(TestRunner.java:588)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1214)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1136)
+at org.testng.TestNG.runSuites(TestNG.java:1066)
+at org.testng.TestNG.run(TestNG.java:1034)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NumberFormatException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- compareHumidity -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:org.weatherComparision.testcases.WeatherDataComparisionTest@19bb07ed]" started-at="2020-07-20T08:51:36 IST" name="setup" finished-at="2020-07-20T08:51:36 IST" duration-ms="26" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="compareHumidity(java.lang.String)[pri:0, instance:org.weatherComparision.testcases.WeatherDataComparisionTest@19bb07ed]" started-at="2020-07-20T08:51:36 IST" name="compareHumidity" data-provider="getCities" finished-at="2020-07-20T08:51:36 IST" duration-ms="4" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Patna]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NumberFormatException">
+            <message>
+              <![CDATA[For input string: ""]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NumberFormatException: For input string: ""
+at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:68)
+at java.base/java.lang.Integer.parseInt(Integer.java:662)
+at java.base/java.lang.Integer.parseInt(Integer.java:770)
+at org.weatherComparision.testcases.WeatherDataComparisionTest.compareHumidity(WeatherDataComparisionTest.java:148)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:821)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
+at org.testng.TestRunner.privateRun(TestRunner.java:767)
+at org.testng.TestRunner.run(TestRunner.java:588)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1214)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1136)
+at org.testng.TestNG.runSuites(TestNG.java:1066)
+at org.testng.TestNG.run(TestNG.java:1034)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NumberFormatException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- compareHumidity -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:org.weatherComparision.testcases.WeatherDataComparisionTest@19bb07ed]" started-at="2020-07-20T08:51:36 IST" name="setup" finished-at="2020-07-20T08:51:36 IST" duration-ms="11" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="compareHumidity(java.lang.String)[pri:0, instance:org.weatherComparision.testcases.WeatherDataComparisionTest@19bb07ed]" started-at="2020-07-20T08:51:36 IST" name="compareHumidity" data-provider="getCities" finished-at="2020-07-20T08:51:36 IST" duration-ms="38" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Alwar]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:97)
+at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:751)
+at org.testng.Assert.assertEquals(Assert.java:761)
+at org.weatherComparision.testcases.WeatherDataComparisionTest.compareHumidity(WeatherDataComparisionTest.java:173)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:821)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
+at org.testng.TestRunner.privateRun(TestRunner.java:767)
+at org.testng.TestRunner.run(TestRunner.java:588)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1214)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1136)
+at org.testng.TestNG.runSuites(TestNG.java:1066)
+at org.testng.TestNG.run(TestNG.java:1034)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- compareHumidity -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:org.weatherComparision.testcases.WeatherDataComparisionTest@19bb07ed]" started-at="2020-07-20T08:51:36 IST" name="setup" finished-at="2020-07-20T08:51:36 IST" duration-ms="31" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="compareHumidity(java.lang.String)[pri:0, instance:org.weatherComparision.testcases.WeatherDataComparisionTest@19bb07ed]" started-at="2020-07-20T08:51:36 IST" name="compareHumidity" data-provider="getCities" finished-at="2020-07-20T08:51:36 IST" duration-ms="27" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Imphal]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- compareHumidity -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:org.weatherComparision.testcases.WeatherDataComparisionTest@19bb07ed]" started-at="2020-07-20T08:51:36 IST" name="setup" finished-at="2020-07-20T08:51:36 IST" duration-ms="19" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="compareLiveTemps(java.lang.String)[pri:0, instance:org.weatherComparision.testcases.WeatherDataComparisionTest@19bb07ed]" started-at="2020-07-20T08:51:36 IST" name="compareLiveTemps" data-provider="getCities" finished-at="2020-07-20T08:51:36 IST" duration-ms="37" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -21,35 +279,241 @@
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- enterCityNameTest -->
-        <test-method is-config="true" signature="houseKeeping()[pri:0, instance:com.weatherData.testcases.WeatherPageTest@48e4374]" started-at="2020-07-20T04:06:26 IST" name="houseKeeping" finished-at="2020-07-20T04:06:28 IST" duration-ms="1311" status="PASS">
+        </test-method> <!-- compareLiveTemps -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:org.weatherComparision.testcases.WeatherDataComparisionTest@19bb07ed]" started-at="2020-07-20T08:51:36 IST" name="setup" finished-at="2020-07-20T08:51:36 IST" duration-ms="47" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- houseKeeping -->
-        <test-method is-config="true" signature="SetupPage()[pri:0, instance:com.weatherData.testcases.WeatherPageTest@48e4374]" started-at="2020-07-20T04:06:28 IST" name="SetupPage" finished-at="2020-07-20T04:06:38 IST" duration-ms="10235" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- SetupPage -->
-        <test-method signature="enterCityNameTest(java.lang.String)[pri:2, instance:com.weatherData.testcases.WeatherPageTest@48e4374]" started-at="2020-07-20T04:06:38 IST" name="enterCityNameTest" data-provider="getCities" finished-at="2020-07-20T04:06:39 IST" duration-ms="1047" status="PASS">
+        </test-method> <!-- setup -->
+        <test-method signature="compareLiveTemps(java.lang.String)[pri:0, instance:org.weatherComparision.testcases.WeatherDataComparisionTest@19bb07ed]" started-at="2020-07-20T08:51:36 IST" name="compareLiveTemps" data-provider="getCities" finished-at="2020-07-20T08:51:36 IST" duration-ms="39" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Bhopal]]>
+                <![CDATA[Bhilai]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- enterCityNameTest -->
-        <test-method is-config="true" signature="houseKeeping()[pri:0, instance:com.weatherData.testcases.WeatherPageTest@48e4374]" started-at="2020-07-20T04:06:39 IST" name="houseKeeping" finished-at="2020-07-20T04:06:40 IST" duration-ms="864" status="PASS">
+        </test-method> <!-- compareLiveTemps -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:org.weatherComparision.testcases.WeatherDataComparisionTest@19bb07ed]" started-at="2020-07-20T08:51:36 IST" name="setup" finished-at="2020-07-20T08:51:36 IST" duration-ms="35" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- houseKeeping -->
-        <test-method is-config="true" signature="SetupPage()[pri:0, instance:com.weatherData.testcases.WeatherPageTest@48e4374]" started-at="2020-07-20T04:06:40 IST" name="SetupPage" finished-at="2020-07-20T04:06:50 IST" duration-ms="10352" status="PASS">
+        </test-method> <!-- setup -->
+        <test-method signature="compareLiveTemps(java.lang.String)[pri:0, instance:org.weatherComparision.testcases.WeatherDataComparisionTest@19bb07ed]" started-at="2020-07-20T08:51:36 IST" name="compareLiveTemps" data-provider="getCities" finished-at="2020-07-20T08:51:36 IST" duration-ms="2" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Ajmer]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NumberFormatException">
+            <message>
+              <![CDATA[empty String]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NumberFormatException: empty String
+at java.base/jdk.internal.math.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:1842)
+at java.base/jdk.internal.math.FloatingDecimal.parseDouble(FloatingDecimal.java:110)
+at java.base/java.lang.Double.parseDouble(Double.java:549)
+at org.weatherComparision.testcases.WeatherDataComparisionTest.compareLiveTemps(WeatherDataComparisionTest.java:48)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:821)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
+at org.testng.TestRunner.privateRun(TestRunner.java:767)
+at org.testng.TestRunner.run(TestRunner.java:588)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1214)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1136)
+at org.testng.TestNG.runSuites(TestNG.java:1066)
+at org.testng.TestNG.run(TestNG.java:1034)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NumberFormatException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- SetupPage -->
-        <test-method signature="enterCityNameTest(java.lang.String)[pri:2, instance:com.weatherData.testcases.WeatherPageTest@48e4374]" started-at="2020-07-20T04:06:50 IST" name="enterCityNameTest" data-provider="getCities" finished-at="2020-07-20T04:07:03 IST" duration-ms="12544" status="PASS">
+        </test-method> <!-- compareLiveTemps -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:org.weatherComparision.testcases.WeatherDataComparisionTest@19bb07ed]" started-at="2020-07-20T08:51:36 IST" name="setup" finished-at="2020-07-20T08:51:36 IST" duration-ms="34" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="compareLiveTemps(java.lang.String)[pri:0, instance:org.weatherComparision.testcases.WeatherDataComparisionTest@19bb07ed]" started-at="2020-07-20T08:51:36 IST" name="compareLiveTemps" data-provider="getCities" finished-at="2020-07-20T08:51:36 IST" duration-ms="4" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Patna]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NumberFormatException">
+            <message>
+              <![CDATA[empty String]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NumberFormatException: empty String
+at java.base/jdk.internal.math.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:1842)
+at java.base/jdk.internal.math.FloatingDecimal.parseDouble(FloatingDecimal.java:110)
+at java.base/java.lang.Double.parseDouble(Double.java:549)
+at org.weatherComparision.testcases.WeatherDataComparisionTest.compareLiveTemps(WeatherDataComparisionTest.java:48)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:821)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
+at org.testng.TestRunner.privateRun(TestRunner.java:767)
+at org.testng.TestRunner.run(TestRunner.java:588)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1214)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1136)
+at org.testng.TestNG.runSuites(TestNG.java:1066)
+at org.testng.TestNG.run(TestNG.java:1034)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NumberFormatException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- compareLiveTemps -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:org.weatherComparision.testcases.WeatherDataComparisionTest@19bb07ed]" started-at="2020-07-20T08:51:37 IST" name="setup" finished-at="2020-07-20T08:51:37 IST" duration-ms="17" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="compareLiveTemps(java.lang.String)[pri:0, instance:org.weatherComparision.testcases.WeatherDataComparisionTest@19bb07ed]" started-at="2020-07-20T08:51:37 IST" name="compareLiveTemps" data-provider="getCities" finished-at="2020-07-20T08:51:37 IST" duration-ms="40" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Alwar]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Temperatues are NOT within Variance Range expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Temperatues are NOT within Variance Range expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:97)
+at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:751)
+at org.weatherComparision.testcases.WeatherDataComparisionTest.compareLiveTemps(WeatherDataComparisionTest.java:64)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:821)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
+at org.testng.TestRunner.privateRun(TestRunner.java:767)
+at org.testng.TestRunner.run(TestRunner.java:588)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1214)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1136)
+at org.testng.TestNG.runSuites(TestNG.java:1066)
+at org.testng.TestNG.run(TestNG.java:1034)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- compareLiveTemps -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:org.weatherComparision.testcases.WeatherDataComparisionTest@19bb07ed]" started-at="2020-07-20T08:51:37 IST" name="setup" finished-at="2020-07-20T08:51:37 IST" duration-ms="17" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="compareLiveTemps(java.lang.String)[pri:0, instance:org.weatherComparision.testcases.WeatherDataComparisionTest@19bb07ed]" started-at="2020-07-20T08:51:37 IST" name="compareLiveTemps" data-provider="getCities" finished-at="2020-07-20T08:51:37 IST" duration-ms="35" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Imphal]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- compareLiveTemps -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:org.weatherComparision.testcases.WeatherDataComparisionTest@19bb07ed]" started-at="2020-07-20T08:51:37 IST" name="setup" finished-at="2020-07-20T08:51:37 IST" duration-ms="12" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="compareWeatherConditions(java.lang.String)[pri:0, instance:org.weatherComparision.testcases.WeatherDataComparisionTest@19bb07ed]" started-at="2020-07-20T08:51:37 IST" name="compareWeatherConditions" data-provider="getCities" finished-at="2020-07-20T08:51:37 IST" duration-ms="51" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Lucknow]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- compareWeatherConditions -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:org.weatherComparision.testcases.WeatherDataComparisionTest@19bb07ed]" started-at="2020-07-20T08:51:37 IST" name="setup" finished-at="2020-07-20T08:51:37 IST" duration-ms="14" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="compareWeatherConditions(java.lang.String)[pri:0, instance:org.weatherComparision.testcases.WeatherDataComparisionTest@19bb07ed]" started-at="2020-07-20T08:51:37 IST" name="compareWeatherConditions" data-provider="getCities" finished-at="2020-07-20T08:51:37 IST" duration-ms="28" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Bhilai]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- compareWeatherConditions -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:org.weatherComparision.testcases.WeatherDataComparisionTest@19bb07ed]" started-at="2020-07-20T08:51:37 IST" name="setup" finished-at="2020-07-20T08:51:37 IST" duration-ms="26" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="compareWeatherConditions(java.lang.String)[pri:0, instance:org.weatherComparision.testcases.WeatherDataComparisionTest@19bb07ed]" started-at="2020-07-20T08:51:37 IST" name="compareWeatherConditions" data-provider="getCities" finished-at="2020-07-20T08:51:37 IST" duration-ms="38" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -59,69 +523,902 @@
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- enterCityNameTest -->
-        <test-method is-config="true" signature="houseKeeping()[pri:0, instance:com.weatherData.testcases.WeatherPageTest@48e4374]" started-at="2020-07-20T04:07:03 IST" name="houseKeeping" finished-at="2020-07-20T04:07:04 IST" duration-ms="928" status="PASS">
+        </test-method> <!-- compareWeatherConditions -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:org.weatherComparision.testcases.WeatherDataComparisionTest@19bb07ed]" started-at="2020-07-20T08:51:37 IST" name="setup" finished-at="2020-07-20T08:51:37 IST" duration-ms="28" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- houseKeeping -->
-        <test-method is-config="true" signature="SetupPage()[pri:0, instance:com.weatherData.testcases.WeatherPageTest@48e4374]" started-at="2020-07-20T04:07:04 IST" name="SetupPage" finished-at="2020-07-20T04:07:14 IST" duration-ms="9821" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- SetupPage -->
-        <test-method signature="enterCityNameTest(java.lang.String)[pri:2, instance:com.weatherData.testcases.WeatherPageTest@48e4374]" started-at="2020-07-20T04:07:14 IST" name="enterCityNameTest" data-provider="getCities" finished-at="2020-07-20T04:07:26 IST" duration-ms="12869" status="PASS">
+        </test-method> <!-- setup -->
+        <test-method signature="compareWeatherConditions(java.lang.String)[pri:0, instance:org.weatherComparision.testcases.WeatherDataComparisionTest@19bb07ed]" started-at="2020-07-20T08:51:37 IST" name="compareWeatherConditions" data-provider="getCities" finished-at="2020-07-20T08:51:37 IST" duration-ms="47" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Coimbatore]]>
+                <![CDATA[Patna]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- enterCityNameTest -->
-        <test-method is-config="true" signature="houseKeeping()[pri:0, instance:com.weatherData.testcases.WeatherPageTest@48e4374]" started-at="2020-07-20T04:07:26 IST" name="houseKeeping" finished-at="2020-07-20T04:07:27 IST" duration-ms="828" status="PASS">
+        </test-method> <!-- compareWeatherConditions -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:org.weatherComparision.testcases.WeatherDataComparisionTest@19bb07ed]" started-at="2020-07-20T08:51:37 IST" name="setup" finished-at="2020-07-20T08:51:37 IST" duration-ms="20" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- houseKeeping -->
-        <test-method is-config="true" signature="SetupPage()[pri:0, instance:com.weatherData.testcases.WeatherPageTest@48e4374]" started-at="2020-07-20T04:07:27 IST" name="SetupPage" finished-at="2020-07-20T04:07:37 IST" duration-ms="10174" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- SetupPage -->
-        <test-method signature="enterCityNameTest(java.lang.String)[pri:2, instance:com.weatherData.testcases.WeatherPageTest@48e4374]" started-at="2020-07-20T04:07:37 IST" name="enterCityNameTest" data-provider="getCities" finished-at="2020-07-20T04:07:38 IST" duration-ms="719" status="PASS">
+        </test-method> <!-- setup -->
+        <test-method signature="compareWeatherConditions(java.lang.String)[pri:0, instance:org.weatherComparision.testcases.WeatherDataComparisionTest@19bb07ed]" started-at="2020-07-20T08:51:37 IST" name="compareWeatherConditions" data-provider="getCities" finished-at="2020-07-20T08:51:37 IST" duration-ms="24" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Mumbai]]>
+                <![CDATA[Alwar]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- enterCityNameTest -->
-        <test-method is-config="true" signature="houseKeeping()[pri:0, instance:com.weatherData.testcases.WeatherPageTest@48e4374]" started-at="2020-07-20T04:07:38 IST" name="houseKeeping" finished-at="2020-07-20T04:07:39 IST" duration-ms="1264" status="PASS">
+        </test-method> <!-- compareWeatherConditions -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:org.weatherComparision.testcases.WeatherDataComparisionTest@19bb07ed]" started-at="2020-07-20T08:51:37 IST" name="setup" finished-at="2020-07-20T08:51:37 IST" duration-ms="21" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- houseKeeping -->
-        <test-method is-config="true" signature="SetupPage()[pri:0, instance:com.weatherData.testcases.WeatherPageTest@48e4374]" started-at="2020-07-20T04:07:39 IST" name="SetupPage" finished-at="2020-07-20T04:07:49 IST" duration-ms="9784" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- SetupPage -->
-        <test-method signature="enterCityNameTest(java.lang.String)[pri:2, instance:com.weatherData.testcases.WeatherPageTest@48e4374]" started-at="2020-07-20T04:07:49 IST" name="enterCityNameTest" data-provider="getCities" finished-at="2020-07-20T04:07:50 IST" duration-ms="906" status="PASS">
+        </test-method> <!-- setup -->
+        <test-method signature="compareWeatherConditions(java.lang.String)[pri:0, instance:org.weatherComparision.testcases.WeatherDataComparisionTest@19bb07ed]" started-at="2020-07-20T08:51:37 IST" name="compareWeatherConditions" data-provider="getCities" finished-at="2020-07-20T08:51:37 IST" duration-ms="32" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Kolkata]]>
+                <![CDATA[Imphal]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- enterCityNameTest -->
-        <test-method is-config="true" signature="houseKeeping()[pri:0, instance:com.weatherData.testcases.WeatherPageTest@48e4374]" started-at="2020-07-20T04:07:50 IST" name="houseKeeping" finished-at="2020-07-20T04:07:51 IST" duration-ms="896" status="PASS">
+        </test-method> <!-- compareWeatherConditions -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:org.weatherComparision.testcases.WeatherDataComparisionTest@19bb07ed]" started-at="2020-07-20T08:51:37 IST" name="setup" finished-at="2020-07-20T08:51:37 IST" duration-ms="17" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="compareWindSpeed(java.lang.String)[pri:0, instance:org.weatherComparision.testcases.WeatherDataComparisionTest@19bb07ed]" started-at="2020-07-20T08:51:37 IST" name="compareWindSpeed" data-provider="getCities" finished-at="2020-07-20T08:51:37 IST" duration-ms="3" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Lucknow]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NumberFormatException">
+            <message>
+              <![CDATA[empty String]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NumberFormatException: empty String
+at java.base/jdk.internal.math.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:1842)
+at java.base/jdk.internal.math.FloatingDecimal.parseDouble(FloatingDecimal.java:110)
+at java.base/java.lang.Double.parseDouble(Double.java:549)
+at org.weatherComparision.testcases.WeatherDataComparisionTest.compareWindSpeed(WeatherDataComparisionTest.java:180)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:821)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
+at org.testng.TestRunner.privateRun(TestRunner.java:767)
+at org.testng.TestRunner.run(TestRunner.java:588)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1214)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1136)
+at org.testng.TestNG.runSuites(TestNG.java:1066)
+at org.testng.TestNG.run(TestNG.java:1034)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NumberFormatException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- compareWindSpeed -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:org.weatherComparision.testcases.WeatherDataComparisionTest@19bb07ed]" started-at="2020-07-20T08:51:37 IST" name="setup" finished-at="2020-07-20T08:51:37 IST" duration-ms="13" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="compareWindSpeed(java.lang.String)[pri:0, instance:org.weatherComparision.testcases.WeatherDataComparisionTest@19bb07ed]" started-at="2020-07-20T08:51:37 IST" name="compareWindSpeed" data-provider="getCities" finished-at="2020-07-20T08:51:37 IST" duration-ms="1" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Bhilai]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NumberFormatException">
+            <message>
+              <![CDATA[empty String]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NumberFormatException: empty String
+at java.base/jdk.internal.math.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:1842)
+at java.base/jdk.internal.math.FloatingDecimal.parseDouble(FloatingDecimal.java:110)
+at java.base/java.lang.Double.parseDouble(Double.java:549)
+at org.weatherComparision.testcases.WeatherDataComparisionTest.compareWindSpeed(WeatherDataComparisionTest.java:180)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:821)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
+at org.testng.TestRunner.privateRun(TestRunner.java:767)
+at org.testng.TestRunner.run(TestRunner.java:588)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1214)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1136)
+at org.testng.TestNG.runSuites(TestNG.java:1066)
+at org.testng.TestNG.run(TestNG.java:1034)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NumberFormatException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- compareWindSpeed -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:org.weatherComparision.testcases.WeatherDataComparisionTest@19bb07ed]" started-at="2020-07-20T08:51:37 IST" name="setup" finished-at="2020-07-20T08:51:37 IST" duration-ms="17" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="compareWindSpeed(java.lang.String)[pri:0, instance:org.weatherComparision.testcases.WeatherDataComparisionTest@19bb07ed]" started-at="2020-07-20T08:51:37 IST" name="compareWindSpeed" data-provider="getCities" finished-at="2020-07-20T08:51:37 IST" duration-ms="1" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Ajmer]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NumberFormatException">
+            <message>
+              <![CDATA[empty String]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NumberFormatException: empty String
+at java.base/jdk.internal.math.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:1842)
+at java.base/jdk.internal.math.FloatingDecimal.parseDouble(FloatingDecimal.java:110)
+at java.base/java.lang.Double.parseDouble(Double.java:549)
+at org.weatherComparision.testcases.WeatherDataComparisionTest.compareWindSpeed(WeatherDataComparisionTest.java:180)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:821)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
+at org.testng.TestRunner.privateRun(TestRunner.java:767)
+at org.testng.TestRunner.run(TestRunner.java:588)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1214)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1136)
+at org.testng.TestNG.runSuites(TestNG.java:1066)
+at org.testng.TestNG.run(TestNG.java:1034)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NumberFormatException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- compareWindSpeed -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:org.weatherComparision.testcases.WeatherDataComparisionTest@19bb07ed]" started-at="2020-07-20T08:51:37 IST" name="setup" finished-at="2020-07-20T08:51:37 IST" duration-ms="15" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="compareWindSpeed(java.lang.String)[pri:0, instance:org.weatherComparision.testcases.WeatherDataComparisionTest@19bb07ed]" started-at="2020-07-20T08:51:37 IST" name="compareWindSpeed" data-provider="getCities" finished-at="2020-07-20T08:51:37 IST" duration-ms="2" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Patna]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NumberFormatException">
+            <message>
+              <![CDATA[empty String]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NumberFormatException: empty String
+at java.base/jdk.internal.math.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:1842)
+at java.base/jdk.internal.math.FloatingDecimal.parseDouble(FloatingDecimal.java:110)
+at java.base/java.lang.Double.parseDouble(Double.java:549)
+at org.weatherComparision.testcases.WeatherDataComparisionTest.compareWindSpeed(WeatherDataComparisionTest.java:180)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:821)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
+at org.testng.TestRunner.privateRun(TestRunner.java:767)
+at org.testng.TestRunner.run(TestRunner.java:588)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1214)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1136)
+at org.testng.TestNG.runSuites(TestNG.java:1066)
+at org.testng.TestNG.run(TestNG.java:1034)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NumberFormatException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- compareWindSpeed -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:org.weatherComparision.testcases.WeatherDataComparisionTest@19bb07ed]" started-at="2020-07-20T08:51:37 IST" name="setup" finished-at="2020-07-20T08:51:37 IST" duration-ms="15" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="compareWindSpeed(java.lang.String)[pri:0, instance:org.weatherComparision.testcases.WeatherDataComparisionTest@19bb07ed]" started-at="2020-07-20T08:51:37 IST" name="compareWindSpeed" data-provider="getCities" finished-at="2020-07-20T08:51:37 IST" duration-ms="5" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Alwar]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NumberFormatException">
+            <message>
+              <![CDATA[empty String]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NumberFormatException: empty String
+at java.base/jdk.internal.math.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:1842)
+at java.base/jdk.internal.math.FloatingDecimal.parseDouble(FloatingDecimal.java:110)
+at java.base/java.lang.Double.parseDouble(Double.java:549)
+at org.weatherComparision.testcases.WeatherDataComparisionTest.compareWindSpeed(WeatherDataComparisionTest.java:180)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:821)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
+at org.testng.TestRunner.privateRun(TestRunner.java:767)
+at org.testng.TestRunner.run(TestRunner.java:588)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1214)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1136)
+at org.testng.TestNG.runSuites(TestNG.java:1066)
+at org.testng.TestNG.run(TestNG.java:1034)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NumberFormatException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- compareWindSpeed -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:org.weatherComparision.testcases.WeatherDataComparisionTest@19bb07ed]" started-at="2020-07-20T08:51:37 IST" name="setup" finished-at="2020-07-20T08:51:37 IST" duration-ms="11" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="compareWindSpeed(java.lang.String)[pri:0, instance:org.weatherComparision.testcases.WeatherDataComparisionTest@19bb07ed]" started-at="2020-07-20T08:51:37 IST" name="compareWindSpeed" data-provider="getCities" finished-at="2020-07-20T08:51:37 IST" duration-ms="1" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Imphal]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NumberFormatException">
+            <message>
+              <![CDATA[empty String]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NumberFormatException: empty String
+at java.base/jdk.internal.math.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:1842)
+at java.base/jdk.internal.math.FloatingDecimal.parseDouble(FloatingDecimal.java:110)
+at java.base/java.lang.Double.parseDouble(Double.java:549)
+at org.weatherComparision.testcases.WeatherDataComparisionTest.compareWindSpeed(WeatherDataComparisionTest.java:180)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:821)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
+at org.testng.TestRunner.privateRun(TestRunner.java:767)
+at org.testng.TestRunner.run(TestRunner.java:588)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1214)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1136)
+at org.testng.TestNG.runSuites(TestNG.java:1066)
+at org.testng.TestNG.run(TestNG.java:1034)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NumberFormatException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- compareWindSpeed -->
+      </class> <!-- org.weatherComparision.testcases.WeatherDataComparisionTest -->
+      <class name="org.openweathermap.testcases.WeatherDataOWM">
+        <test-method is-config="true" signature="setup()[pri:0, instance:org.openweathermap.testcases.WeatherDataOWM@e056f20]" started-at="2020-07-20T08:47:23 IST" name="setup" finished-at="2020-07-20T08:47:23 IST" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testOpenWeatherMapData(java.lang.String)[pri:0, instance:org.openweathermap.testcases.WeatherDataOWM@e056f20]" started-at="2020-07-20T08:47:23 IST" name="testOpenWeatherMapData" data-provider="getCities" finished-at="2020-07-20T08:47:28 IST" duration-ms="4698" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Lucknow]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testOpenWeatherMapData -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:org.openweathermap.testcases.WeatherDataOWM@e056f20]" started-at="2020-07-20T08:47:28 IST" name="setup" finished-at="2020-07-20T08:47:28 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testOpenWeatherMapData(java.lang.String)[pri:0, instance:org.openweathermap.testcases.WeatherDataOWM@e056f20]" started-at="2020-07-20T08:47:28 IST" name="testOpenWeatherMapData" data-provider="getCities" finished-at="2020-07-20T08:47:28 IST" duration-ms="794" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Bhilai]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testOpenWeatherMapData -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:org.openweathermap.testcases.WeatherDataOWM@e056f20]" started-at="2020-07-20T08:47:28 IST" name="setup" finished-at="2020-07-20T08:47:28 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testOpenWeatherMapData(java.lang.String)[pri:0, instance:org.openweathermap.testcases.WeatherDataOWM@e056f20]" started-at="2020-07-20T08:47:28 IST" name="testOpenWeatherMapData" data-provider="getCities" finished-at="2020-07-20T08:47:29 IST" duration-ms="704" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Ajmer]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testOpenWeatherMapData -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:org.openweathermap.testcases.WeatherDataOWM@e056f20]" started-at="2020-07-20T08:47:29 IST" name="setup" finished-at="2020-07-20T08:47:29 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testOpenWeatherMapData(java.lang.String)[pri:0, instance:org.openweathermap.testcases.WeatherDataOWM@e056f20]" started-at="2020-07-20T08:47:29 IST" name="testOpenWeatherMapData" data-provider="getCities" finished-at="2020-07-20T08:47:30 IST" duration-ms="677" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Patna]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testOpenWeatherMapData -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:org.openweathermap.testcases.WeatherDataOWM@e056f20]" started-at="2020-07-20T08:47:30 IST" name="setup" finished-at="2020-07-20T08:47:30 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testOpenWeatherMapData(java.lang.String)[pri:0, instance:org.openweathermap.testcases.WeatherDataOWM@e056f20]" started-at="2020-07-20T08:47:30 IST" name="testOpenWeatherMapData" data-provider="getCities" finished-at="2020-07-20T08:47:31 IST" duration-ms="727" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Alwar]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testOpenWeatherMapData -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:org.openweathermap.testcases.WeatherDataOWM@e056f20]" started-at="2020-07-20T08:47:31 IST" name="setup" finished-at="2020-07-20T08:47:31 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testOpenWeatherMapData(java.lang.String)[pri:0, instance:org.openweathermap.testcases.WeatherDataOWM@e056f20]" started-at="2020-07-20T08:47:31 IST" name="testOpenWeatherMapData" data-provider="getCities" finished-at="2020-07-20T08:47:31 IST" duration-ms="622" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Imphal]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testOpenWeatherMapData -->
+      </class> <!-- org.openweathermap.testcases.WeatherDataOWM -->
+      <class name="com.ndtv.testcases.WeatherPageTest">
+        <test-method is-config="true" signature="SetupPage()[pri:0, instance:com.ndtv.testcases.WeatherPageTest@4b0b0854]" started-at="2020-07-20T08:47:31 IST" name="SetupPage" finished-at="2020-07-20T08:47:42 IST" duration-ms="10607" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetupPage -->
+        <test-method signature="presenceOfCityInput()[pri:1, instance:com.ndtv.testcases.WeatherPageTest@4b0b0854]" started-at="2020-07-20T08:47:42 IST" name="presenceOfCityInput" finished-at="2020-07-20T08:47:42 IST" duration-ms="352" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- presenceOfCityInput -->
+        <test-method is-config="true" signature="houseKeeping(org.testng.ITestResult)[pri:0, instance:com.ndtv.testcases.WeatherPageTest@4b0b0854]" started-at="2020-07-20T08:47:42 IST" name="houseKeeping" finished-at="2020-07-20T08:47:43 IST" duration-ms="1129" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=presenceOfCityInput status=SUCCESS method=WeatherPageTest.presenceOfCityInput()[pri:1, instance:com.ndtv.testcases.WeatherPageTest@4b0b0854] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- houseKeeping -->
-      </class> <!-- com.weatherData.testcases.WeatherPageTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        <test-method is-config="true" signature="SetupPage()[pri:0, instance:com.ndtv.testcases.WeatherPageTest@4b0b0854]" started-at="2020-07-20T08:47:43 IST" name="SetupPage" finished-at="2020-07-20T08:47:53 IST" duration-ms="9950" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetupPage -->
+        <test-method signature="cityOnMapTest(java.lang.String)[pri:2, instance:com.ndtv.testcases.WeatherPageTest@4b0b0854]" started-at="2020-07-20T08:47:53 IST" name="cityOnMapTest" data-provider="getCities" finished-at="2020-07-20T08:47:54 IST" duration-ms="986" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Lucknow]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cityOnMapTest -->
+        <test-method is-config="true" signature="houseKeeping(org.testng.ITestResult)[pri:0, instance:com.ndtv.testcases.WeatherPageTest@4b0b0854]" started-at="2020-07-20T08:47:54 IST" name="houseKeeping" finished-at="2020-07-20T08:47:55 IST" duration-ms="1223" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=cityOnMapTest status=SUCCESS method=WeatherPageTest.cityOnMapTest(java.lang.String)[pri:2, instance:com.ndtv.testcases.WeatherPageTest@4b0b0854] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- houseKeeping -->
+        <test-method is-config="true" signature="SetupPage()[pri:0, instance:com.ndtv.testcases.WeatherPageTest@4b0b0854]" started-at="2020-07-20T08:47:55 IST" name="SetupPage" finished-at="2020-07-20T08:48:05 IST" duration-ms="9705" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetupPage -->
+        <test-method signature="cityOnMapTest(java.lang.String)[pri:2, instance:com.ndtv.testcases.WeatherPageTest@4b0b0854]" started-at="2020-07-20T08:48:05 IST" name="cityOnMapTest" data-provider="getCities" finished-at="2020-07-20T08:48:17 IST" duration-ms="11608" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Bhilai]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cityOnMapTest -->
+        <test-method is-config="true" signature="houseKeeping(org.testng.ITestResult)[pri:0, instance:com.ndtv.testcases.WeatherPageTest@4b0b0854]" started-at="2020-07-20T08:48:17 IST" name="houseKeeping" finished-at="2020-07-20T08:48:18 IST" duration-ms="1069" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=cityOnMapTest status=SUCCESS method=WeatherPageTest.cityOnMapTest(java.lang.String)[pri:2, instance:com.ndtv.testcases.WeatherPageTest@4b0b0854] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- houseKeeping -->
+        <test-method is-config="true" signature="SetupPage()[pri:0, instance:com.ndtv.testcases.WeatherPageTest@4b0b0854]" started-at="2020-07-20T08:48:18 IST" name="SetupPage" finished-at="2020-07-20T08:48:28 IST" duration-ms="10189" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetupPage -->
+        <test-method signature="cityOnMapTest(java.lang.String)[pri:2, instance:com.ndtv.testcases.WeatherPageTest@4b0b0854]" started-at="2020-07-20T08:48:28 IST" name="cityOnMapTest" data-provider="getCities" finished-at="2020-07-20T08:48:39 IST" duration-ms="11310" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Ajmer]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cityOnMapTest -->
+        <test-method is-config="true" signature="houseKeeping(org.testng.ITestResult)[pri:0, instance:com.ndtv.testcases.WeatherPageTest@4b0b0854]" started-at="2020-07-20T08:48:39 IST" name="houseKeeping" finished-at="2020-07-20T08:48:40 IST" duration-ms="1056" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=cityOnMapTest status=SUCCESS method=WeatherPageTest.cityOnMapTest(java.lang.String)[pri:2, instance:com.ndtv.testcases.WeatherPageTest@4b0b0854] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- houseKeeping -->
+        <test-method is-config="true" signature="SetupPage()[pri:0, instance:com.ndtv.testcases.WeatherPageTest@4b0b0854]" started-at="2020-07-20T08:48:40 IST" name="SetupPage" finished-at="2020-07-20T08:48:50 IST" duration-ms="10075" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetupPage -->
+        <test-method signature="cityOnMapTest(java.lang.String)[pri:2, instance:com.ndtv.testcases.WeatherPageTest@4b0b0854]" started-at="2020-07-20T08:48:50 IST" name="cityOnMapTest" data-provider="getCities" finished-at="2020-07-20T08:48:51 IST" duration-ms="884" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Patna]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cityOnMapTest -->
+        <test-method is-config="true" signature="houseKeeping(org.testng.ITestResult)[pri:0, instance:com.ndtv.testcases.WeatherPageTest@4b0b0854]" started-at="2020-07-20T08:48:51 IST" name="houseKeeping" finished-at="2020-07-20T08:48:53 IST" duration-ms="1536" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=cityOnMapTest status=SUCCESS method=WeatherPageTest.cityOnMapTest(java.lang.String)[pri:2, instance:com.ndtv.testcases.WeatherPageTest@4b0b0854] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- houseKeeping -->
+        <test-method is-config="true" signature="SetupPage()[pri:0, instance:com.ndtv.testcases.WeatherPageTest@4b0b0854]" started-at="2020-07-20T08:48:53 IST" name="SetupPage" finished-at="2020-07-20T08:49:03 IST" duration-ms="9950" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetupPage -->
+        <test-method signature="cityOnMapTest(java.lang.String)[pri:2, instance:com.ndtv.testcases.WeatherPageTest@4b0b0854]" started-at="2020-07-20T08:49:03 IST" name="cityOnMapTest" data-provider="getCities" finished-at="2020-07-20T08:49:14 IST" duration-ms="11338" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Alwar]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cityOnMapTest -->
+        <test-method is-config="true" signature="houseKeeping(org.testng.ITestResult)[pri:0, instance:com.ndtv.testcases.WeatherPageTest@4b0b0854]" started-at="2020-07-20T08:49:14 IST" name="houseKeeping" finished-at="2020-07-20T08:49:15 IST" duration-ms="992" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=cityOnMapTest status=SUCCESS method=WeatherPageTest.cityOnMapTest(java.lang.String)[pri:2, instance:com.ndtv.testcases.WeatherPageTest@4b0b0854] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- houseKeeping -->
+        <test-method is-config="true" signature="SetupPage()[pri:0, instance:com.ndtv.testcases.WeatherPageTest@4b0b0854]" started-at="2020-07-20T08:49:15 IST" name="SetupPage" finished-at="2020-07-20T08:49:25 IST" duration-ms="10155" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetupPage -->
+        <test-method signature="cityOnMapTest(java.lang.String)[pri:2, instance:com.ndtv.testcases.WeatherPageTest@4b0b0854]" started-at="2020-07-20T08:49:25 IST" name="cityOnMapTest" data-provider="getCities" finished-at="2020-07-20T08:49:37 IST" duration-ms="11510" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Imphal]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cityOnMapTest -->
+        <test-method is-config="true" signature="houseKeeping(org.testng.ITestResult)[pri:0, instance:com.ndtv.testcases.WeatherPageTest@4b0b0854]" started-at="2020-07-20T08:49:37 IST" name="houseKeeping" finished-at="2020-07-20T08:49:38 IST" duration-ms="933" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=cityOnMapTest status=SUCCESS method=WeatherPageTest.cityOnMapTest(java.lang.String)[pri:2, instance:com.ndtv.testcases.WeatherPageTest@4b0b0854] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- houseKeeping -->
+        <test-method is-config="true" signature="SetupPage()[pri:0, instance:com.ndtv.testcases.WeatherPageTest@4b0b0854]" started-at="2020-07-20T08:49:38 IST" name="SetupPage" finished-at="2020-07-20T08:49:49 IST" duration-ms="11103" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetupPage -->
+        <test-method signature="collectDataTest(java.lang.String)[pri:3, instance:com.ndtv.testcases.WeatherPageTest@4b0b0854]" started-at="2020-07-20T08:49:49 IST" name="collectDataTest" data-provider="getCities" finished-at="2020-07-20T08:49:50 IST" duration-ms="1357" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Lucknow]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- collectDataTest -->
+        <test-method is-config="true" signature="houseKeeping(org.testng.ITestResult)[pri:0, instance:com.ndtv.testcases.WeatherPageTest@4b0b0854]" started-at="2020-07-20T08:49:50 IST" name="houseKeeping" finished-at="2020-07-20T08:49:52 IST" duration-ms="1519" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=collectDataTest status=SUCCESS method=WeatherPageTest.collectDataTest(java.lang.String)[pri:3, instance:com.ndtv.testcases.WeatherPageTest@4b0b0854] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- houseKeeping -->
+        <test-method is-config="true" signature="SetupPage()[pri:0, instance:com.ndtv.testcases.WeatherPageTest@4b0b0854]" started-at="2020-07-20T08:49:52 IST" name="SetupPage" finished-at="2020-07-20T08:50:02 IST" duration-ms="9850" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetupPage -->
+        <test-method signature="collectDataTest(java.lang.String)[pri:3, instance:com.ndtv.testcases.WeatherPageTest@4b0b0854]" started-at="2020-07-20T08:50:02 IST" name="collectDataTest" data-provider="getCities" finished-at="2020-07-20T08:50:13 IST" duration-ms="11161" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Bhilai]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- collectDataTest -->
+        <test-method is-config="true" signature="houseKeeping(org.testng.ITestResult)[pri:0, instance:com.ndtv.testcases.WeatherPageTest@4b0b0854]" started-at="2020-07-20T08:50:13 IST" name="houseKeeping" finished-at="2020-07-20T08:50:14 IST" duration-ms="1005" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=collectDataTest status=SUCCESS method=WeatherPageTest.collectDataTest(java.lang.String)[pri:3, instance:com.ndtv.testcases.WeatherPageTest@4b0b0854] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- houseKeeping -->
+        <test-method is-config="true" signature="SetupPage()[pri:0, instance:com.ndtv.testcases.WeatherPageTest@4b0b0854]" started-at="2020-07-20T08:50:14 IST" name="SetupPage" finished-at="2020-07-20T08:50:24 IST" duration-ms="10460" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetupPage -->
+        <test-method signature="collectDataTest(java.lang.String)[pri:3, instance:com.ndtv.testcases.WeatherPageTest@4b0b0854]" started-at="2020-07-20T08:50:24 IST" name="collectDataTest" data-provider="getCities" finished-at="2020-07-20T08:50:35 IST" duration-ms="10875" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Ajmer]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NumberFormatException">
+            <message>
+              <![CDATA[For input string: "u
+"]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NumberFormatException: For input string: "u
+"
+at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:68)
+at java.base/java.lang.Integer.parseInt(Integer.java:652)
+at java.base/java.lang.Integer.parseInt(Integer.java:770)
+at common.utils.CommonCalculations.returnTemperatureInDegreeC(CommonCalculations.java:15)
+at com.ndtv.testcases.WeatherPageTest.collectDataTest(WeatherPageTest.java:95)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:821)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
+at org.testng.TestRunner.privateRun(TestRunner.java:767)
+at org.testng.TestRunner.run(TestRunner.java:588)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1214)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1136)
+at org.testng.TestNG.runSuites(TestNG.java:1066)
+at org.testng.TestNG.run(TestNG.java:1034)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NumberFormatException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- collectDataTest -->
+        <test-method is-config="true" signature="houseKeeping(org.testng.ITestResult)[pri:0, instance:com.ndtv.testcases.WeatherPageTest@4b0b0854]" started-at="2020-07-20T08:50:35 IST" name="houseKeeping" finished-at="2020-07-20T08:50:38 IST" duration-ms="2625" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=collectDataTest status=FAILURE method=WeatherPageTest.collectDataTest(java.lang.String)[pri:3, instance:com.ndtv.testcases.WeatherPageTest@4b0b0854] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- houseKeeping -->
+        <test-method is-config="true" signature="SetupPage()[pri:0, instance:com.ndtv.testcases.WeatherPageTest@4b0b0854]" started-at="2020-07-20T08:50:38 IST" name="SetupPage" finished-at="2020-07-20T08:50:48 IST" duration-ms="9777" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetupPage -->
+        <test-method signature="collectDataTest(java.lang.String)[pri:3, instance:com.ndtv.testcases.WeatherPageTest@4b0b0854]" started-at="2020-07-20T08:50:48 IST" name="collectDataTest" data-provider="getCities" finished-at="2020-07-20T08:50:48 IST" duration-ms="886" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Patna]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NumberFormatException">
+            <message>
+              <![CDATA[For input string: "u
+"]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NumberFormatException: For input string: "u
+"
+at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:68)
+at java.base/java.lang.Integer.parseInt(Integer.java:652)
+at java.base/java.lang.Integer.parseInt(Integer.java:770)
+at common.utils.CommonCalculations.returnTemperatureInDegreeC(CommonCalculations.java:15)
+at com.ndtv.testcases.WeatherPageTest.collectDataTest(WeatherPageTest.java:95)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:821)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
+at org.testng.TestRunner.privateRun(TestRunner.java:767)
+at org.testng.TestRunner.run(TestRunner.java:588)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1214)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1136)
+at org.testng.TestNG.runSuites(TestNG.java:1066)
+at org.testng.TestNG.run(TestNG.java:1034)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NumberFormatException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- collectDataTest -->
+        <test-method is-config="true" signature="houseKeeping(org.testng.ITestResult)[pri:0, instance:com.ndtv.testcases.WeatherPageTest@4b0b0854]" started-at="2020-07-20T08:50:48 IST" name="houseKeeping" finished-at="2020-07-20T08:50:51 IST" duration-ms="2545" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=collectDataTest status=FAILURE method=WeatherPageTest.collectDataTest(java.lang.String)[pri:3, instance:com.ndtv.testcases.WeatherPageTest@4b0b0854] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- houseKeeping -->
+        <test-method is-config="true" signature="SetupPage()[pri:0, instance:com.ndtv.testcases.WeatherPageTest@4b0b0854]" started-at="2020-07-20T08:50:51 IST" name="SetupPage" finished-at="2020-07-20T08:51:01 IST" duration-ms="10260" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetupPage -->
+        <test-method signature="collectDataTest(java.lang.String)[pri:3, instance:com.ndtv.testcases.WeatherPageTest@4b0b0854]" started-at="2020-07-20T08:51:01 IST" name="collectDataTest" data-provider="getCities" finished-at="2020-07-20T08:51:13 IST" duration-ms="11379" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Alwar]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- collectDataTest -->
+        <test-method is-config="true" signature="houseKeeping(org.testng.ITestResult)[pri:0, instance:com.ndtv.testcases.WeatherPageTest@4b0b0854]" started-at="2020-07-20T08:51:13 IST" name="houseKeeping" finished-at="2020-07-20T08:51:14 IST" duration-ms="936" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=collectDataTest status=SUCCESS method=WeatherPageTest.collectDataTest(java.lang.String)[pri:3, instance:com.ndtv.testcases.WeatherPageTest@4b0b0854] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- houseKeeping -->
+        <test-method is-config="true" signature="SetupPage()[pri:0, instance:com.ndtv.testcases.WeatherPageTest@4b0b0854]" started-at="2020-07-20T08:51:14 IST" name="SetupPage" finished-at="2020-07-20T08:51:24 IST" duration-ms="10285" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetupPage -->
+        <test-method signature="collectDataTest(java.lang.String)[pri:3, instance:com.ndtv.testcases.WeatherPageTest@4b0b0854]" started-at="2020-07-20T08:51:24 IST" name="collectDataTest" data-provider="getCities" finished-at="2020-07-20T08:51:35 IST" duration-ms="11104" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Imphal]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- collectDataTest -->
+        <test-method is-config="true" signature="houseKeeping(org.testng.ITestResult)[pri:0, instance:com.ndtv.testcases.WeatherPageTest@4b0b0854]" started-at="2020-07-20T08:51:35 IST" name="houseKeeping" finished-at="2020-07-20T08:51:36 IST" duration-ms="1007" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=collectDataTest status=SUCCESS method=WeatherPageTest.collectDataTest(java.lang.String)[pri:3, instance:com.ndtv.testcases.WeatherPageTest@4b0b0854] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- houseKeeping -->
+      </class> <!-- com.ndtv.testcases.WeatherPageTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

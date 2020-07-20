@@ -17,10 +17,13 @@ public class EnterAllData extends BaseOpenWeatherMap {
 				CityNameGenerator.reader.getCellRowNum(listOfCities, "City", City), String.valueOf(arr.get(i)));
 		CityNameGenerator.reader.setCellData(listOfCities, "Humidity (OpenWeatherMap)",
 				CityNameGenerator.reader.getCellRowNum(listOfCities, "City", City), String.valueOf(arr.get(i + 1)));
-		CityNameGenerator.reader.setCellData(listOfCities, "Wind (OpenWeatherMap)",
-				CityNameGenerator.reader.getCellRowNum(listOfCities, "City", City), String.valueOf(arr.get(i + 2)));
+		/*
+		 * CityNameGenerator.reader.setCellData(listOfCities, "Wind (OpenWeatherMap)",
+		 * CityNameGenerator.reader.getCellRowNum(listOfCities, "City", City),
+		 * String.valueOf(arr.get(i + 2)));
+		 */
 		CityNameGenerator.reader.setCellData(listOfCities, "Weather Condition (OpenWeatherMap)",
-				CityNameGenerator.reader.getCellRowNum(listOfCities, "City", City), String.valueOf(arr.get(i + 3)));
+				CityNameGenerator.reader.getCellRowNum(listOfCities, "City", City), String.valueOf(arr.get(i + 2)));
 		
 
 	}
@@ -33,10 +36,13 @@ public class EnterAllData extends BaseOpenWeatherMap {
 				CityNameGenerator.reader.getCellRowNum(listOfCities, "City", City), String.valueOf(arr.get(i)));
 		CityNameGenerator.reader.setCellData(listOfCities, "Humidity (NDTV)",
 				CityNameGenerator.reader.getCellRowNum(listOfCities, "City", City), String.valueOf(arr.get(i + 1)));
-		CityNameGenerator.reader.setCellData(listOfCities, "Wind (NDTV)",
-				CityNameGenerator.reader.getCellRowNum(listOfCities, "City", City), String.valueOf(arr.get(i + 2)));
+		/*
+		 * CityNameGenerator.reader.setCellData(listOfCities, "Wind (NDTV)",
+		 * CityNameGenerator.reader.getCellRowNum(listOfCities, "City", City),
+		 * String.valueOf(arr.get(i + 2)));
+		 */
 		CityNameGenerator.reader.setCellData(listOfCities, "Weather Condition (NDTV)",
-				CityNameGenerator.reader.getCellRowNum(listOfCities, "City", City), String.valueOf(arr.get(i + 3)));
+				CityNameGenerator.reader.getCellRowNum(listOfCities, "City", City), String.valueOf(arr.get(i + 2)));
 
 	}
 

@@ -66,7 +66,7 @@ public class WeatherDataOWM extends BaseOpenWeatherMap{
 							.response();
 		
 		ArrayList<Object> cityWeatherData = new ArrayList<Object>();
-		dataEntryFlag = CityNameGenerator.reader.getRowCount("listOfCities"); //4
+		dataEntryFlag = CityNameGenerator.reader.getRowCount("listOfCities"); 
 		
 		System.out.println(response.asString());
 		df.setRoundingMode(RoundingMode.UP);
@@ -82,13 +82,15 @@ public class WeatherDataOWM extends BaseOpenWeatherMap{
 		humidity = currentHumidity(response);
 		cityWeatherData.add(humidity);
 		
-		windSpeed = ((Number)windCondition(response)).doubleValue();
-		cityWeatherData.add(df.format(windSpeed));
+		/*
+		 * windSpeed = ((Number)windCondition(response)).doubleValue();
+		 * cityWeatherData.add(df.format(windSpeed));
+		 */
 		
 		weatherCondition = weatherCondition(response);
 		cityWeatherData.add(weatherCondition);
 		
-		System.out.println("Data for: Temp | Humidity (%) | Wind Speed (m/s) | Weather Conditions");
+		System.out.println("Data for: Temp | Humidity (%)  | Weather Conditions");
 
 		for(Object ob : cityWeatherData) {
 			System.out.print("| ["+String.valueOf(ob)+"] |");

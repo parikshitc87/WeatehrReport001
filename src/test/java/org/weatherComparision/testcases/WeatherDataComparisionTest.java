@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Iterator;
 
 import org.apache.commons.math3.analysis.interpolation.DividedDifferenceInterpolator;
+import org.apache.groovy.parser.antlr4.GroovyParser.LogicalAndExprAltContext;
 import org.openweathermap.BaseOpenWeatherMap;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
@@ -51,8 +52,6 @@ public class WeatherDataComparisionTest extends BaseOpenWeatherMap {
 		
 		Double variance = CommUtils.Variance_difference;
 
-		// System.out.println("Variance Percentage is : " + variancePercent);
-
 		if (variance >= differenceInTemp) {
 			boolean flag = true;
 			reader.setCellData(listOfCities, "LiveTemp Compare Result",
@@ -66,7 +65,10 @@ public class WeatherDataComparisionTest extends BaseOpenWeatherMap {
 		}
 
 	}
-
+// - Logic - Both portals are using differnt terms to define same weather conditions when it comes to ~Cloudy.
+	//so using 2 arrays as a mini dictionary for cloudy or hazy comparison with other portal
+	//Remaining weather conditions were matched without dictionary
+	
 	@Test(dataProvider = "getCities")
 	public void compareWeatherConditions(String City) {
 		int weatherSimilarityMeter = 0;
@@ -111,11 +113,14 @@ public class WeatherDataComparisionTest extends BaseOpenWeatherMap {
 		if (weatherConditionOWM.contains("rain") && weatherConditionNDTV.contains("rain")) 
 			weatherSimilarityMeter++;
 		
-
+		System.out.println("Weather conditions on OpenWeatherMap.org :");
 		System.out.println(weatherConditionOWM);
+		System.out.println("Weather conditions on NDTV.com :");
 		System.out.print(weatherConditionNDTV);
 		System.out.println("Flag count -- " + weatherSimilarityMeter);
-
+		
+		
+		
 		if (weatherSimilarityMeter == 0) {
 			reader.setCellData(listOfCities, "Weather Condition Compare Result",
 					reader.getCellRowNum(listOfCities, "City", City),
@@ -134,7 +139,8 @@ public class WeatherDataComparisionTest extends BaseOpenWeatherMap {
 		}
 
 	}
-
+	
+	//This compares humidity within x% range
 	@Test(dataProvider = "getCities")
 	public void compareHumidity(String City) {
 		double humidityOWM = Integer.parseInt(reader.getCellData(listOfCities, "Humidity (OpenWeatherMap)",
@@ -154,7 +160,6 @@ public class WeatherDataComparisionTest extends BaseOpenWeatherMap {
 		
 		System.out.println(percentOWM+"***"+percentNDTV);
 		
-//		/int variancePercent = CommUtils.Humidity_Variance_Percent;
 		
 		if (percentOWM <= CommUtils.Humidity_Variance_Percent || percentNDTV <= CommUtils.Humidity_Variance_Percent) {
 			boolean flag = true;
@@ -169,6 +174,7 @@ public class WeatherDataComparisionTest extends BaseOpenWeatherMap {
 		}
 	}
 	
+	//Compares on which portal it shows more windy or wind speed
 	@Test(dataProvider = "getCities")
 	public void compareWindSpeed(String City) {
 		double windSpeedOWM = Double.parseDouble(reader.getCellData(listOfCities, "Wind (OpenWeatherMap)", reader.getCellRowNum(listOfCities, "City", City)));
@@ -187,7 +193,7 @@ public class WeatherDataComparisionTest extends BaseOpenWeatherMap {
 		
 	}
 
-	@DataProvider // will return cities names as String one by one
+	@DataProvider // will return cities names as String
 	public Iterator<String> getCities() {
 		ArrayList<String> it = CityNameGenerator.storeData();
 		return it.iterator();

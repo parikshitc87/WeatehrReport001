@@ -22,9 +22,10 @@ public class BaseOpenWeatherMap {
 		prop.load(inputStream);
 		Session_ID = prop.getProperty("APIkey");
 		//Session_ID = Payload.returnKey(); // in case the APIkey is not static and needs to be generated
-												//every time, a key-generator util class "Payload"
-												//and method returnKey could be		
-												//created to generate a new key every time or for every test 
+												//every time, a key-generator utility class say "Payload"
+												//and method "returnKey()" could be		
+												//created to generate a new key every time 
+												//a test method starts execution   
 		
 		
 	}

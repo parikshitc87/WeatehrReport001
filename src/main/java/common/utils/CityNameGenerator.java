@@ -19,7 +19,7 @@ public class CityNameGenerator {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-
+		//this will read sheet's first column from second row to get all the cities
 		for (int rowNum = 2; rowNum <= reader.getRowCount("listOfCities"); rowNum++) {
 
 			String City = reader.getCellData("listOfCities", "City", rowNum);

@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 15 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,8 +39,8 @@
       <div class="suite">
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
-            <a href="#" panel-name="suite-Default_suite" class="navigator-link">
-              <span class="suite-name border-passed">Default suite</span>
+            <a href="#" panel-name="suite-Suite" class="navigator-link">
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -50,37 +50,37 @@
             <div class="suite-section-content">
               <ul>
                 <li>
-                  <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\Cp\AppData\Local\Temp\testng-eclipse-268229063\testng-customsuite.xml</span>
+                  <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
+                    <span>C:\Users\Cp\eclipse-workspace\WeatherReport0001\testng.ProblemStatement.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="testlist-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="testlist-Suite" class="navigator-link ">
                     <span class="test-stats">1 test</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="group-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="group-Suite" class="navigator-link ">
                     <span>0 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="times-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="times-Suite" class="navigator-link ">
                     <span>Times</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="reporter-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="reporter-Suite" class="navigator-link ">
                     <span>Reporter output</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="ignored-methods-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="ignored-methods-Suite" class="navigator-link ">
                     <span>Ignored methods</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="chronological-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="chronological-Suite" class="navigator-link ">
                     <span>Chronological view</span>
                   </a> <!-- navigator-link  -->
                 </li>
@@ -93,46 +93,240 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">6 methods,   6 passed</span>
+                    <span class="method-stats">43 methods, 15 failed,   28 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.ndtv.testcases.WeatherPageTest" class="method navigator-link" hash-for-method="collectDataTest(Ajmer)">collectDataTest(Ajmer)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.ndtv.testcases.WeatherPageTest" class="method navigator-link" hash-for-method="collectDataTest(Patna)">collectDataTest(Patna)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="org.weatherComparision.testcases.WeatherDataComparisionTest" class="method navigator-link" hash-for-method="compareHumidity(Patna)">compareHumidity(Patna)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="org.weatherComparision.testcases.WeatherDataComparisionTest" class="method navigator-link" hash-for-method="compareHumidity(Lucknow)">compareHumidity(Lucknow)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="org.weatherComparision.testcases.WeatherDataComparisionTest" class="method navigator-link" hash-for-method="compareHumidity(Ajmer)">compareHumidity(Ajmer)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="org.weatherComparision.testcases.WeatherDataComparisionTest" class="method navigator-link" hash-for-method="compareHumidity(Alwar)">compareHumidity(Alwar)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="org.weatherComparision.testcases.WeatherDataComparisionTest" class="method navigator-link" hash-for-method="compareLiveTemps(Patna)">compareLiveTemps(Patna)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="org.weatherComparision.testcases.WeatherDataComparisionTest" class="method navigator-link" hash-for-method="compareLiveTemps(Alwar)">compareLiveTemps(Alwar)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="org.weatherComparision.testcases.WeatherDataComparisionTest" class="method navigator-link" hash-for-method="compareLiveTemps(Ajmer)">compareLiveTemps(Ajmer)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="org.weatherComparision.testcases.WeatherDataComparisionTest" class="method navigator-link" hash-for-method="compareWindSpeed(Lucknow)">compareWindSpeed(Lucknow)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="org.weatherComparision.testcases.WeatherDataComparisionTest" class="method navigator-link" hash-for-method="compareWindSpeed(Bhilai)">compareWindSpeed(Bhilai)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="org.weatherComparision.testcases.WeatherDataComparisionTest" class="method navigator-link" hash-for-method="compareWindSpeed(Alwar)">compareWindSpeed(Alwar)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="org.weatherComparision.testcases.WeatherDataComparisionTest" class="method navigator-link" hash-for-method="compareWindSpeed(Patna)">compareWindSpeed(Patna)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="org.weatherComparision.testcases.WeatherDataComparisionTest" class="method navigator-link" hash-for-method="compareWindSpeed(Ajmer)">compareWindSpeed(Ajmer)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="org.weatherComparision.testcases.WeatherDataComparisionTest" class="method navigator-link" hash-for-method="compareWindSpeed(Imphal)">compareWindSpeed(Imphal)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
                     <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Default_suite" class="hide-methods passed suite-Default_suite"> (hide)</a> <!-- hide-methods passed suite-Default_suite -->
-                      <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
                     </span>
-                    <div class="method-list-content passed suite-Default_suite">
+                    <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="com.weatherData.testcases.WeatherPageTest" class="method navigator-link" hash-for-method="enterCityNameTest(Kolkata)">enterCityNameTest(Kolkata)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="com.ndtv.testcases.WeatherPageTest" class="method navigator-link" hash-for-method="cityOnMapTest(Lucknow)">cityOnMapTest(Lucknow)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="com.weatherData.testcases.WeatherPageTest" class="method navigator-link" hash-for-method="enterCityNameTest(Lucknow)">enterCityNameTest(Lucknow)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="com.ndtv.testcases.WeatherPageTest" class="method navigator-link" hash-for-method="cityOnMapTest(Bhilai)">cityOnMapTest(Bhilai)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="com.weatherData.testcases.WeatherPageTest" class="method navigator-link" hash-for-method="enterCityNameTest(Bhopal)">enterCityNameTest(Bhopal)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="com.ndtv.testcases.WeatherPageTest" class="method navigator-link" hash-for-method="cityOnMapTest(Imphal)">cityOnMapTest(Imphal)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="com.weatherData.testcases.WeatherPageTest" class="method navigator-link" hash-for-method="enterCityNameTest(Coimbatore)">enterCityNameTest(Coimbatore)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="com.ndtv.testcases.WeatherPageTest" class="method navigator-link" hash-for-method="cityOnMapTest(Alwar)">cityOnMapTest(Alwar)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="com.weatherData.testcases.WeatherPageTest" class="method navigator-link" hash-for-method="enterCityNameTest(Mumbai)">enterCityNameTest(Mumbai)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="com.ndtv.testcases.WeatherPageTest" class="method navigator-link" hash-for-method="cityOnMapTest(Patna)">cityOnMapTest(Patna)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="com.weatherData.testcases.WeatherPageTest" class="method navigator-link" hash-for-method="enterCityNameTest(Ajmer)">enterCityNameTest(Ajmer)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="com.ndtv.testcases.WeatherPageTest" class="method navigator-link" hash-for-method="cityOnMapTest(Ajmer)">cityOnMapTest(Ajmer)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content passed suite-Default_suite -->
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.ndtv.testcases.WeatherPageTest" class="method navigator-link" hash-for-method="collectDataTest(Lucknow)">collectDataTest(Lucknow)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.ndtv.testcases.WeatherPageTest" class="method navigator-link" hash-for-method="collectDataTest(Bhilai)">collectDataTest(Bhilai)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.ndtv.testcases.WeatherPageTest" class="method navigator-link" hash-for-method="collectDataTest(Alwar)">collectDataTest(Alwar)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.ndtv.testcases.WeatherPageTest" class="method navigator-link" hash-for-method="collectDataTest(Imphal)">collectDataTest(Imphal)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="org.weatherComparision.testcases.WeatherDataComparisionTest" class="method navigator-link" hash-for-method="compareHumidity(Bhilai)">compareHumidity(Bhilai)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="org.weatherComparision.testcases.WeatherDataComparisionTest" class="method navigator-link" hash-for-method="compareHumidity(Imphal)">compareHumidity(Imphal)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="org.weatherComparision.testcases.WeatherDataComparisionTest" class="method navigator-link" hash-for-method="compareLiveTemps(Lucknow)">compareLiveTemps(Lucknow)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="org.weatherComparision.testcases.WeatherDataComparisionTest" class="method navigator-link" hash-for-method="compareLiveTemps(Imphal)">compareLiveTemps(Imphal)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="org.weatherComparision.testcases.WeatherDataComparisionTest" class="method navigator-link" hash-for-method="compareLiveTemps(Bhilai)">compareLiveTemps(Bhilai)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="org.weatherComparision.testcases.WeatherDataComparisionTest" class="method navigator-link" hash-for-method="compareWeatherConditions(Patna)">compareWeatherConditions(Patna)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="org.weatherComparision.testcases.WeatherDataComparisionTest" class="method navigator-link" hash-for-method="compareWeatherConditions(Bhilai)">compareWeatherConditions(Bhilai)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="org.weatherComparision.testcases.WeatherDataComparisionTest" class="method navigator-link" hash-for-method="compareWeatherConditions(Imphal)">compareWeatherConditions(Imphal)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="org.weatherComparision.testcases.WeatherDataComparisionTest" class="method navigator-link" hash-for-method="compareWeatherConditions(Ajmer)">compareWeatherConditions(Ajmer)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="org.weatherComparision.testcases.WeatherDataComparisionTest" class="method navigator-link" hash-for-method="compareWeatherConditions(Alwar)">compareWeatherConditions(Alwar)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="org.weatherComparision.testcases.WeatherDataComparisionTest" class="method navigator-link" hash-for-method="compareWeatherConditions(Lucknow)">compareWeatherConditions(Lucknow)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.ndtv.testcases.WeatherPageTest" class="method navigator-link" hash-for-method="presenceOfCityInput">presenceOfCityInput</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="org.openweathermap.testcases.WeatherDataOWM" class="method navigator-link" hash-for-method="testOpenWeatherMapData(Patna)">testOpenWeatherMapData(Patna)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="org.openweathermap.testcases.WeatherDataOWM" class="method navigator-link" hash-for-method="testOpenWeatherMapData(Lucknow)">testOpenWeatherMapData(Lucknow)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="org.openweathermap.testcases.WeatherDataOWM" class="method navigator-link" hash-for-method="testOpenWeatherMapData(Imphal)">testOpenWeatherMapData(Imphal)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="org.openweathermap.testcases.WeatherDataOWM" class="method navigator-link" hash-for-method="testOpenWeatherMapData(Ajmer)">testOpenWeatherMapData(Ajmer)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="org.openweathermap.testcases.WeatherDataOWM" class="method navigator-link" hash-for-method="testOpenWeatherMapData(Alwar)">testOpenWeatherMapData(Alwar)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="org.openweathermap.testcases.WeatherDataOWM" class="method navigator-link" hash-for-method="testOpenWeatherMapData(Bhilai)">testOpenWeatherMapData(Bhilai)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -143,256 +337,1195 @@
     </div> <!-- navigator-root -->
     <div class="wrapper">
       <div class="main-panel-root">
-        <div panel-name="suite-Default_suite" class="panel Default_suite">
-          <div class="suite-Default_suite-class-passed">
+        <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.weatherData.testcases.WeatherPageTest</span>
+              <img src="failed.png"/>
+              <span class="class-name">com.ndtv.testcases.WeatherPageTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="enterCityNameTest(Kolkata)">
-                  </a> <!-- enterCityNameTest(Kolkata) -->
-                  <span class="method-name">enterCityNameTest</span>
-                  <span class="parameters">(Kolkata)</span>
+                  <a name="collectDataTest(Ajmer)">
+                  </a> <!-- collectDataTest(Ajmer) -->
+                  <span class="method-name">collectDataTest</span>
+                  <span class="parameters">(Ajmer)</span>
+                  <div class="stack-trace">java.lang.NumberFormatException: For input string: &quot;u
+&quot;
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:68)
+	at java.base/java.lang.Integer.parseInt(Integer.java:652)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at common.utils.CommonCalculations.returnTemperatureInDegreeC(CommonCalculations.java:15)
+	at com.ndtv.testcases.WeatherPageTest.collectDataTest(WeatherPageTest.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="enterCityNameTest(Lucknow)">
-                  </a> <!-- enterCityNameTest(Lucknow) -->
-                  <span class="method-name">enterCityNameTest</span>
+                  <a name="collectDataTest(Patna)">
+                  </a> <!-- collectDataTest(Patna) -->
+                  <span class="method-name">collectDataTest</span>
+                  <span class="parameters">(Patna)</span>
+                  <div class="stack-trace">java.lang.NumberFormatException: For input string: &quot;u
+&quot;
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:68)
+	at java.base/java.lang.Integer.parseInt(Integer.java:652)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at common.utils.CommonCalculations.returnTemperatureInDegreeC(CommonCalculations.java:15)
+	at com.ndtv.testcases.WeatherPageTest.collectDataTest(WeatherPageTest.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">org.weatherComparision.testcases.WeatherDataComparisionTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="compareHumidity(Patna)">
+                  </a> <!-- compareHumidity(Patna) -->
+                  <span class="method-name">compareHumidity</span>
+                  <span class="parameters">(Patna)</span>
+                  <div class="stack-trace">java.lang.NumberFormatException: For input string: &quot;&quot;
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:68)
+	at java.base/java.lang.Integer.parseInt(Integer.java:662)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at org.weatherComparision.testcases.WeatherDataComparisionTest.compareHumidity(WeatherDataComparisionTest.java:148)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="compareHumidity(Lucknow)">
+                  </a> <!-- compareHumidity(Lucknow) -->
+                  <span class="method-name">compareHumidity</span>
+                  <span class="parameters">(Lucknow)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at org.weatherComparision.testcases.WeatherDataComparisionTest.compareHumidity(WeatherDataComparisionTest.java:173)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="compareHumidity(Ajmer)">
+                  </a> <!-- compareHumidity(Ajmer) -->
+                  <span class="method-name">compareHumidity</span>
+                  <span class="parameters">(Ajmer)</span>
+                  <div class="stack-trace">java.lang.NumberFormatException: For input string: &quot;&quot;
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:68)
+	at java.base/java.lang.Integer.parseInt(Integer.java:662)
+	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+	at org.weatherComparision.testcases.WeatherDataComparisionTest.compareHumidity(WeatherDataComparisionTest.java:148)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="compareHumidity(Alwar)">
+                  </a> <!-- compareHumidity(Alwar) -->
+                  <span class="method-name">compareHumidity</span>
+                  <span class="parameters">(Alwar)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at org.weatherComparision.testcases.WeatherDataComparisionTest.compareHumidity(WeatherDataComparisionTest.java:173)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="compareLiveTemps(Patna)">
+                  </a> <!-- compareLiveTemps(Patna) -->
+                  <span class="method-name">compareLiveTemps</span>
+                  <span class="parameters">(Patna)</span>
+                  <div class="stack-trace">java.lang.NumberFormatException: empty String
+	at java.base/jdk.internal.math.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:1842)
+	at java.base/jdk.internal.math.FloatingDecimal.parseDouble(FloatingDecimal.java:110)
+	at java.base/java.lang.Double.parseDouble(Double.java:549)
+	at org.weatherComparision.testcases.WeatherDataComparisionTest.compareLiveTemps(WeatherDataComparisionTest.java:48)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="compareLiveTemps(Alwar)">
+                  </a> <!-- compareLiveTemps(Alwar) -->
+                  <span class="method-name">compareLiveTemps</span>
+                  <span class="parameters">(Alwar)</span>
+                  <div class="stack-trace">java.lang.AssertionError: Temperatues are NOT within Variance Range expected [true] but found [false]
+	at org.weatherComparision.testcases.WeatherDataComparisionTest.compareLiveTemps(WeatherDataComparisionTest.java:64)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="compareLiveTemps(Ajmer)">
+                  </a> <!-- compareLiveTemps(Ajmer) -->
+                  <span class="method-name">compareLiveTemps</span>
+                  <span class="parameters">(Ajmer)</span>
+                  <div class="stack-trace">java.lang.NumberFormatException: empty String
+	at java.base/jdk.internal.math.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:1842)
+	at java.base/jdk.internal.math.FloatingDecimal.parseDouble(FloatingDecimal.java:110)
+	at java.base/java.lang.Double.parseDouble(Double.java:549)
+	at org.weatherComparision.testcases.WeatherDataComparisionTest.compareLiveTemps(WeatherDataComparisionTest.java:48)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="compareWindSpeed(Lucknow)">
+                  </a> <!-- compareWindSpeed(Lucknow) -->
+                  <span class="method-name">compareWindSpeed</span>
+                  <span class="parameters">(Lucknow)</span>
+                  <div class="stack-trace">java.lang.NumberFormatException: empty String
+	at java.base/jdk.internal.math.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:1842)
+	at java.base/jdk.internal.math.FloatingDecimal.parseDouble(FloatingDecimal.java:110)
+	at java.base/java.lang.Double.parseDouble(Double.java:549)
+	at org.weatherComparision.testcases.WeatherDataComparisionTest.compareWindSpeed(WeatherDataComparisionTest.java:180)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="compareWindSpeed(Bhilai)">
+                  </a> <!-- compareWindSpeed(Bhilai) -->
+                  <span class="method-name">compareWindSpeed</span>
+                  <span class="parameters">(Bhilai)</span>
+                  <div class="stack-trace">java.lang.NumberFormatException: empty String
+	at java.base/jdk.internal.math.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:1842)
+	at java.base/jdk.internal.math.FloatingDecimal.parseDouble(FloatingDecimal.java:110)
+	at java.base/java.lang.Double.parseDouble(Double.java:549)
+	at org.weatherComparision.testcases.WeatherDataComparisionTest.compareWindSpeed(WeatherDataComparisionTest.java:180)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="compareWindSpeed(Alwar)">
+                  </a> <!-- compareWindSpeed(Alwar) -->
+                  <span class="method-name">compareWindSpeed</span>
+                  <span class="parameters">(Alwar)</span>
+                  <div class="stack-trace">java.lang.NumberFormatException: empty String
+	at java.base/jdk.internal.math.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:1842)
+	at java.base/jdk.internal.math.FloatingDecimal.parseDouble(FloatingDecimal.java:110)
+	at java.base/java.lang.Double.parseDouble(Double.java:549)
+	at org.weatherComparision.testcases.WeatherDataComparisionTest.compareWindSpeed(WeatherDataComparisionTest.java:180)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="compareWindSpeed(Patna)">
+                  </a> <!-- compareWindSpeed(Patna) -->
+                  <span class="method-name">compareWindSpeed</span>
+                  <span class="parameters">(Patna)</span>
+                  <div class="stack-trace">java.lang.NumberFormatException: empty String
+	at java.base/jdk.internal.math.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:1842)
+	at java.base/jdk.internal.math.FloatingDecimal.parseDouble(FloatingDecimal.java:110)
+	at java.base/java.lang.Double.parseDouble(Double.java:549)
+	at org.weatherComparision.testcases.WeatherDataComparisionTest.compareWindSpeed(WeatherDataComparisionTest.java:180)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="compareWindSpeed(Ajmer)">
+                  </a> <!-- compareWindSpeed(Ajmer) -->
+                  <span class="method-name">compareWindSpeed</span>
+                  <span class="parameters">(Ajmer)</span>
+                  <div class="stack-trace">java.lang.NumberFormatException: empty String
+	at java.base/jdk.internal.math.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:1842)
+	at java.base/jdk.internal.math.FloatingDecimal.parseDouble(FloatingDecimal.java:110)
+	at java.base/java.lang.Double.parseDouble(Double.java:549)
+	at org.weatherComparision.testcases.WeatherDataComparisionTest.compareWindSpeed(WeatherDataComparisionTest.java:180)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="compareWindSpeed(Imphal)">
+                  </a> <!-- compareWindSpeed(Imphal) -->
+                  <span class="method-name">compareWindSpeed</span>
+                  <span class="parameters">(Imphal)</span>
+                  <div class="stack-trace">java.lang.NumberFormatException: empty String
+	at java.base/jdk.internal.math.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:1842)
+	at java.base/jdk.internal.math.FloatingDecimal.parseDouble(FloatingDecimal.java:110)
+	at java.base/java.lang.Double.parseDouble(Double.java:549)
+	at org.weatherComparision.testcases.WeatherDataComparisionTest.compareWindSpeed(WeatherDataComparisionTest.java:180)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.ndtv.testcases.WeatherPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="cityOnMapTest(Lucknow)">
+                  </a> <!-- cityOnMapTest(Lucknow) -->
+                  <span class="method-name">cityOnMapTest</span>
                   <span class="parameters">(Lucknow)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="enterCityNameTest(Bhopal)">
-                  </a> <!-- enterCityNameTest(Bhopal) -->
-                  <span class="method-name">enterCityNameTest</span>
-                  <span class="parameters">(Bhopal)</span>
+                  <a name="cityOnMapTest(Bhilai)">
+                  </a> <!-- cityOnMapTest(Bhilai) -->
+                  <span class="method-name">cityOnMapTest</span>
+                  <span class="parameters">(Bhilai)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="enterCityNameTest(Coimbatore)">
-                  </a> <!-- enterCityNameTest(Coimbatore) -->
-                  <span class="method-name">enterCityNameTest</span>
-                  <span class="parameters">(Coimbatore)</span>
+                  <a name="cityOnMapTest(Imphal)">
+                  </a> <!-- cityOnMapTest(Imphal) -->
+                  <span class="method-name">cityOnMapTest</span>
+                  <span class="parameters">(Imphal)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="enterCityNameTest(Mumbai)">
-                  </a> <!-- enterCityNameTest(Mumbai) -->
-                  <span class="method-name">enterCityNameTest</span>
-                  <span class="parameters">(Mumbai)</span>
+                  <a name="cityOnMapTest(Alwar)">
+                  </a> <!-- cityOnMapTest(Alwar) -->
+                  <span class="method-name">cityOnMapTest</span>
+                  <span class="parameters">(Alwar)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="enterCityNameTest(Ajmer)">
-                  </a> <!-- enterCityNameTest(Ajmer) -->
-                  <span class="method-name">enterCityNameTest</span>
+                  <a name="cityOnMapTest(Patna)">
+                  </a> <!-- cityOnMapTest(Patna) -->
+                  <span class="method-name">cityOnMapTest</span>
+                  <span class="parameters">(Patna)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="cityOnMapTest(Ajmer)">
+                  </a> <!-- cityOnMapTest(Ajmer) -->
+                  <span class="method-name">cityOnMapTest</span>
                   <span class="parameters">(Ajmer)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="collectDataTest(Lucknow)">
+                  </a> <!-- collectDataTest(Lucknow) -->
+                  <span class="method-name">collectDataTest</span>
+                  <span class="parameters">(Lucknow)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="collectDataTest(Bhilai)">
+                  </a> <!-- collectDataTest(Bhilai) -->
+                  <span class="method-name">collectDataTest</span>
+                  <span class="parameters">(Bhilai)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="collectDataTest(Alwar)">
+                  </a> <!-- collectDataTest(Alwar) -->
+                  <span class="method-name">collectDataTest</span>
+                  <span class="parameters">(Alwar)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="collectDataTest(Imphal)">
+                  </a> <!-- collectDataTest(Imphal) -->
+                  <span class="method-name">collectDataTest</span>
+                  <span class="parameters">(Imphal)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="presenceOfCityInput">
+                  </a> <!-- presenceOfCityInput -->
+                  <span class="method-name">presenceOfCityInput</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Default_suite-class-passed -->
-        </div> <!-- panel Default_suite -->
-        <div panel-name="test-xml-Default_suite" class="panel">
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">org.openweathermap.testcases.WeatherDataOWM</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testOpenWeatherMapData(Patna)">
+                  </a> <!-- testOpenWeatherMapData(Patna) -->
+                  <span class="method-name">testOpenWeatherMapData</span>
+                  <span class="parameters">(Patna)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testOpenWeatherMapData(Lucknow)">
+                  </a> <!-- testOpenWeatherMapData(Lucknow) -->
+                  <span class="method-name">testOpenWeatherMapData</span>
+                  <span class="parameters">(Lucknow)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testOpenWeatherMapData(Imphal)">
+                  </a> <!-- testOpenWeatherMapData(Imphal) -->
+                  <span class="method-name">testOpenWeatherMapData</span>
+                  <span class="parameters">(Imphal)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testOpenWeatherMapData(Ajmer)">
+                  </a> <!-- testOpenWeatherMapData(Ajmer) -->
+                  <span class="method-name">testOpenWeatherMapData</span>
+                  <span class="parameters">(Ajmer)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testOpenWeatherMapData(Alwar)">
+                  </a> <!-- testOpenWeatherMapData(Alwar) -->
+                  <span class="method-name">testOpenWeatherMapData</span>
+                  <span class="parameters">(Alwar)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testOpenWeatherMapData(Bhilai)">
+                  </a> <!-- testOpenWeatherMapData(Bhilai) -->
+                  <span class="method-name">testOpenWeatherMapData</span>
+                  <span class="parameters">(Bhilai)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">org.weatherComparision.testcases.WeatherDataComparisionTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="compareHumidity(Bhilai)">
+                  </a> <!-- compareHumidity(Bhilai) -->
+                  <span class="method-name">compareHumidity</span>
+                  <span class="parameters">(Bhilai)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="compareHumidity(Imphal)">
+                  </a> <!-- compareHumidity(Imphal) -->
+                  <span class="method-name">compareHumidity</span>
+                  <span class="parameters">(Imphal)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="compareLiveTemps(Lucknow)">
+                  </a> <!-- compareLiveTemps(Lucknow) -->
+                  <span class="method-name">compareLiveTemps</span>
+                  <span class="parameters">(Lucknow)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="compareLiveTemps(Imphal)">
+                  </a> <!-- compareLiveTemps(Imphal) -->
+                  <span class="method-name">compareLiveTemps</span>
+                  <span class="parameters">(Imphal)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="compareLiveTemps(Bhilai)">
+                  </a> <!-- compareLiveTemps(Bhilai) -->
+                  <span class="method-name">compareLiveTemps</span>
+                  <span class="parameters">(Bhilai)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="compareWeatherConditions(Patna)">
+                  </a> <!-- compareWeatherConditions(Patna) -->
+                  <span class="method-name">compareWeatherConditions</span>
+                  <span class="parameters">(Patna)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="compareWeatherConditions(Bhilai)">
+                  </a> <!-- compareWeatherConditions(Bhilai) -->
+                  <span class="method-name">compareWeatherConditions</span>
+                  <span class="parameters">(Bhilai)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="compareWeatherConditions(Imphal)">
+                  </a> <!-- compareWeatherConditions(Imphal) -->
+                  <span class="method-name">compareWeatherConditions</span>
+                  <span class="parameters">(Imphal)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="compareWeatherConditions(Ajmer)">
+                  </a> <!-- compareWeatherConditions(Ajmer) -->
+                  <span class="method-name">compareWeatherConditions</span>
+                  <span class="parameters">(Ajmer)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="compareWeatherConditions(Alwar)">
+                  </a> <!-- compareWeatherConditions(Alwar) -->
+                  <span class="method-name">compareWeatherConditions</span>
+                  <span class="parameters">(Alwar)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="compareWeatherConditions(Lucknow)">
+                  </a> <!-- compareWeatherConditions(Lucknow) -->
+                  <span class="method-name">compareWeatherConditions</span>
+                  <span class="parameters">(Lucknow)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+        </div> <!-- panel Suite -->
+        <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Cp\AppData\Local\Temp\testng-eclipse-268229063\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\Cp\eclipse-workspace\WeatherReport0001\testng.ProblemStatement.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
+&lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.weatherData.testcases.WeatherPageTest&quot;&gt;
-        &lt;methods&gt;
-          &lt;include name=&quot;enterCityNameTest&quot;/&gt;
-        &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- com.weatherData.testcases.WeatherPageTest --&gt;
+      &lt;class name=&quot;org.openweathermap.testcases.WeatherDataOWM&quot;/&gt;
+      &lt;class name=&quot;com.ndtv.testcases.WeatherPageTest&quot;/&gt;
+      &lt;class name=&quot;org.weatherComparision.testcases.WeatherDataComparisionTest&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Default test --&gt;
-&lt;/suite&gt; &lt;!-- Default suite --&gt;
+  &lt;/test&gt; &lt;!-- Test --&gt;
+&lt;/suite&gt; &lt;!-- Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="testlist-Default_suite" class="panel">
+        <div panel-name="testlist-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Tests for Default suite</span>
+            <span class="header-content">Tests for Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Default test (1 class)</span>
+                <span class="test-name">Test (3 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="group-Default_suite" class="panel">
+        <div panel-name="group-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Groups for Default suite</span>
+            <span class="header-content">Groups for Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="times-Default_suite" class="panel">
+        <div panel-name="times-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Times for Default suite</span>
+            <span class="header-content">Times for Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="times-div">
               <script type="text/javascript">
-suiteTableInitFunctions.push('tableData_Default_suite');
-function tableData_Default_suite() {
+suiteTableInitFunctions.push('tableData_Suite');
+function tableData_Suite() {
 var data = new google.visualization.DataTable();
 data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(6);
+data.addRows(43);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'enterCityNameTest')
-data.setCell(0, 2, 'com.weatherData.testcases.WeatherPageTest')
-data.setCell(0, 3, 12869);
+data.setCell(0, 1, 'cityOnMapTest')
+data.setCell(0, 2, 'com.ndtv.testcases.WeatherPageTest')
+data.setCell(0, 3, 11608);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'enterCityNameTest')
-data.setCell(1, 2, 'com.weatherData.testcases.WeatherPageTest')
-data.setCell(1, 3, 12544);
+data.setCell(1, 1, 'cityOnMapTest')
+data.setCell(1, 2, 'com.ndtv.testcases.WeatherPageTest')
+data.setCell(1, 3, 11510);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'enterCityNameTest')
-data.setCell(2, 2, 'com.weatherData.testcases.WeatherPageTest')
-data.setCell(2, 3, 1047);
+data.setCell(2, 1, 'collectDataTest')
+data.setCell(2, 2, 'com.ndtv.testcases.WeatherPageTest')
+data.setCell(2, 3, 11379);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'enterCityNameTest')
-data.setCell(3, 2, 'com.weatherData.testcases.WeatherPageTest')
-data.setCell(3, 3, 981);
+data.setCell(3, 1, 'cityOnMapTest')
+data.setCell(3, 2, 'com.ndtv.testcases.WeatherPageTest')
+data.setCell(3, 3, 11338);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'enterCityNameTest')
-data.setCell(4, 2, 'com.weatherData.testcases.WeatherPageTest')
-data.setCell(4, 3, 906);
+data.setCell(4, 1, 'cityOnMapTest')
+data.setCell(4, 2, 'com.ndtv.testcases.WeatherPageTest')
+data.setCell(4, 3, 11310);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'enterCityNameTest')
-data.setCell(5, 2, 'com.weatherData.testcases.WeatherPageTest')
-data.setCell(5, 3, 719);
-window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
+data.setCell(5, 1, 'collectDataTest')
+data.setCell(5, 2, 'com.ndtv.testcases.WeatherPageTest')
+data.setCell(5, 3, 11161);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'collectDataTest')
+data.setCell(6, 2, 'com.ndtv.testcases.WeatherPageTest')
+data.setCell(6, 3, 11104);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'collectDataTest')
+data.setCell(7, 2, 'com.ndtv.testcases.WeatherPageTest')
+data.setCell(7, 3, 10875);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'testOpenWeatherMapData')
+data.setCell(8, 2, 'org.openweathermap.testcases.WeatherDataOWM')
+data.setCell(8, 3, 4698);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'collectDataTest')
+data.setCell(9, 2, 'com.ndtv.testcases.WeatherPageTest')
+data.setCell(9, 3, 1357);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'cityOnMapTest')
+data.setCell(10, 2, 'com.ndtv.testcases.WeatherPageTest')
+data.setCell(10, 3, 986);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'collectDataTest')
+data.setCell(11, 2, 'com.ndtv.testcases.WeatherPageTest')
+data.setCell(11, 3, 886);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'cityOnMapTest')
+data.setCell(12, 2, 'com.ndtv.testcases.WeatherPageTest')
+data.setCell(12, 3, 884);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'testOpenWeatherMapData')
+data.setCell(13, 2, 'org.openweathermap.testcases.WeatherDataOWM')
+data.setCell(13, 3, 794);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'testOpenWeatherMapData')
+data.setCell(14, 2, 'org.openweathermap.testcases.WeatherDataOWM')
+data.setCell(14, 3, 727);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'testOpenWeatherMapData')
+data.setCell(15, 2, 'org.openweathermap.testcases.WeatherDataOWM')
+data.setCell(15, 3, 704);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'testOpenWeatherMapData')
+data.setCell(16, 2, 'org.openweathermap.testcases.WeatherDataOWM')
+data.setCell(16, 3, 677);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'testOpenWeatherMapData')
+data.setCell(17, 2, 'org.openweathermap.testcases.WeatherDataOWM')
+data.setCell(17, 3, 622);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'presenceOfCityInput')
+data.setCell(18, 2, 'com.ndtv.testcases.WeatherPageTest')
+data.setCell(18, 3, 352);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'compareWeatherConditions')
+data.setCell(19, 2, 'org.weatherComparision.testcases.WeatherDataComparisionTest')
+data.setCell(19, 3, 51);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'compareWeatherConditions')
+data.setCell(20, 2, 'org.weatherComparision.testcases.WeatherDataComparisionTest')
+data.setCell(20, 3, 47);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'compareHumidity')
+data.setCell(21, 2, 'org.weatherComparision.testcases.WeatherDataComparisionTest')
+data.setCell(21, 3, 45);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'compareLiveTemps')
+data.setCell(22, 2, 'org.weatherComparision.testcases.WeatherDataComparisionTest')
+data.setCell(22, 3, 40);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'compareLiveTemps')
+data.setCell(23, 2, 'org.weatherComparision.testcases.WeatherDataComparisionTest')
+data.setCell(23, 3, 39);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'compareWeatherConditions')
+data.setCell(24, 2, 'org.weatherComparision.testcases.WeatherDataComparisionTest')
+data.setCell(24, 3, 38);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'compareHumidity')
+data.setCell(25, 2, 'org.weatherComparision.testcases.WeatherDataComparisionTest')
+data.setCell(25, 3, 38);
+data.setCell(26, 0, 26)
+data.setCell(26, 1, 'compareLiveTemps')
+data.setCell(26, 2, 'org.weatherComparision.testcases.WeatherDataComparisionTest')
+data.setCell(26, 3, 37);
+data.setCell(27, 0, 27)
+data.setCell(27, 1, 'compareLiveTemps')
+data.setCell(27, 2, 'org.weatherComparision.testcases.WeatherDataComparisionTest')
+data.setCell(27, 3, 35);
+data.setCell(28, 0, 28)
+data.setCell(28, 1, 'compareWeatherConditions')
+data.setCell(28, 2, 'org.weatherComparision.testcases.WeatherDataComparisionTest')
+data.setCell(28, 3, 32);
+data.setCell(29, 0, 29)
+data.setCell(29, 1, 'compareHumidity')
+data.setCell(29, 2, 'org.weatherComparision.testcases.WeatherDataComparisionTest')
+data.setCell(29, 3, 30);
+data.setCell(30, 0, 30)
+data.setCell(30, 1, 'compareWeatherConditions')
+data.setCell(30, 2, 'org.weatherComparision.testcases.WeatherDataComparisionTest')
+data.setCell(30, 3, 28);
+data.setCell(31, 0, 31)
+data.setCell(31, 1, 'compareHumidity')
+data.setCell(31, 2, 'org.weatherComparision.testcases.WeatherDataComparisionTest')
+data.setCell(31, 3, 27);
+data.setCell(32, 0, 32)
+data.setCell(32, 1, 'compareWeatherConditions')
+data.setCell(32, 2, 'org.weatherComparision.testcases.WeatherDataComparisionTest')
+data.setCell(32, 3, 24);
+data.setCell(33, 0, 33)
+data.setCell(33, 1, 'compareWindSpeed')
+data.setCell(33, 2, 'org.weatherComparision.testcases.WeatherDataComparisionTest')
+data.setCell(33, 3, 5);
+data.setCell(34, 0, 34)
+data.setCell(34, 1, 'compareLiveTemps')
+data.setCell(34, 2, 'org.weatherComparision.testcases.WeatherDataComparisionTest')
+data.setCell(34, 3, 4);
+data.setCell(35, 0, 35)
+data.setCell(35, 1, 'compareHumidity')
+data.setCell(35, 2, 'org.weatherComparision.testcases.WeatherDataComparisionTest')
+data.setCell(35, 3, 4);
+data.setCell(36, 0, 36)
+data.setCell(36, 1, 'compareWindSpeed')
+data.setCell(36, 2, 'org.weatherComparision.testcases.WeatherDataComparisionTest')
+data.setCell(36, 3, 3);
+data.setCell(37, 0, 37)
+data.setCell(37, 1, 'compareLiveTemps')
+data.setCell(37, 2, 'org.weatherComparision.testcases.WeatherDataComparisionTest')
+data.setCell(37, 3, 2);
+data.setCell(38, 0, 38)
+data.setCell(38, 1, 'compareWindSpeed')
+data.setCell(38, 2, 'org.weatherComparision.testcases.WeatherDataComparisionTest')
+data.setCell(38, 3, 2);
+data.setCell(39, 0, 39)
+data.setCell(39, 1, 'compareWindSpeed')
+data.setCell(39, 2, 'org.weatherComparision.testcases.WeatherDataComparisionTest')
+data.setCell(39, 3, 1);
+data.setCell(40, 0, 40)
+data.setCell(40, 1, 'compareHumidity')
+data.setCell(40, 2, 'org.weatherComparision.testcases.WeatherDataComparisionTest')
+data.setCell(40, 3, 1);
+data.setCell(41, 0, 41)
+data.setCell(41, 1, 'compareWindSpeed')
+data.setCell(41, 2, 'org.weatherComparision.testcases.WeatherDataComparisionTest')
+data.setCell(41, 3, 1);
+data.setCell(42, 0, 42)
+data.setCell(42, 1, 'compareWindSpeed')
+data.setCell(42, 2, 'org.weatherComparision.testcases.WeatherDataComparisionTest')
+data.setCell(42, 3, 1);
+window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 29 seconds</span>
-              <div id="times-div-Default_suite">
-              </div> <!-- times-div-Default_suite -->
+              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <div id="times-div-Suite">
+              </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="reporter-Default_suite" class="panel">
+        <div panel-name="reporter-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Reporter output for Default suite</span>
+            <span class="header-content">Reporter output for Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="ignored-methods-Default_suite" class="panel">
+        <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">2 ignored methods</span>
+            <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">com.weatherData.testcases.WeatherPageTest</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">presenceOfCityInput</span>
-                <br/>
-                <span class="ignored-method-name">collectDataTest</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="chronological-Default_suite" class="panel">
+        <div panel-name="chronological-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">Methods in chronological order</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.weatherData.testcases.WeatherPageTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">org.openweathermap.testcases.WeatherDataOWM</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
-                <span class="method-name">SetupPage</span>
+                <span class="method-name">setup</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">enterCityNameTest(Lucknow)</span>
-                <span class="method-start">10720 ms</span>
+                <span class="method-name">testOpenWeatherMapData(Lucknow)</span>
+                <span class="method-start">5 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">4707 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testOpenWeatherMapData(Bhilai)</span>
+                <span class="method-start">4708 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">5503 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testOpenWeatherMapData(Ajmer)</span>
+                <span class="method-start">5504 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">6210 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testOpenWeatherMapData(Patna)</span>
+                <span class="method-start">6211 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">6889 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testOpenWeatherMapData(Alwar)</span>
+                <span class="method-start">6891 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">7658 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testOpenWeatherMapData(Imphal)</span>
+                <span class="method-start">7658 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.ndtv.testcases.WeatherPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">SetupPage</span>
+                <span class="method-start">8285 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">presenceOfCityInput</span>
+                <span class="method-start">18892 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">houseKeeping</span>
-                <span class="method-start">11704 ms</span>
+                <span class="method-name">houseKeeping([TestResult name=presenceOfCityInput status=SUCCESS method=WeatherPageTest.presenceOfCityInput()[pri...)</span>
+                <span class="method-start">19248 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">SetupPage</span>
-                <span class="method-start">13016 ms</span>
+                <span class="method-start">20406 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">enterCityNameTest(Bhopal)</span>
-                <span class="method-start">23251 ms</span>
+                <span class="method-name">cityOnMapTest(Lucknow)</span>
+                <span class="method-start">30356 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">houseKeeping</span>
-                <span class="method-start">24299 ms</span>
+                <span class="method-name">houseKeeping([TestResult name=cityOnMapTest status=SUCCESS method=WeatherPageTest.cityOnMapTest(java.lang.String)...)</span>
+                <span class="method-start">31343 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">SetupPage</span>
-                <span class="method-start">25163 ms</span>
+                <span class="method-start">32566 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">enterCityNameTest(Ajmer)</span>
-                <span class="method-start">35515 ms</span>
+                <span class="method-name">cityOnMapTest(Bhilai)</span>
+                <span class="method-start">42271 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">houseKeeping</span>
-                <span class="method-start">48061 ms</span>
+                <span class="method-name">houseKeeping([TestResult name=cityOnMapTest status=SUCCESS method=WeatherPageTest.cityOnMapTest(java.lang.String)...)</span>
+                <span class="method-start">53880 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">SetupPage</span>
-                <span class="method-start">48989 ms</span>
+                <span class="method-start">54949 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">enterCityNameTest(Coimbatore)</span>
-                <span class="method-start">58810 ms</span>
+                <span class="method-name">cityOnMapTest(Ajmer)</span>
+                <span class="method-start">65138 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">houseKeeping</span>
-                <span class="method-start">71682 ms</span>
+                <span class="method-name">houseKeeping([TestResult name=cityOnMapTest status=SUCCESS method=WeatherPageTest.cityOnMapTest(java.lang.String)...)</span>
+                <span class="method-start">76449 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">SetupPage</span>
-                <span class="method-start">72511 ms</span>
+                <span class="method-start">77505 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">enterCityNameTest(Mumbai)</span>
-                <span class="method-start">82685 ms</span>
+                <span class="method-name">cityOnMapTest(Patna)</span>
+                <span class="method-start">87580 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">houseKeeping</span>
-                <span class="method-start">83405 ms</span>
+                <span class="method-name">houseKeeping([TestResult name=cityOnMapTest status=SUCCESS method=WeatherPageTest.cityOnMapTest(java.lang.String)...)</span>
+                <span class="method-start">88464 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">SetupPage</span>
-                <span class="method-start">84670 ms</span>
+                <span class="method-start">90000 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">enterCityNameTest(Kolkata)</span>
-                <span class="method-start">94454 ms</span>
+                <span class="method-name">cityOnMapTest(Alwar)</span>
+                <span class="method-start">99950 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">houseKeeping</span>
-                <span class="method-start">95361 ms</span>
+                <span class="method-name">houseKeeping([TestResult name=cityOnMapTest status=SUCCESS method=WeatherPageTest.cityOnMapTest(java.lang.String)...)</span>
+                <span class="method-start">111289 ms</span>
               </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">SetupPage</span>
+                <span class="method-start">112281 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">cityOnMapTest(Imphal)</span>
+                <span class="method-start">122436 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">houseKeeping([TestResult name=cityOnMapTest status=SUCCESS method=WeatherPageTest.cityOnMapTest(java.lang.String)...)</span>
+                <span class="method-start">133947 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">SetupPage</span>
+                <span class="method-start">134896 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">collectDataTest(Lucknow)</span>
+                <span class="method-start">145999 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">houseKeeping([TestResult name=collectDataTest status=SUCCESS method=WeatherPageTest.collectDataTest(java.lang.Str...)</span>
+                <span class="method-start">147357 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">SetupPage</span>
+                <span class="method-start">148876 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">collectDataTest(Bhilai)</span>
+                <span class="method-start">158726 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">houseKeeping([TestResult name=collectDataTest status=SUCCESS method=WeatherPageTest.collectDataTest(java.lang.Str...)</span>
+                <span class="method-start">169888 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">SetupPage</span>
+                <span class="method-start">170893 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">collectDataTest(Ajmer)</span>
+                <span class="method-start">181353 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">houseKeeping([TestResult name=collectDataTest status=FAILURE method=WeatherPageTest.collectDataTest(java.lang.Str...)</span>
+                <span class="method-start">192231 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">SetupPage</span>
+                <span class="method-start">194856 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">collectDataTest(Patna)</span>
+                <span class="method-start">204633 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">houseKeeping([TestResult name=collectDataTest status=FAILURE method=WeatherPageTest.collectDataTest(java.lang.Str...)</span>
+                <span class="method-start">205522 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">SetupPage</span>
+                <span class="method-start">208067 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">collectDataTest(Alwar)</span>
+                <span class="method-start">218327 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">houseKeeping([TestResult name=collectDataTest status=SUCCESS method=WeatherPageTest.collectDataTest(java.lang.Str...)</span>
+                <span class="method-start">229711 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">SetupPage</span>
+                <span class="method-start">230648 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">collectDataTest(Imphal)</span>
+                <span class="method-start">240934 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">houseKeeping([TestResult name=collectDataTest status=SUCCESS method=WeatherPageTest.collectDataTest(java.lang.Str...)</span>
+                <span class="method-start">252039 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">org.weatherComparision.testcases.WeatherDataComparisionTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">253061 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">compareHumidity(Lucknow)</span>
+                <span class="method-start">253073 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">253104 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">compareHumidity(Bhilai)</span>
+                <span class="method-start">253123 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">253172 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">compareHumidity(Ajmer)</span>
+                <span class="method-start">253206 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">253209 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">compareHumidity(Patna)</span>
+                <span class="method-start">253235 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">253242 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">compareHumidity(Alwar)</span>
+                <span class="method-start">253253 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">253295 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">compareHumidity(Imphal)</span>
+                <span class="method-start">253326 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">253374 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">compareLiveTemps(Lucknow)</span>
+                <span class="method-start">253394 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">253435 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">compareLiveTemps(Bhilai)</span>
+                <span class="method-start">253482 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">253522 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">compareLiveTemps(Ajmer)</span>
+                <span class="method-start">253557 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">253577 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">compareLiveTemps(Patna)</span>
+                <span class="method-start">253611 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">253618 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">compareLiveTemps(Alwar)</span>
+                <span class="method-start">253635 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">253676 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">compareLiveTemps(Imphal)</span>
+                <span class="method-start">253693 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">253752 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">compareWeatherConditions(Lucknow)</span>
+                <span class="method-start">253764 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">253816 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">compareWeatherConditions(Bhilai)</span>
+                <span class="method-start">253831 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">253863 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">compareWeatherConditions(Ajmer)</span>
+                <span class="method-start">253890 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">253931 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">compareWeatherConditions(Patna)</span>
+                <span class="method-start">253959 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">254007 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">compareWeatherConditions(Alwar)</span>
+                <span class="method-start">254027 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">254052 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">compareWeatherConditions(Imphal)</span>
+                <span class="method-start">254073 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">254137 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">compareWindSpeed(Lucknow)</span>
+                <span class="method-start">254154 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">254158 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">compareWindSpeed(Bhilai)</span>
+                <span class="method-start">254171 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">254177 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">compareWindSpeed(Ajmer)</span>
+                <span class="method-start">254195 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">254205 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">compareWindSpeed(Patna)</span>
+                <span class="method-start">254220 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">254223 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">compareWindSpeed(Alwar)</span>
+                <span class="method-start">254238 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">254252 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">compareWindSpeed(Imphal)</span>
+                <span class="method-start">254263 ms</span>
+              </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->
