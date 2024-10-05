@@ -1,17 +1,22 @@
+/*
 package logger.WebEvent;
+*/
 /*************************************** PURPOSE **********************************
 
  - This class implements the WebDriverEventListener, which is included under events.
  
-  */
+  *//*
 
+
+*/
+/*
 import java.io.IOException;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.events.WebDriverEventListener;
+//.openqa.selenium.support.events.WebDriverEventListener;
 
 import com.ndtv.base.BaseNDTV;
 
@@ -71,9 +76,15 @@ public class WebEventListener extends BaseNDTV implements WebDriverEventListener
 		System.out.println("Found Element By : " + by.toString());
 	}
 
-	/*
+	*//*
+
+*/
+/*
 	 * non overridden methods of WebListener class
-	 */
+	 *//*
+*/
+/*
+
 	public void beforeScript(String script, WebDriver driver) {
 	}
 
@@ -150,4 +161,6 @@ public class WebEventListener extends BaseNDTV implements WebDriverEventListener
 		
 	}
 
-}
+*//*
+
+}*/

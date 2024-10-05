@@ -34,7 +34,7 @@ public class HomePageTest extends BaseNDTV{
 	@Test (priority = 2)
 	public void presenceOfWeatherLinkTest() { //Tests presence of weather link for further navigation
 		homepageNdtv.OpenExtendedMenu();
-		Assert.assertEquals(homepageNdtv.WeatherLinkPresent(), true); 
+        Assert.assertTrue(homepageNdtv.WeatherLinkPresent());
 	}
 	
 	@Test (priority = 3)

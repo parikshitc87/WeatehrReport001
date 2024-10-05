@@ -6,6 +6,7 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.time.Duration;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.Properties;
@@ -18,7 +19,7 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.support.events.EventFiringWebDriver;
+//import org.openqa.selenium.support.events.EventFiringWebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.ITestResult;
@@ -28,15 +29,15 @@ import org.testng.annotations.DataProvider;
 
 import common.utils.CityNameGenerator;
 import common.utils.CommUtils;
-import logger.WebEvent.*;
+//import logger.WebEvent.*;
 
 public class BaseNDTV {
 
 	public static WebDriver driver;
 	public static Properties prop; // to get the Environmental Properties like Browser and URLs
 	public static String listOfCities = "listOfCities";
-	public static EventFiringWebDriver e_driver;
-	public static WebEventListener eventListener;
+	//public static EventFiringWebDriver e_driver;
+	//public static WebEventListener eventListener;
 
 	public void Setup() {
 
@@ -57,12 +58,12 @@ public class BaseNDTV {
 
 		driver = new ChromeDriver();
 
-		e_driver = new EventFiringWebDriver(driver);
+	/*	e_driver = new EventFiringWebDriver(driver);
 		// Now create object of EventListerHandler to register it with
 		// EventFiringWebDriver
 		eventListener = new WebEventListener();
 		e_driver.register(eventListener);
-		driver = e_driver;
+		driver = e_driver;*/
 
 		driver.manage().timeouts().pageLoadTimeout(CommUtils.Page_LoadOut_Time, TimeUnit.SECONDS);
 		driver.manage().timeouts().implicitlyWait(CommUtils.Implicitely_Wait, TimeUnit.SECONDS);
@@ -73,12 +74,15 @@ public class BaseNDTV {
 	}
 
 	public static void sendKeys(WebDriver driver, WebElement element, int timeout, String City) {
-		new WebDriverWait(driver, timeout).until(ExpectedConditions.visibilityOf(element));
+		new WebDriverWait(driver, Duration.ofSeconds(timeout)).until(ExpectedConditions.visibilityOf(element));
 		element.sendKeys(City);
 	}
 
 	public static void clickOn(WebDriver driver, WebElement element, int timeout) {
-		new WebDriverWait(driver, timeout).until(ExpectedConditions.elementToBeClickable(element));
+		new WebDriverWait(driver, Duration.ofSeconds(timeout)).until(ExpectedConditions.elementToBeClickable(element));
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(timeout));
+
+
 		element.click();
 	}
 

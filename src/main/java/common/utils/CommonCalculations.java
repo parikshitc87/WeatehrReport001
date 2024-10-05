@@ -32,8 +32,7 @@ public class CommonCalculations {
 		
 	
 		// also divided  by 3.6 to get speed in m/s to match OpenWeatherMap wind speed unit (m/s)
-		String avgWindSpeedString = df.format(Double.parseDouble(str1)/3.6);
-		return avgWindSpeedString;
+        return df.format(Double.parseDouble(str1)/3.6);
 	}
 
 	public static String returnWeatherCondition(String str) {

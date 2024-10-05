@@ -15,7 +15,7 @@ import com.ndtv.base.BaseNDTV;
 import com.ndtv.pages.HomePageNDTV;
 import com.ndtv.pages.WeatherPageNDTV;
 
-import bsh.This;
+//import bsh.This;
 import common.utils.CityNameGenerator;
 import common.utils.CommonCalculations;
 import common.utils.EnterAllData;
@@ -40,13 +40,13 @@ public class WeatherPageTest extends BaseNDTV {
 
 	@Test(priority = 1)
 	public void presenceOfCityInput() { // to test if "Pin your city" present on page
-		Assert.assertEquals(weatherPageNdtv.cityInputFieldEnabled(), true);
+        Assert.assertTrue(weatherPageNdtv.cityInputFieldEnabled());
 	}
 
 	
 	// This will test Presence Of city on map and panel after clicking on city
 	@Test(dataProvider = "getCities", priority = 2)
-	public void cityOnMapTest(String City) throws Exception{ 
+	public void cityOnMapTest(String City) throws Exception{
 
 		if (weatherPageNdtv.presenceOfCityonList(City)) {
 			try {
@@ -57,25 +57,23 @@ public class WeatherPageTest extends BaseNDTV {
 				weatherPageNdtv.enterCityName(City);// By now framework knows on NDTV map test City is not displayed by
 													//default. So it enters City in lookup and selects it.
 				weatherPageNdtv.clickCityOnMap(City);// And this should bring up the weather pop-up 
-													// with weather informations in detail. Asserted right ahead.
+													// with weather information in detail. Asserted right ahead.
 			}
 		}
 
-		Assert.assertEquals(
-				(weatherPageNdtv.isCityOnMap(City) || driver
-						.findElement(By.xpath("*[@id='map_canvas' and contains(., '" + City + "')]")).isDisplayed()),
-				true); // verifies City's Presence on Map and if Weather panel opened 
+        Assert.assertTrue((weatherPageNdtv.isCityOnMap(City) || driver
+                .findElement(By.xpath("*[@id='map_canvas' and contains(., '" + City + "')]")).isDisplayed())); // verifies City's Presence on Map and if Weather panel opened
 	}
 
 	
 	//Asserts if the panel contains the temperature details + captures all weather related data and stores in excel sheet
 	@Test(dataProvider = "getCities", priority = 3) // (dependsOnMethods = { "enterCityNameTest" })
 	public void collectDataTest(String City) {
-		// This Arraylist will contain 3 informations - 
+		// This Arraylist will contain 3 information -
 		// LiveTemp, Humidity & Weather Conditions
 		ArrayList<Object> cityWeatherData = new ArrayList<Object>();
 		try {
-			weatherPageNdtv.clickCityOnMap(City); 
+			weatherPageNdtv.clickCityOnMap(City);
 
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
@@ -110,15 +108,14 @@ public class WeatherPageTest extends BaseNDTV {
 		cityWeatherData.add(weatherCondition);
 
 		for (Object object : cityWeatherData) {
-			System.out.println(String.valueOf(object));
+			//System.out.println(String.valueOf(object));
+			System.out.println(object);
 		}
 
 		// Enters 4 weather data points in the Excel sheet
 		EnterAllData.enterNDTVData(cityWeatherData, listOfCities, City);
 		//Asserts if the panel contains the temperature details
-		Assert.assertEquals((tempdatacollector.contains("Temp in Degrees: " + String.valueOf(tempInDegreeC))), true,
-				"Temperature data MISSING on weather pop up panel");
-
+        //Assert.assertTrue((tempdatacollector.contains("Temp in Degrees: " + String.valueOf(tempInDegreeC))), "Temperature data MISSING on weather pop up panel");
+		Assert.assertTrue((tempdatacollector.contains("Temp in Degrees: " + tempInDegreeC)), "Temperature data MISSING on weather pop up panel");
 	}
-
 }
