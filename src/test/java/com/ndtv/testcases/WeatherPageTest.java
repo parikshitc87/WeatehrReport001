@@ -15,7 +15,7 @@ import com.ndtv.base.BaseNDTV;
 import com.ndtv.pages.HomePageNDTV;
 import com.ndtv.pages.WeatherPageNDTV;
 
-import bsh.This;
+//import bsh.This;
 import common.utils.CityNameGenerator;
 import common.utils.CommonCalculations;
 import common.utils.EnterAllData;
@@ -61,10 +61,8 @@ public class WeatherPageTest extends BaseNDTV {
 			}
 		}
 
-		Assert.assertEquals(
-				(weatherPageNdtv.isCityOnMap(City) || driver
-						.findElement(By.xpath("*[@id='map_canvas' and contains(., '" + City + "')]")).isDisplayed()),
-				true); // verifies City's Presence on Map and if Weather panel opened 
+        Assert.assertTrue((weatherPageNdtv.isCityOnMap(City) || driver
+                .findElement(By.xpath("*[@id='map_canvas' and contains(., '" + City + "')]")).isDisplayed())); // verifies City's Presence on Map and if Weather panel opened
 	}
 
 	
