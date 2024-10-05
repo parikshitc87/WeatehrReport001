@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="141c98cb-a36a-4825-9ed5-f4f0cf0a9d72" name="Changes" comment="regular changes!!">
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ndtv/base/BaseNDTV.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ndtv/base/BaseNDTV.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ndtv/pages/WeatherPageNDTV.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ndtv/pages/WeatherPageNDTV.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/common/utils/CommonCalculations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/common/utils/CommonCalculations.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/logger/WebEvent/WebEventListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/logger/WebEvent/WebEventListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/drivers/chromedriver.exe" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/drivers/chromedriver.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/test/data/dataExcel.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/test/data/dataExcel.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/ndtv/testcases/HomePageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ndtv/testcases/HomePageTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/ndtv/testcases/WeatherPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ndtv/testcases/WeatherPageTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ndtv/base/BaseNDTV.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ndtv/base/BaseNDTV.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ndtv/pages/HomePageNDTV.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ndtv/pages/HomePageNDTV.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/ndtv/pages/WeatherPageNDTV.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ndtv/pages/WeatherPageNDTV.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/common/utils/CityNameGenerator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/common/utils/CityNameGenerator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/common/utils/CommUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/common/utils/CommUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/common/utils/CommonCalculations.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/common/utils/CommonCalculations.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/common/utils/EnterAllData.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/common/utils/EnterAllData.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/common/utils/Xls_Reader.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/common/utils/Xls_Reader.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/drivers/chromedriver.exe" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/drivers/chromedriver.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/env/properties/config.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/logger/WebEvent/WebEventListener.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/openweathermap/BaseOpenWeatherMap.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/openweathermap/BaseOpenWeatherMap.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/test/data/dataExcel.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/test/data/dataExcel.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/ndtv/testcases/HomePageTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/ndtv/testcases/HomePageTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/ndtv/testcases/WeatherPageTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/ndtv/testcases/WeatherPageTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/org/openweathermap/testcases/WeatherDataOWM.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/org/openweathermap/testcases/WeatherDataOWM.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/org/weatherComparision/testcases/WeatherDataComparisionTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/org/weatherComparision/testcases/WeatherDataComparisionTest.class" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="MIXED" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="jar://$APPLICATION_HOME_DIR$/plugins/maven/lib/maven.jar!/schemas/maven-4.0.0.xsd" root0="SKIP_INSPECTION" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
+  <component name="ProjectId" id="2n0rfph5wAnYkYdBLCY03PACvPh" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "TestNG.C:/Users/parik/IdeaProjects/WeatehrReport001/ComparatorOnlyTest.xml.executor": "Run",
+    "TestNG.C:/Users/parik/IdeaProjects/WeatehrReport001/testng.ComparatorOnly.xml.executor": "Run",
+    "TestNG.C:/Users/parik/IdeaProjects/WeatehrReport001/testng.ProblemStatement.xml.executor": "Run",
+    "TestNG.C:/Users/parik/IdeaProjects/WeatehrReport001/testng.runEverything.xml.executor": "Run",
+    "TestNG.C:/Users/parik/IdeaProjects/WeatehrReport001/testng.xml.executor": "Run",
+    "TestNG.HomePageTest.clickWeatherLinkTest.executor": "Run",
+    "TestNG.HomePageTest.executor": "Run",
+    "TestNG.HomePageTest.presenceOfWeatherLinkTest.executor": "Run",
+    "TestNG.HomePageTest.verifyHomePageTitleTest.executor": "Run",
+    "TestNG.WeatherDataComparisionTest.compareHumidity.executor": "Run",
+    "git-widget-placeholder": "ce59746d",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/parik/IdeaProjects/WeatehrReport001/src/main/resources/drivers",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\parik\IdeaProjects\WeatehrReport001\src\main\resources\drivers" />
+    </key>
+  </component>
+  <component name="RunManager" selected="TestNG.C:/Users/parik/IdeaProjects/WeatehrReport001/testng.ComparatorOnly.xml">
+    <configuration name="C:/Users/parik/IdeaProjects/WeatehrReport001/ComparatorOnlyTest.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="WeatherReport0001" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/ComparatorOnlyTest.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="C:/Users/parik/IdeaProjects/WeatehrReport001/testng.ComparatorOnly.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="WeatherReport0001" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/testng.ComparatorOnly.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="C:/Users/parik/IdeaProjects/WeatehrReport001/testng.ProblemStatement.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="WeatherReport0001" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/testng.ProblemStatement.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HomePageTest.clickWeatherLinkTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="WeatherReport0001" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ndtv.testcases.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ndtv.testcases" />
+      <option name="MAIN_CLASS_NAME" value="com.ndtv.testcases.HomePageTest" />
+      <option name="METHOD_NAME" value="clickWeatherLinkTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HomePageTest.verifyHomePageTitleTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="WeatherReport0001" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ndtv.testcases.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ndtv.testcases" />
+      <option name="MAIN_CLASS_NAME" value="com.ndtv.testcases.HomePageTest" />
+      <option name="METHOD_NAME" value="verifyHomePageTitleTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="TestNG.C:/Users/parik/IdeaProjects/WeatehrReport001/testng.ComparatorOnly.xml" />
+        <item itemvalue="TestNG.C:/Users/parik/IdeaProjects/WeatehrReport001/ComparatorOnlyTest.xml" />
+        <item itemvalue="TestNG.HomePageTest.clickWeatherLinkTest" />
+        <item itemvalue="TestNG.C:/Users/parik/IdeaProjects/WeatehrReport001/testng.ProblemStatement.xml" />
+        <item itemvalue="TestNG.HomePageTest.verifyHomePageTitleTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="141c98cb-a36a-4825-9ed5-f4f0cf0a9d72" name="Changes" comment="" />
+      <created>1728120941629</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1728120941629</updated>
+    </task>
+    <task id="LOCAL-00001" summary="changes on weekend 5 OCT 24">
+      <option name="closed" value="true" />
+      <created>1728122439163</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1728122439163</updated>
+    </task>
+    <task id="LOCAL-00002" summary="changes on weekend 5 OCT 24">
+      <option name="closed" value="true" />
+      <created>1728122565191</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1728122565191</updated>
+    </task>
+    <task id="LOCAL-00003" summary="regular changes!!">
+      <option name="closed" value="true" />
+      <created>1728138429194</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1728138429195</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Revert &quot;changes on weekend 5 OCT 24&quot;&#10;&#10;This reverts commit d2acc734">
+      <option name="closed" value="true" />
+      <created>1728139225400</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1728139225400</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="changes on weekend 5 OCT 24" />
+    <MESSAGE value="regular changes!!" />
+    <MESSAGE value="Revert &quot;changes on weekend 5 OCT 24&quot;&#10;&#10;This reverts commit d2acc734" />
+    <option name="LAST_COMMIT_MESSAGE" value="Revert &quot;changes on weekend 5 OCT 24&quot;&#10;&#10;This reverts commit d2acc734" />
+  </component>
+</project>
