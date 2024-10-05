@@ -48,7 +48,7 @@
     "TestNG.HomePageTest.verifyHomePageTitleTest.executor": "Run",
     "TestNG.WeatherDataComparisionTest.compareHumidity.executor": "Run",
     "TestNG.WeatherDataComparisionTest.compareWindSpeed.executor": "Run",
-    "git-widget-placeholder": "3258402c",
+    "git-widget-placeholder": "e0bf24b5",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/parik/IdeaProjects/WeatehrReport001/src/main/resources/drivers",
@@ -205,7 +205,15 @@
       <option name="project" value="LOCAL" />
       <updated>1728158444695</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="some fixes.">
+      <option name="closed" value="true" />
+      <created>1728158922007</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1728158922007</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
