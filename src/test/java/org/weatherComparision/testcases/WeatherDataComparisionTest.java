@@ -164,7 +164,7 @@ public class WeatherDataComparisionTest extends BaseOpenWeatherMap {
 			reader.setCellData(listOfCities, "Humidity Compare Result",
 					reader.getCellRowNum(listOfCities, "City", City), "Humidity readings are NOT within Variance Range");
         }
-        Assert.assertTrue(flag);
+        Assert.assertTrue(flag, "Humidity readings are NOT within Variance Range");
     }
 	
 	//Compares on which portal it shows more windy or wind speed
