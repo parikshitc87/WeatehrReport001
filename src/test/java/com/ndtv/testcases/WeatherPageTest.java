@@ -114,8 +114,7 @@ public class WeatherPageTest extends BaseNDTV {
 		// Enters 4 weather data points in the Excel sheet
 		EnterAllData.enterNDTVData(cityWeatherData, listOfCities, City);
 		//Asserts if the panel contains the temperature details
-		Assert.assertEquals((tempdatacollector.contains("Temp in Degrees: " + String.valueOf(tempInDegreeC))), true,
-				"Temperature data MISSING on weather pop up panel");
+        Assert.assertTrue((tempdatacollector.contains("Temp in Degrees: " + String.valueOf(tempInDegreeC))), "Temperature data MISSING on weather pop up panel");
 
 	}
 
