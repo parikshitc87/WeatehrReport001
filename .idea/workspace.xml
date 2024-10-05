@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="141c98cb-a36a-4825-9ed5-f4f0cf0a9d72" name="Changes" comment="Lots of cleanup, again!">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/test/data/dataExcel.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/test/data/dataExcel.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/weatherComparision/testcases/WeatherDataComparisionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/weatherComparision/testcases/WeatherDataComparisionTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/test/data/dataExcel.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/test/data/dataExcel.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/org/weatherComparision/testcases/WeatherDataComparisionTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/org/weatherComparision/testcases/WeatherDataComparisionTest.class" afterDir="false" />
-    </list>
+    <list default="true" id="141c98cb-a36a-4825-9ed5-f4f0cf0a9d72" name="Changes" comment="some fixes." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -54,7 +48,7 @@
     "TestNG.HomePageTest.verifyHomePageTitleTest.executor": "Run",
     "TestNG.WeatherDataComparisionTest.compareHumidity.executor": "Run",
     "TestNG.WeatherDataComparisionTest.compareWindSpeed.executor": "Run",
-    "git-widget-placeholder": "09c73459",
+    "git-widget-placeholder": "3258402c",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/parik/IdeaProjects/WeatehrReport001/src/main/resources/drivers",
@@ -203,7 +197,15 @@
       <option name="project" value="LOCAL" />
       <updated>1728156977302</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="some fixes.">
+      <option name="closed" value="true" />
+      <created>1728158444695</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1728158444695</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -222,7 +224,8 @@
     <MESSAGE value="regular changes!!" />
     <MESSAGE value="Revert &quot;changes on weekend 5 OCT 24&quot;&#10;&#10;This reverts commit d2acc734" />
     <MESSAGE value="Lots of cleanup, again!" />
-    <option name="LAST_COMMIT_MESSAGE" value="Lots of cleanup, again!" />
+    <MESSAGE value="some fixes." />
+    <option name="LAST_COMMIT_MESSAGE" value="some fixes." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
