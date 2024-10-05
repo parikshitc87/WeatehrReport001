@@ -180,7 +180,6 @@ public class WeatherDataComparisionTest extends BaseOpenWeatherMap {
 		}
 		else {
 			reader.setCellData(listOfCities, "Wind Compare Result", reader.getCellRowNum(listOfCities, "City", City), "Wind speed is same on both portals.");
-
 		}
 		
 	}
