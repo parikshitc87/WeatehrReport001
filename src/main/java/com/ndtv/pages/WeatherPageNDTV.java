@@ -39,13 +39,10 @@ public class WeatherPageNDTV extends BaseNDTV {
 		for (char c : City.toCharArray()) {
 			CityInputField.click();
 			CityInputField.sendKeys(String.valueOf(c), Keys.ENTER); // , Keys.ENTER
-			// driver.manage().timeouts().implicitlyWait(CommUtils.Implicitely_Wait,
-			// TimeUnit.SECONDS);
 			CityInputField.sendKeys(Keys.SPACE, Keys.BACK_SPACE);
 			// CityInputField.sendKeys(Keys.RETURN);
 		}
 		CityInputField.sendKeys(Keys.TAB, Keys.SPACE);
-
 	}
 
 	public void sendTabSpace() {
@@ -66,6 +63,5 @@ public class WeatherPageNDTV extends BaseNDTV {
 		return driver.findElement(By.xpath("//*[@class = 'outerContainer' and contains(.,'" + City
 				+ "')]//div[@class='temperatureContainer']//span[@class='tempRedText']")).isEnabled();
 	}
-	
 
 }
