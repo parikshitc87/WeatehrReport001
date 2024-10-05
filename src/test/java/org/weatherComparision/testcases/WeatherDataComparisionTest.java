@@ -33,8 +33,7 @@ public class WeatherDataComparisionTest extends BaseOpenWeatherMap {
 
 	@Test(dataProvider = "getCities")
 	public void compareLiveTemps(String City) { // here we will test if NDTV data is within 10% of data from
-												// OpenWeatherMap or
-		// not
+												// OpenWeatherMap or not
 
 		System.out.println(reader.getRowCount("listOfCities"));
 
@@ -47,10 +46,8 @@ public class WeatherDataComparisionTest extends BaseOpenWeatherMap {
 				reader.getCellRowNum(listOfCities, "City", City)));
 		double liveTempNDTV = Double.parseDouble(
 				reader.getCellData(listOfCities, "LiveTemp (NDTV)", reader.getCellRowNum(listOfCities, "City", City)));
-
 		double differenceInTemp = Math.abs(liveTempOWM - liveTempNDTV);
-		
-		Double variance = CommUtils.Variance_difference;
+		double variance = CommUtils.Variance_difference;
 
 		if (variance >= differenceInTemp) {
 			boolean flag = true;
@@ -65,7 +62,7 @@ public class WeatherDataComparisionTest extends BaseOpenWeatherMap {
 		}
 
 	}
-// - Logic - Both portals are using differnt terms to define same weather conditions when it comes to ~Cloudy.
+// - Logic - Both portals are using different terms to define same weather conditions when it comes to ~Cloudy.
 	//so using 2 arrays as a mini dictionary for cloudy or hazy comparison with other portal
 	//Remaining weather conditions were matched without dictionary
 	
@@ -85,8 +82,8 @@ public class WeatherDataComparisionTest extends BaseOpenWeatherMap {
 			weatherSimilarityMeter++;
 		
 
-		String array1[] = new String[] { "haze", "clouds" };
-		String array2[] = new String[] { "overcast", "cloudy" };
+		String[] array1 = new String[] { "haze", "clouds" };
+		String[] array2 = new String[] { "overcast", "cloudy" };
 
 		loopOne: for (String str1 : array1) {
 			for (String str2 : weatherConditionOWM.split("\\s")) {
@@ -108,7 +105,6 @@ public class WeatherDataComparisionTest extends BaseOpenWeatherMap {
 
 		if (cloudy1 && cloudy2) 
 			weatherSimilarityMeter++;
-		
 
 		if (weatherConditionOWM.contains("rain") && weatherConditionNDTV.contains("rain")) 
 			weatherSimilarityMeter++;
@@ -147,32 +143,28 @@ public class WeatherDataComparisionTest extends BaseOpenWeatherMap {
 				reader.getCellRowNum(listOfCities, "City", City)));
 		double humidityNDTV = Integer.parseInt(
 				reader.getCellData(listOfCities, "Humidity (NDTV)", reader.getCellRowNum(listOfCities, "City", City)));
-
+		System.out.println("Weather Data for " + City + ":");
 		System.out.println("OpenWeatherMap Humidity:  " + humidityOWM);
 		System.out.println("NDTV Humidity:  " + humidityNDTV);
-
 		double differenceInTemp = Math.abs(humidityOWM - humidityNDTV);
 		System.out.println(differenceInTemp);
-		
-		
 		double percentOWM = (differenceInTemp / humidityOWM) * 100;
 		double percentNDTV = (differenceInTemp / humidityNDTV) * 100;
-		
 		System.out.println(percentOWM+"***"+percentNDTV);
-		
-		
-		if (percentOWM <= CommUtils.Humidity_Variance_Percent || percentNDTV <= CommUtils.Humidity_Variance_Percent) {
-			boolean flag = true;
+
+
+        boolean flag;
+        if (percentOWM <= CommUtils.Humidity_Variance_Percent || percentNDTV <= CommUtils.Humidity_Variance_Percent) {
+            flag = true;
 			reader.setCellData(listOfCities, "Humidity Compare Result",
 					reader.getCellRowNum(listOfCities, "City", City), "Humidity readings are within Variance Range");
-			Assert.assertEquals(flag, true);
-		} else {
-			boolean flag = false;
+        } else {
+            flag = false;
 			reader.setCellData(listOfCities, "Humidity Compare Result",
 					reader.getCellRowNum(listOfCities, "City", City), "Humidity readings are NOT within Variance Range");
-			Assert.assertEquals(flag, true);
-		}
-	}
+        }
+        Assert.assertTrue(flag);
+    }
 	
 	//Compares on which portal it shows more windy or wind speed
 	@Test(dataProvider = "getCities")
@@ -193,7 +185,7 @@ public class WeatherDataComparisionTest extends BaseOpenWeatherMap {
 		
 	}
 
-	@DataProvider // will return cities names as String
+	@DataProvider // will return cities names
 	public Iterator<String> getCities() {
 		ArrayList<String> it = CityNameGenerator.storeData();
 		return it.iterator();

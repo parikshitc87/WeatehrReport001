@@ -4,32 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="141c98cb-a36a-4825-9ed5-f4f0cf0a9d72" name="Changes" comment="regular changes!!">
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ndtv/base/BaseNDTV.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ndtv/base/BaseNDTV.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ndtv/pages/WeatherPageNDTV.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ndtv/pages/WeatherPageNDTV.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/common/utils/CommonCalculations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/common/utils/CommonCalculations.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/logger/WebEvent/WebEventListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/logger/WebEvent/WebEventListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/drivers/chromedriver.exe" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/drivers/chromedriver.exe" afterDir="false" />
+    <list default="true" id="141c98cb-a36a-4825-9ed5-f4f0cf0a9d72" name="Changes" comment="Lots of cleanup, again!">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/test/data/dataExcel.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/test/data/dataExcel.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/ndtv/testcases/HomePageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ndtv/testcases/HomePageTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/ndtv/testcases/WeatherPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ndtv/testcases/WeatherPageTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ndtv/base/BaseNDTV.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ndtv/base/BaseNDTV.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ndtv/pages/HomePageNDTV.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ndtv/pages/HomePageNDTV.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/ndtv/pages/WeatherPageNDTV.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/ndtv/pages/WeatherPageNDTV.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/common/utils/CityNameGenerator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/common/utils/CityNameGenerator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/common/utils/CommUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/common/utils/CommUtils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/common/utils/CommonCalculations.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/common/utils/CommonCalculations.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/common/utils/EnterAllData.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/common/utils/EnterAllData.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/common/utils/Xls_Reader.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/common/utils/Xls_Reader.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/drivers/chromedriver.exe" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/drivers/chromedriver.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/env/properties/config.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/logger/WebEvent/WebEventListener.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/openweathermap/BaseOpenWeatherMap.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/openweathermap/BaseOpenWeatherMap.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/weatherComparision/testcases/WeatherDataComparisionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/weatherComparision/testcases/WeatherDataComparisionTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/test/data/dataExcel.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/test/data/dataExcel.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/ndtv/testcases/HomePageTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/ndtv/testcases/HomePageTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/ndtv/testcases/WeatherPageTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/ndtv/testcases/WeatherPageTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/org/openweathermap/testcases/WeatherDataOWM.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/org/openweathermap/testcases/WeatherDataOWM.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/org/weatherComparision/testcases/WeatherDataComparisionTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/org/weatherComparision/testcases/WeatherDataComparisionTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -74,7 +53,8 @@
     "TestNG.HomePageTest.presenceOfWeatherLinkTest.executor": "Run",
     "TestNG.HomePageTest.verifyHomePageTitleTest.executor": "Run",
     "TestNG.WeatherDataComparisionTest.compareHumidity.executor": "Run",
-    "git-widget-placeholder": "ce59746d",
+    "TestNG.WeatherDataComparisionTest.compareWindSpeed.executor": "Run",
+    "git-widget-placeholder": "09c73459",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/parik/IdeaProjects/WeatehrReport001/src/main/resources/drivers",
@@ -138,17 +118,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HomePageTest.verifyHomePageTitleTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="WeatherDataComparisionTest.compareWindSpeed" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="WeatherReport0001" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.ndtv.testcases.*" />
+          <option name="PATTERN" value="org.weatherComparision.testcases.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.ndtv.testcases" />
-      <option name="MAIN_CLASS_NAME" value="com.ndtv.testcases.HomePageTest" />
-      <option name="METHOD_NAME" value="verifyHomePageTitleTest" />
+      <option name="PACKAGE_NAME" value="org.weatherComparision.testcases" />
+      <option name="MAIN_CLASS_NAME" value="org.weatherComparision.testcases.WeatherDataComparisionTest" />
+      <option name="METHOD_NAME" value="compareWindSpeed" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -159,10 +139,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="TestNG.C:/Users/parik/IdeaProjects/WeatehrReport001/testng.ComparatorOnly.xml" />
+        <item itemvalue="TestNG.WeatherDataComparisionTest.compareWindSpeed" />
         <item itemvalue="TestNG.C:/Users/parik/IdeaProjects/WeatehrReport001/ComparatorOnlyTest.xml" />
         <item itemvalue="TestNG.HomePageTest.clickWeatherLinkTest" />
         <item itemvalue="TestNG.C:/Users/parik/IdeaProjects/WeatehrReport001/testng.ProblemStatement.xml" />
-        <item itemvalue="TestNG.HomePageTest.verifyHomePageTitleTest" />
       </list>
     </recent_temporary>
   </component>
@@ -207,7 +187,23 @@
       <option name="project" value="LOCAL" />
       <updated>1728139225400</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Lots of cleanup, again!">
+      <option name="closed" value="true" />
+      <created>1728156943900</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1728156943900</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Lots of cleanup, again!">
+      <option name="closed" value="true" />
+      <created>1728156977302</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1728156977302</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -225,6 +221,18 @@
     <MESSAGE value="changes on weekend 5 OCT 24" />
     <MESSAGE value="regular changes!!" />
     <MESSAGE value="Revert &quot;changes on weekend 5 OCT 24&quot;&#10;&#10;This reverts commit d2acc734" />
-    <option name="LAST_COMMIT_MESSAGE" value="Revert &quot;changes on weekend 5 OCT 24&quot;&#10;&#10;This reverts commit d2acc734" />
+    <MESSAGE value="Lots of cleanup, again!" />
+    <option name="LAST_COMMIT_MESSAGE" value="Lots of cleanup, again!" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/org/weatherComparision/testcases/WeatherDataComparisionTest.java</url>
+          <line>169</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
