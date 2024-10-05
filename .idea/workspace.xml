@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="141c98cb-a36a-4825-9ed5-f4f0cf0a9d72" name="Changes" comment="some fixes.">
+    <list default="true" id="141c98cb-a36a-4825-9ed5-f4f0cf0a9d72" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/weatherComparision/testcases/WeatherDataComparisionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/weatherComparision/testcases/WeatherDataComparisionTest.java" afterDir="false" />
     </list>
@@ -51,7 +51,7 @@
     "TestNG.HomePageTest.verifyHomePageTitleTest.executor": "Run",
     "TestNG.WeatherDataComparisionTest.compareHumidity.executor": "Run",
     "TestNG.WeatherDataComparisionTest.compareWindSpeed.executor": "Run",
-    "git-widget-placeholder": "321b3e56",
+    "git-widget-placeholder": "b317d0d5",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/parik/IdeaProjects/WeatehrReport001/src/main/resources/drivers",
@@ -224,7 +224,15 @@
       <option name="project" value="LOCAL" />
       <updated>1728159142616</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="fixup! some fixes.">
+      <option name="closed" value="true" />
+      <created>1728162141551</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1728162141551</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -244,14 +252,15 @@
     <MESSAGE value="Revert &quot;changes on weekend 5 OCT 24&quot;&#10;&#10;This reverts commit d2acc734" />
     <MESSAGE value="Lots of cleanup, again!" />
     <MESSAGE value="some fixes." />
-    <option name="LAST_COMMIT_MESSAGE" value="some fixes." />
+    <MESSAGE value="fixup! some fixes." />
+    <option name="LAST_COMMIT_MESSAGE" value="fixup! some fixes." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/org/weatherComparision/testcases/WeatherDataComparisionTest.java</url>
-          <line>169</line>
+          <line>170</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
