@@ -144,7 +144,7 @@ public class WeatherDataComparisionTest extends BaseOpenWeatherMap {
 		double humidityNDTV = Integer.parseInt(
 				reader.getCellData(listOfCities, "Humidity (NDTV)", reader.getCellRowNum(listOfCities, "City", City)));
 		System.out.println("Weather Data for " + City + ":");
-		//this line
+		//this line edited
 		System.out.println("OpenWeatherMap Humidity:  " + humidityOWM);
 		System.out.println("NDTV Humidity:  " + humidityNDTV);
 		double differenceInTemp = Math.abs(humidityOWM - humidityNDTV);
