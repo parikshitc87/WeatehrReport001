@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="141c98cb-a36a-4825-9ed5-f4f0cf0a9d72" name="Changes" comment="revised">
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/weatherComparision/testcases/WeatherDataComparisionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/weatherComparision/testcases/WeatherDataComparisionTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="141c98cb-a36a-4825-9ed5-f4f0cf0a9d72" name="Changes" comment="some more fixes." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -19,7 +17,7 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="RESET_MODE" value="MIXED" />
+    <option name="RESET_MODE" value="SOFT" />
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="jar://$APPLICATION_HOME_DIR$/plugins/maven/lib/maven.jar!/schemas/maven-4.0.0.xsd" root0="SKIP_INSPECTION" />
@@ -50,7 +48,7 @@
     "TestNG.HomePageTest.verifyHomePageTitleTest.executor": "Run",
     "TestNG.WeatherDataComparisionTest.compareHumidity.executor": "Run",
     "TestNG.WeatherDataComparisionTest.compareWindSpeed.executor": "Run",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "Sunday1",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/parik/IdeaProjects/WeatehrReport001/src/main/resources/drivers",
@@ -247,7 +245,15 @@
       <option name="project" value="LOCAL" />
       <updated>1728162737464</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="some more fixes.">
+      <option name="closed" value="true" />
+      <created>1728190461903</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1728190461903</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -261,6 +267,11 @@
         <entry key="Branch">
           <value>
             <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="Sunday1" />
+                </option>
+              </RecentGroup>
               <RecentGroup>
                 <option name="FILTER_VALUES">
                   <option value="HEAD" />
@@ -308,7 +319,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="HEAD" />
+                        <option value="Sunday1" />
                       </list>
                     </value>
                   </entry>
@@ -328,17 +339,7 @@
     <MESSAGE value="fixup! some fixes." />
     <MESSAGE value="some fixes." />
     <MESSAGE value="revised" />
-    <option name="LAST_COMMIT_MESSAGE" value="revised" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/org/weatherComparision/testcases/WeatherDataComparisionTest.java</url>
-          <line>170</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="some more fixes." />
+    <option name="LAST_COMMIT_MESSAGE" value="some more fixes." />
   </component>
 </project>
