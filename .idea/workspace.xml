@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="141c98cb-a36a-4825-9ed5-f4f0cf0a9d72" name="Changes" comment="some fixes.">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/weatherComparision/testcases/WeatherDataComparisionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/weatherComparision/testcases/WeatherDataComparisionTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="141c98cb-a36a-4825-9ed5-f4f0cf0a9d72" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -16,7 +13,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="a85d9d907a45ea920159e5d0111eef26cae0c971" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -37,30 +34,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;TestNG.C:/Users/parik/IdeaProjects/WeatehrReport001/ComparatorOnlyTest.xml.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.C:/Users/parik/IdeaProjects/WeatehrReport001/testng.ComparatorOnly.xml.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.C:/Users/parik/IdeaProjects/WeatehrReport001/testng.ProblemStatement.xml.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.C:/Users/parik/IdeaProjects/WeatehrReport001/testng.runEverything.xml.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.C:/Users/parik/IdeaProjects/WeatehrReport001/testng.xml.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.HomePageTest.clickWeatherLinkTest.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.HomePageTest.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.HomePageTest.presenceOfWeatherLinkTest.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.HomePageTest.verifyHomePageTitleTest.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.WeatherDataComparisionTest.compareHumidity.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.WeatherDataComparisionTest.compareWindSpeed.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;0546ba04&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/parik/IdeaProjects/WeatehrReport001/src/main/resources/drivers&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "TestNG.C:/Users/parik/IdeaProjects/WeatehrReport001/ComparatorOnlyTest.xml.executor": "Run",
+    "TestNG.C:/Users/parik/IdeaProjects/WeatehrReport001/testng.ComparatorOnly.xml.executor": "Run",
+    "TestNG.C:/Users/parik/IdeaProjects/WeatehrReport001/testng.ProblemStatement.xml.executor": "Run",
+    "TestNG.C:/Users/parik/IdeaProjects/WeatehrReport001/testng.runEverything.xml.executor": "Run",
+    "TestNG.C:/Users/parik/IdeaProjects/WeatehrReport001/testng.xml.executor": "Run",
+    "TestNG.HomePageTest.clickWeatherLinkTest.executor": "Run",
+    "TestNG.HomePageTest.executor": "Run",
+    "TestNG.HomePageTest.presenceOfWeatherLinkTest.executor": "Run",
+    "TestNG.HomePageTest.verifyHomePageTitleTest.executor": "Run",
+    "TestNG.WeatherDataComparisionTest.compareHumidity.executor": "Run",
+    "TestNG.WeatherDataComparisionTest.compareWindSpeed.executor": "Run",
+    "git-widget-placeholder": "a85d9d90",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/parik/IdeaProjects/WeatehrReport001/src/main/resources/drivers",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\parik\IdeaProjects\WeatehrReport001\src\main\resources\drivers" />
@@ -135,11 +132,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.C:/Users/parik/IdeaProjects/WeatehrReport001/testng.ComparatorOnly.xml" />
         <item itemvalue="TestNG.WeatherDataComparisionTest.compareWindSpeed" />
-        <item itemvalue="TestNG.C:/Users/parik/IdeaProjects/WeatehrReport001/ComparatorOnlyTest.xml" />
         <item itemvalue="TestNG.HomePageTest.clickWeatherLinkTest" />
         <item itemvalue="TestNG.C:/Users/parik/IdeaProjects/WeatehrReport001/testng.ProblemStatement.xml" />
+        <item itemvalue="TestNG.C:/Users/parik/IdeaProjects/WeatehrReport001/testng.ComparatorOnly.xml" />
+        <item itemvalue="TestNG.C:/Users/parik/IdeaProjects/WeatehrReport001/ComparatorOnlyTest.xml" />
       </list>
     </recent_temporary>
   </component>
@@ -248,7 +245,15 @@
       <option name="project" value="LOCAL" />
       <updated>1728162737464</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="squash! some fixes.">
+      <option name="closed" value="true" />
+      <created>1728189849604</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1728189849604</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -328,7 +333,8 @@
     <MESSAGE value="Lots of cleanup, again!" />
     <MESSAGE value="fixup! some fixes." />
     <MESSAGE value="some fixes." />
-    <option name="LAST_COMMIT_MESSAGE" value="some fixes." />
+    <MESSAGE value="squash! some fixes." />
+    <option name="LAST_COMMIT_MESSAGE" value="squash! some fixes." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
